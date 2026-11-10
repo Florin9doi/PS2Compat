@@ -913,6 +913,8 @@ SCPS_150.35: # Keihin Kyuukou, The - Train Simulator Real (Japan)
     - USBMCKQ.IRX__2adab02203f175f5cf96d60c777b79ee
     - USRFTDI.IRX__08ee3fc7b3dc0a8c67b5c40a191e1229
     - USRPL.IRX__1c2fb10263db0fa3defbd61199091898
+  controllers:
+    - Master Controller
 SCPS_150.45: # Ka 2 - Let's Go Hawaii (Japan)
   modules:
     - USBHT.IRX__ee49589454c52696d397c2958f016844
@@ -1246,6 +1248,8 @@ SLES_500.32: # Theme Park World (Europe) (En,Fr,De)
   modules:
     - USBFLK.IRX__211d9d596c04b36c59e81e791aaea4bc
     - USBKEY.IRX__02b51a60a546a010e67a877c38ae1ce1
+  controllers:
+    - Keyboard
 SLES_500.33: # Swing Away Golf (Europe)
   modules:
 SLES_500.37: # Silent Scope (Europe) (En,Fr,De,Es,It)
@@ -1302,6 +1306,8 @@ SLES_501.26: # Quake III - Revolution (Europe) (En,Fr,It)
   modules:
     - FLSHLNK.IRX__b2c525703b0108796b38c2aad6b4de41
     - USBKEY.IRX__02b51a60a546a010e67a877c38ae1ce1
+  controllers:
+    - Keyboard
 SLES_501.65: # Star Wars - Starfighter (Europe)
   modules:
     - USBKEYBD.IRX__f3469935b48b4969a65b707732d56747
@@ -1570,7 +1576,6 @@ SLES_505.41: # Capcom vs. SNK 2 - Mark of the Millennium 2001 (Europe)
     - CXTMDM.IRX__a09a2ca63ccd24eda7b1fa2286a621b4
     - OMMODEM.IRX__7bb4e1174837aa41bf73ab182987ab33
     - OSTMDM_A.IRX__94967c6cfae44a63665c2775ec08f25e
-    - USB_SRCH.IRX__2ab0e383109c0956b5abeea0a4de1b82
     - USBKB.IRX__fae9db3b2b773c3eaddba8c0afe37a93
   controllers:
     - Conexant SmartSCM
@@ -1652,6 +1657,7 @@ SLES_507.22: # Premier Manager 2002-2003 Season (Europe)
     - USBKEYB.IRX__397b177f392edb777c5a1be552decf11
     - USBMOUSE.IRX__c6b003a3055b2ecd822c7ab62727582f
   controllers:
+    - Keyboard
     - Mouse
 SLES_507.23: # TOCA Race Driver (Europe) (En,Fr,Es) (v2.00)
   modules:
@@ -1959,7 +1965,6 @@ SLES_511.74: # Marvel vs. Capcom 2 - New Age of Heroes (Europe)
     - CXTMDM.IRX__a09a2ca63ccd24eda7b1fa2286a621b4
     - OMMODEM.IRX__7bb4e1174837aa41bf73ab182987ab33
     - OSTMDM_A.IRX__94967c6cfae44a63665c2775ec08f25e
-    - USB_SRCH.IRX__0e33e597c301b4ff1cfbf756807beb8e
     - USBKB.IRX__79a682865378ad6925b87c56ae1cf570
   controllers:
     - Conexant SmartSCM
@@ -4108,6 +4113,8 @@ SLES_555.09: # Music Maker - Rockstar (Europe) (En,Fr,De,Es,It,Nl)
   modules:
     - HIDMOD.IRX__e7f8b31751172a266c38ddb3a66ac7d8
     - USBMICRO.IRX__85fa272985fdb4a1828595ceefdc14f3
+  controllers:
+    - Microphone
 SLES_555.18: # Guitar Hero - Van Halen (Australia)
   modules:
     - BCUI.IRX__698b3fd4125fe51491fe88bade3af5f8
@@ -4334,6 +4341,7 @@ SLPM_621.11: # EGBrowser (Japan) (v1.16)
     - Conexant SmartSCM
     - Keyboard
     - Omron
+    - Pegasus
     - Sony PopEgg
 SLPM_621.36: # NetFront for Delta (Japan)
   modules:
@@ -4428,7 +4436,6 @@ SLPM_622.27: # Marvel vs. Capcom 2 - New Age of Heroes (Japan)
     - CXTMDM.IRX__a09a2ca63ccd24eda7b1fa2286a621b4
     - OMMODEM.IRX__7bb4e1174837aa41bf73ab182987ab33
     - OSTMDM_A.IRX__94967c6cfae44a63665c2775ec08f25e
-    - USB_SRCH.IRX__0e33e597c301b4ff1cfbf756807beb8e
     - USBKB.IRX__79a682865378ad6925b87c56ae1cf570
   controllers:
     - Conexant SmartSCM
@@ -4576,7 +4583,6 @@ SLPM_650.47: # Capcom vs. SNK 2 - Millionaire Fighting 2001 (Japan)
     - CXTMDM.IRX__a09a2ca63ccd24eda7b1fa2286a621b4
     - OMMODEM.IRX__7bb4e1174837aa41bf73ab182987ab33
     - OSTMDM_A.IRX__94967c6cfae44a63665c2775ec08f25e
-    - USB_SRCH.IRX__2ab0e383109c0956b5abeea0a4de1b82
     - USBKB.IRX__99fe52416866a4c2dc4a99ff8851da5d
   controllers:
     - Conexant SmartSCM
@@ -4599,7 +4605,6 @@ SLPM_650.76: # Kidou Senshi Gundam - Renpou vs. Zeon DX (Japan)
     - CXTMDM.IRX__4d5c6c27f636d8bfb3f9e84f1f2b0f63
     - MDMGLUE.IRX__7a93f001aa890e9e07165734f2bff6ab
     - OSTMDM_A.IRX__94967c6cfae44a63665c2775ec08f25e
-    - USB_SRCH.IRX__b330cfe339f8c47d04bfe882a1c038ce
     - USBKB.IRX__27907fe6c26eeec3a2449e2ad40a97cd
   controllers:
     - Conexant SmartSCM
@@ -5315,6 +5320,8 @@ SLUS_200.34: # Unreal Tournament (USA)
 SLUS_200.45: # Legend of Alon D'ar, The (USA)
   modules:
     - USBKEY.IRX__88d8571a3ab9ac045e8b0a4a6ee27cb2
+  controllers:
+    - Keyboard
 SLUS_200.51: # NFL Blitz 2002 (USA)
   modules:
     - AN986.IRX__2da9fc6c471a0f57d4b1b74262b71de4

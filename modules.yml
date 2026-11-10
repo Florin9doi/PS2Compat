@@ -44,7 +44,8 @@ USBKQCON.IRX:
 USBMTCON.IRX:
   type: "Train Sim"
   support: ["Multi Train Controller"]
-USBTSCON.IRX:
+Train Sim - Master Controller:
+  modules: USBTSCON.IRX, USBMCKQ.IRX
   type: "Train Sim"
   support: ["Master Controller"]
 
@@ -88,11 +89,11 @@ SLOTCNTR.IRX:
   support: ["Pachi-Slot"]
 
 Microphones:
-  modules: LGAUD.IRX, USBMIC.IRX
+  modules: LGAUD.IRX, USBMIC.IRX, USBMICRO.IRX
   type: "Audio"
   support: ["Microphone"]
 Keyboards:
-  modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX
+  modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX
   type: "Keyboards"
   support: ["Keyboard"]
 Mice:
@@ -123,7 +124,7 @@ Webcams - CaptureEye:
   support: ["CaptureEye"]
 
 Ethernet:
-  modules: AN986.IRX
+  modules: AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX
   type: "Network adapters"
   support: ["Pegasus"]
 Modem - Omron:
