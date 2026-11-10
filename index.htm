@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PS2 Compatibility Database</title>
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #0b1020;
+  --panel: #131c30;
+  --panel2: #1b2740;
+  --border: #293751;
+  --text: #edf2ff;
+  --muted: #9baac3;
+  --accent: #6595ff;
+  --green: #54d6a0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+header {
+  padding: 28px max(20px, calc((100% - 1100px)/2));
+  border-bottom: 1px solid var(--border);
+  background: #101a2e;
+}
+header h1 { margin: 0 0 7px; font-size: 25px; }
+header p { margin: 0; color: var(--muted); font-size: 14px; }
+main { max-width: 1100px; margin: auto; padding: 24px 18px 60px; }
+.tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+  overflow-x: auto;
+}
+.tab {
+  padding: 13px 20px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 650;
+}
+.tab.active { color: white; border-bottom-color: var(--accent); }
+.panel { display: none; }
+.panel.active { display: block; }
+input {
+  width: 100%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: white;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+input:focus { border-color: var(--accent); }
+.search { margin-bottom: 20px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 13px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 17px;
+  cursor: pointer;
+  transition: .15s;
+}
+.card:hover { border-color: var(--accent); background: var(--panel2); }
+.card h3 { margin: 0 0 8px; font-size: 15px; }
+.card p { margin: 0; font-size: 13px; color: var(--muted); }
+.section-title { margin: 25px 0 14px; font-size: 17px; }
+.pills { display: flex; flex-wrap: wrap; gap: 9px; margin: 15px 0 22px; }
+.pill {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 9px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.pill:hover, .pill.selected {
+  border-color: var(--accent);
+  background: #263b63;
+}
+.game-row {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+.game-row:hover { border-color: var(--accent); }
+.game-row h3 { margin: 0 0 6px; font-size: 14px; }
+.game-row p { margin: 0; color: var(--muted); font-size: 12px; }
+.tag {
+  display: inline-block;
+  background: #203a35;
+  color: var(--green);
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 11px;
+  margin: 3px 4px 3px 0;
+}
+.controller-groups { display: grid; gap: 12px; }
+.controller-group {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.controller-group h4 {
+  margin: 0 0 9px;
+  color: var(--text);
+  font-size: 14px;
+}
+.module {
+  display: block;
+  padding: 10px;
+  margin: 7px 0;
+  background: var(--bg);
+  border-radius: 6px;
+  color: #b6c9e9;
+  font: 12px monospace;
+  overflow-wrap: anywhere;
+}
+.detail {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 23px;
+  margin-bottom: 22px;
+}
+.detail h2 { margin: 0 0 8px; font-size: 21px; }
+.detail .id { color: var(--accent); font-family: monospace; }
+.back {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  padding: 0 0 15px;
+  cursor: pointer;
+}
+.empty { color: var(--muted); padding: 30px 5px; text-align: center; }
+.status {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 12px 0;
+}
+.loader { color: var(--accent); }
+
+.controller-layout { display:grid; grid-template-columns:260px minmax(0,1fr); gap:22px; align-items:start; }
+.filter-sidebar { position:sticky; top:0; align-self:start; height:calc(100vh - 18px); padding:16px; background:var(--panel); border:1px solid var(--border); border-radius:12px; }
+.filter-sidebar h3 { margin:0 0 12px; font-size:14px; }
+.filter-sidebar input { padding:11px 12px; font-size:13px; margin-bottom:12px; }
+.filter-hint { color:var(--muted); font-size:12px; line-height:1.5; margin:0; }
+.category-nav { display:grid; gap:6px; }
+.category-tree { display:grid; gap:4px; }
+.category-children { display:grid; gap:4px; margin:2px 0 7px 13px; padding-left:11px; border-left:1px solid var(--border); }
+.category-nav button.child { padding:8px 10px; font-size:12px; }
+.category-nav button { width:100%; text-align:left; padding:11px 12px; border:1px solid transparent; border-radius:8px; background:transparent; color:var(--muted); cursor:pointer; font-size:13px; }
+.category-nav button:hover { background:var(--panel2); color:var(--text); }
+.category-nav button.active { background:#263b63; border-color:var(--accent); color:white; }
+.category-nav .count { float:right; color:var(--muted); font-size:11px; }
+.category-list { min-width:0; }
+.category-heading { margin:2px 0 8px; font-size:21px; }
+.category-description { color:var(--muted); font-size:13px; margin:0 0 18px; }
+.controller-submenu { display:flex; flex-wrap:wrap; gap:8px; padding:12px; margin:0 0 18px; background:var(--panel); border:1px solid var(--border); border-radius:10px; }
+.controller-submenu .pill { margin:0; }
+#controllerFilterStatus { color:var(--muted); font-size:12px; margin:0 0 12px; }
+@media(max-width:760px) { .controller-layout { grid-template-columns:1fr; } .filter-sidebar { position:static; height:auto; } .category-nav { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+.upload {
+  margin-top: 25px;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+}
+.upload label { display: block; font-size: 13px; margin-bottom: 10px; }
+.upload input { padding: 9px; font-size: 12px; }
+button:focus-visible, .card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+@media(max-width:600px) {
+  header { padding: 22px 17px; }
+  main { padding: 18px 13px 40px; }
+  .grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .card { padding: 13px; }
+  .tab { padding: 12px 13px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎮 PS2 Compatibility Database</h1>
+  <p>Explore PlayStation 2 games and their supported accessories.</p>
+</header>
+
+<main>
+  <div class="status" id="status">Loading compatibility database...</div>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="search">⌕ Search</button>
+    <button class="tab" data-tab="controller">🎮 Controllers</button>
+    <button class="tab" data-tab="games">▤ Games</button>
+  </nav>
+
+  <section class="panel active" id="search">
+    <input class="search" id="globalSearch"
+      placeholder="Search games, game IDs, controllers, modules...">
+    <div id="searchResults"></div>
+  </section>
+
+  <section class="panel" id="controller">
+    <h2>Browse by accessory</h2>
+    <p style="color:var(--muted);font-size:14px">
+      Choose an accessory category, then select a controller.
+    </p>
+    <div class="controller-layout">
+      <aside class="filter-sidebar">
+        <h3>Categories</h3>
+        <input id="controllerFilter" type="search" placeholder="Filter categories..." aria-label="Filter categories">
+        <nav id="groups" class="category-nav" aria-label="Accessory categories"></nav>
+      </aside>
+      <div class="category-list">
+        <p id="controllerFilterStatus"></p>
+        <div id="controllerBrowser"><p class="empty">Select a category to browse compatible games.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="games">
+    <div id="gameBrowser">
+      <input class="search" id="gameSearch"
+        placeholder="Search games by name or ID...">
+      <div id="gameList"></div>
+    </div>
+    <div id="gameDetail" hidden></div>
+  </section>
+
+  <div class="upload" id="uploadArea">
+    <label><strong>Load your YAML files manually</strong></label>
+    <input type="file" id="fileInput" accept=".yml,.yaml" multiple>
+    <p style="font-size:12px;color:var(--muted)">
+      Select game_controllers.yml, accessories.yml and
+      gameid_to_name.yml together if automatic loading fails.
+    </p>
+  </div>
+</main>
+
+<script>
+const FILES = [
+  "game_controllers.yml",
+  "accessories.yml",
+  "gameid_to_name.yml"
+];
+
+let gameControllers = {};
+let accessories = {};
+let gameNames = {};
+let games = [];
+let groups = {};
+let selectedGroup = null;
+let selectedController = null;
+let selectedGame = null;
+
+const $ = id => document.getElementById(id);
+
+function parseYaml(text) {
+  return jsyaml.load(text) || {};
+}
+
+async function loadFiles() {
+  try {
+    const contents = await Promise.all(
+      FILES.map(async file => {
+        const response = await fetch("./" + file);
+        if (!response.ok) throw new Error("Could not load " + file);
+        return parseYaml(await response.text());
+      })
+    );
+    initialize(contents[0], contents[1], contents[2]);
+  } catch (error) {
+    $("status").textContent =
+      "Automatic loading failed. Please select your three YAML files below.";
+    $("status").classList.remove("loader");
+  }
+}
+
+function initialize(controllers, accessoryData, names) {
+  gameControllers = controllers || {};
+  accessories = accessoryData || {};
+  gameNames = names || {};
+
+  games = Object.entries(gameControllers).map(([id, data]) => ({
+    id,
+    name: gameNames[id] || id,
+    controllers: Array.isArray(data?.controllers)
+      ? data.controllers : [],
+    modules: Array.isArray(data?.modules) ? data.modules : []
+  }));
+
+  buildGroups();
+  renderEverything();
+
+  $("status").textContent =
+    `Database loaded successfully · ${games.length} games · ` +
+    `${new Set(games.flatMap(g => g.controllers)).size} controllers`;
+
+  $("uploadArea").hidden = true;
+}
+
+function buildGroups() {
+  groups = {};
+  const controllerGroups = {};
+
+  Object.entries(accessories).forEach(([category, list]) => {
+    if (!Array.isArray(list)) return;
+    groups[category] = [...new Set(list)];
+    list.forEach(controller => {
+      controllerGroups[controller] = category;
+    });
+  });
+
+  // Include controllers that are not listed in accessories.yml.
+  games.forEach(game => {
+    game.controllers.forEach(controller => {
+      if (controllerGroups[controller]) return;
+
+      let category = "Other Accessories";
+      if (/gamepad|dualshock|game.?pad/i.test(controller))
+        category = "Gamepads";
+
+      if (!groups[category]) groups[category] = [];
+      if (!groups[category].includes(controller))
+        groups[category].push(controller);
+
+      controllerGroups[controller] = category;
+    });
+  });
+}
+
+function renderEverything() {
+  renderGroups();
+  renderGames();
+  renderSearch();
+}
+
+function setTab(tab) {
+  document.querySelectorAll(".tab").forEach(button =>
+    button.classList.toggle("active", button.dataset.tab === tab)
+  );
+  document.querySelectorAll(".panel").forEach(panel =>
+    panel.classList.toggle("active", panel.id === tab)
+  );
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+document.querySelectorAll(".tab").forEach(button => {
+  button.addEventListener("click", () => setTab(button.dataset.tab));
+});
+
+function openGame(game) {
+  selectedGame = game;
+  setTab("games");
+  $("gameBrowser").hidden = true;
+  $("gameDetail").hidden = false;
+  renderGameDetail(game);
+}
+
+function renderGameDetail(game) {
+  // Group this game's supported controllers using the categories in accessories.yml.
+  const groupedControllers = {};
+  game.controllers.forEach(controller => {
+    const category = Object.entries(groups).find(([, list]) => list.includes(controller))?.[0]
+      || "Other Accessories";
+    if (!groupedControllers[category]) groupedControllers[category] = [];
+    groupedControllers[category].push(controller);
+  });
+
+  const categoryOrder = Object.keys(accessories);
+  const orderedGroups = Object.entries(groupedControllers).sort(([a], [b]) => {
+    const ai = categoryOrder.indexOf(a);
+    const bi = categoryOrder.indexOf(b);
+    if (ai < 0 && bi < 0) return a.localeCompare(b);
+    if (ai < 0) return 1;
+    if (bi < 0) return -1;
+    return ai - bi;
+  });
+
+  const controllerGroupsHtml = orderedGroups.length
+    ? orderedGroups.map(([category, controllers]) => `
+        <section class="controller-group">
+          <h4>${escapeHtml(category)}</h4>
+          <div>${controllers.map(controller =>
+            `<span class="tag">${escapeHtml(controller)}</span>`
+          ).join("")}</div>
+        </section>
+      `).join("")
+    : '<p class="empty">No controller information available.</p>';
+
+  $("gameDetail").innerHTML = `
+    <button class="back" id="backGames">← Back to games</button>
+    <div class="detail">
+      <div class="id">${escapeHtml(game.id)}</div>
+      <h2>${escapeHtml(game.name)}</h2>
+      <p style="color:var(--muted);font-size:13px">
+        ${game.controllers.length} supported controller types
+      </p>
+    </div>
+    <h3 class="section-title">Supported controllers</h3>
+    <div class="controller-groups">${controllerGroupsHtml}</div>
+  `;
+
+  $("backGames").addEventListener("click", () => {
+    $("gameDetail").hidden = true;
+    $("gameBrowser").hidden = false;
+  });
+}
+
+function renderGroups() {
+  const query = ($("controllerFilter")?.value || "").trim().toLowerCase();
+  const entries = Object.entries(groups).sort(([a], [b]) => {
+    return a.localeCompare(b);
+  }).filter(([name, list]) => !query || name.toLowerCase().includes(query) ||
+    list.some(controller => controller.toLowerCase().includes(query)));
+
+  const tree = entries.map(([name, list]) => {
+    const showCategory = !query ||
+      name.toLowerCase().includes(query) ||
+      list.some(controller => controller.toLowerCase().includes(query));
+
+    if (!showCategory) return '';
+
+    const categoryActive = selectedGroup === name && !selectedController;
+    const parent = `
+      <button type="button" class="${categoryActive ? "active" : ""}" data-category="${escapeHtml(name)}">
+        ${escapeHtml(name)} <span class="count">${list.length}</span>
+      </button>`;
+
+    // Only show subcategories when the group has more than one controller.
+    const children = list.length > 1
+      ? list
+          .filter(controller =>
+            !query ||
+            controller.toLowerCase().includes(query) ||
+            name.toLowerCase().includes(query)
+          )
+          .map(controller => `
+            <button type="button"
+              class="child ${selectedGroup === name && selectedController === controller ? "active" : ""}"
+              data-tree-controller="${escapeHtml(controller)}"
+              data-tree-group="${escapeHtml(name)}">
+              ${escapeHtml(controller)}
+            </button>
+          `).join("")
+      : "";
+
+    return `
+      <div class="category-tree">
+        ${parent}
+        ${children ? `<div class="category-children">${children}</div>` : ""}
+      </div>`;
+  }).join("");
+
+  $("groups").innerHTML = tree || '<p class="filter-hint">No matching categories.</p>';
+
+  document.querySelectorAll("[data-category]").forEach(button => {
+    button.addEventListener("click", () => {
+      selectedGroup = button.dataset.category;
+      selectedController = null;
+      renderGroups();
+      renderControllerBrowser();
+    });
+  });
+
+  document.querySelectorAll("[data-tree-controller]").forEach(button => {
+    button.addEventListener("click", () => {
+      selectedGroup = button.dataset.treeGroup;
+      selectedController = button.dataset.treeController;
+      renderGroups();
+      renderControllerBrowser();
+    });
+  });
+
+  $("controllerFilterStatus").textContent = `${entries.length} categories`;
+}
+
+function renderControllerBrowser() {
+  const container = $("controllerBrowser");
+  if (!selectedGroup || !groups[selectedGroup]) {
+    container.innerHTML = '<p class="empty">Select a category to browse compatible games.</p>';
+    return;
+  }
+
+  const controllers = groups[selectedGroup];
+  const activeControllers = selectedController && controllers.includes(selectedController)
+    ? [selectedController] : controllers;
+  const matches = games.filter(game => game.controllers.some(controller => activeControllers.includes(controller)));
+
+  container.innerHTML = `
+    <h2 class="category-heading">${escapeHtml(selectedGroup)}</h2>
+    <p class="category-description">${matches.length} compatible game${matches.length === 1 ? "" : "s"}${selectedController ? ` for ${escapeHtml(selectedController)}` : ""}</p>
+    ${matches.length ? matches.map(game => `
+      <div class="game-row" data-open="${escapeHtml(game.id)}">
+        <h3>${escapeHtml(game.name)}</h3>
+        <p>${escapeHtml(game.id)} · ${game.controllers.filter(c => activeControllers.includes(c)).length} matching controller type(s)</p>
+      </div>
+    `).join("") : '<p class="empty">No compatible games found.</p>'}
+  `;
+
+  document.querySelectorAll("[data-controller-filter]").forEach(button => {
+    button.addEventListener("click", () => {
+      selectedController = button.dataset.controllerFilter || null;
+      renderControllerBrowser();
+    });
+  });
+  document.querySelectorAll("[data-open]").forEach(row => {
+    row.addEventListener("click", () => {
+      const game = games.find(item => item.id === row.dataset.open);
+      if (game) openGame(game);
+    });
+  });
+}
+
+function renderGames() {
+  const query = ($("gameSearch").value || "").toLowerCase();
+  const matches = games.filter(g =>
+    g.name.toLowerCase().includes(query) ||
+    g.id.toLowerCase().includes(query)
+  );
+
+  $("gameList").innerHTML = matches.length
+    ? matches.map(g => `
+      <div class="game-row" data-game="${escapeHtml(g.id)}">
+        <h3>${escapeHtml(g.name)}</h3>
+        <p>${escapeHtml(g.id)} · ${g.controllers.length} controllers</p>
+      </div>
+    `).join("")
+    : '<p class="empty">No games found.</p>';
+
+  document.querySelectorAll("[data-game]").forEach(row => {
+    row.addEventListener("click", () => {
+      const game = games.find(g => g.id === row.dataset.game);
+      if (game) openGame(game);
+    });
+  });
+}
+
+$("gameSearch").addEventListener("input", renderGames);
+$("controllerFilter").addEventListener("input", renderGroups);
+
+function renderSearch() {
+  const query = ($("globalSearch").value || "").toLowerCase().trim();
+
+  if (!query) {
+    $("searchResults").innerHTML = `
+      <div class="detail">
+        <h2>Welcome to the compatibility database</h2>
+        <p style="color:var(--muted)">
+          Search for a game, game ID, controller or IRX module.
+        </p>
+        <p>${games.length} games indexed</p>
+      </div>
+      <h3 class="section-title">Recently indexed games</h3>
+      ${games.slice(0, 8).map(g => `
+        <div class="game-row" data-search-game="${escapeHtml(g.id)}">
+          <h3>${escapeHtml(g.name)}</h3>
+          <p>${escapeHtml(g.id)}</p>
+        </div>
+      `).join("")}
+    `;
+  } else {
+    const matches = games.filter(g =>
+      g.name.toLowerCase().includes(query) ||
+      g.id.toLowerCase().includes(query) ||
+      g.controllers.some(c => c.toLowerCase().includes(query)) ||
+      g.modules.some(m => m.toLowerCase().includes(query))
+    );
+
+    $("searchResults").innerHTML = `
+      <p style="color:var(--muted);font-size:13px">
+        ${matches.length} matching games
+      </p>
+      ${matches.map(g => `
+        <div class="game-row" data-search-game="${escapeHtml(g.id)}">
+          <h3>${escapeHtml(g.name)}</h3>
+          <p>${escapeHtml(g.id)}</p>
+          <div style="margin-top:8px">
+            ${g.controllers.map(c => `<span class="tag">${escapeHtml(c)}</span>`).join("")}
+          </div>
+        </div>
+      `).join("") || '<p class="empty">No matching games.</p>'}
+    `;
+  }
+
+  document.querySelectorAll("[data-search-game]").forEach(row => {
+    row.addEventListener("click", () => {
+      const game = games.find(g => g.id === row.dataset.searchGame);
+      if (game) openGame(game);
+    });
+  });
+}
+
+$("globalSearch").addEventListener("input", renderSearch);
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, c => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[c]);
+}
+
+// Manual YAML loading, useful when running without a web server.
+$("fileInput").addEventListener("change", async event => {
+  const files = [...event.target.files];
+  const contents = {};
+
+  for (const file of files) {
+    const name = FILES.find(f => f === file.name);
+    if (name) contents[name] = parseYaml(await file.text());
+  }
+
+  if (FILES.every(f => contents[f])) {
+    initialize(
+      contents["game_controllers.yml"],
+      contents["accessories.yml"],
+      contents["gameid_to_name.yml"]
+    );
+  } else {
+    $("status").textContent = "Please select all three YAML files.";
+  }
+});
+
+loadFiles();
+</script>
+</body>
+</html>
