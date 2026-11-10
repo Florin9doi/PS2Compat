@@ -1,18 +1,28 @@
-### Usage:
-- Scan the games:
+# PS2 USB compatibility database
+
+## Usage
+Requires Python 3 and PyYAML (`pip install pyyaml`).
+
+- Scan the games (only needed once):
 ```bash
 python ps2_scanner.py --in "D:\path\to\ps2\games" --out "docs" --extract-filter "usbd"
 ```
-- Update the `modules.yml` file with more details.
-- Run the script again to rebuild the database with the new `modules.yml` changes.
+- Add details to `modules.yml`, then rebuild the database without scanning:
 ```bash
 python ps2_scanner.py --out "docs"
 ```
-- Test the server locally:
+- Test the website locally:
 ```bash
+cd docs
 python -m http.server 8000
 ```
 
-### Notes:
-- `modules.yml` is the main input file, and `unused.yml`  is also an input file used to ignore generic modules that escape the `--extract-filter`.
-- `game_controllers.yml`, `gameid_to_name.yml` and `accessories.yml` are output files, the new data is mixed with the existing content to improve the database.
+## Files
+- Inputs, next to the script:
+  - `modules.yml` maps modules to a type and supported controllers.
+  - `unused.yml` lists generic modules to ignore, those that pass `--extract-filter` but are not relevant.
+- Outputs, in `docs/`:
+  - `game_controllers.yml` lists the modules and controllers per game.
+  - `gameid_to_name.yml` maps game IDs to names. Existing names are never overwritten, so you can edit them by hand.
+  - `accessories.yml` lists controllers by type, and is rebuilt from `modules.yml` on every run.
+- Scans add new games and modules to the existing database. Controllers are recomputed from the current `modules.yml` on every run.
