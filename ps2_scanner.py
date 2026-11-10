@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# python ps2_scanner.py "/path/to/images" "/path/to/output" --extract-modules --extract-filter "usbd"
+# python ps2_scanner.py --in "/path/to/images" --out "/path/to/output" --extract-modules --extract-filter "usbd"
+# python ps2_scanner.py --out "/path/to/output"   (no --in: rebuild the database from the stored data, without scanning)
 # Inputs (next to this script, override with --modules / --unused): modules.yml, unused.yml (global ignore list)
 import argparse
 import hashlib
@@ -179,8 +180,24 @@ def as_list(v):
     return [] if v is None else v if isinstance(v, list) else [v]
 
 
+class UniqueLoader(yaml.SafeLoader):
+    def construct_mapping(self, node, deep=False):
+        seen = set()
+        for k, _ in node.value:
+            key = self.construct_object(k, deep=True)
+            if key in seen:
+                raise yaml.YAMLError(f"duplicate key '{key}' at line {k.start_mark.line + 1}")
+            seen.add(key)
+        return super().construct_mapping(node, deep)
+
+
 def load_yml(path):
-    return (yaml.safe_load(path.read_text(encoding="utf-8")) or {}) if path.exists() else {}
+    if not path.exists():
+        return {}
+    try:
+        return yaml.load(path.read_text(encoding="utf-8"), UniqueLoader) or {}
+    except yaml.YAMLError as e:
+        sys.exit(f"{path}: {e}")
 
 
 def dump_yml(path, data):
@@ -240,7 +257,7 @@ def process_image(path, a, names, games, unused):
                     print(f"  Extraction error: {name}: {e}")
         if found:
             games.setdefault(gid, set()).update(found)
-        names[gid] = path.stem.strip()
+        names.setdefault(gid, path.stem.strip())
         print(f"  {gid} -> {names[gid]} ({len(found)} modules)")
     except Exception as e:
         print(f"  ERROR: {path.name}: {e}")
@@ -251,19 +268,21 @@ def process_image(path, a, names, games, unused):
 
 def main():
     p = argparse.ArgumentParser(description="PS2 ISO/BIN/CUE scanner")
-    p.add_argument("input_folder", type=Path)
-    p.add_argument("output_folder", type=Path)
+    p.add_argument("--in", dest="input_folder", type=Path, help="Images folder; when omitted, no scan is done and the database is only rebuilt")
+    p.add_argument("--out", dest="output_folder", type=Path, required=True)
     p.add_argument("--extract-modules", action="store_true", help="Extract IRX and IOPRP files")
     p.add_argument("--extract-filter", help="Only process modules containing this binary content")
     p.add_argument("--modules", type=Path, default=HERE / "modules.yml")
     p.add_argument("--unused", type=Path, default=HERE / "unused.yml")
     a = p.parse_args()
-    src, dst = a.input_folder.resolve(), a.output_folder.resolve()
+    src, dst = a.input_folder and a.input_folder.resolve(), a.output_folder.resolve()
     a.output_folder = dst
-    if not src.is_dir() or not dst.is_dir():
+    if not dst.is_dir() or (src and not src.is_dir()):
         sys.exit("Input and output folders must exist")
     if src == dst:
         sys.exit("Input and output folders must be different")
+    if not src and (a.extract_modules or a.extract_filter):
+        p.error("--extract-modules / --extract-filter need --in")
 
     raw = load_yml(a.modules)
     modules = expand(raw)
@@ -271,12 +290,12 @@ def main():
     unused = {str(x).casefold() for x in (u if isinstance(u, (dict, list)) else [u])}
 
     names_f, acc_f, ctrl_f = (dst / n for n in ("gameid_to_name.yml", "accessories.yml", "game_controllers.yml"))
-    names = load_yml(names_f)
-    acc = {t: set(as_list(v)) for t, v in load_yml(acc_f).items()}
+    names = {g: as_list(v)[0] for g, v in load_yml(names_f).items() if v}
+    acc = {}
     games = {g: {m for m in as_list(v.get("modules")) if not is_unused(m, unused)} for g, v in load_yml(ctrl_f).items() if isinstance(v, dict)}
 
     images = sorted((f for f in src.rglob("*") if f.is_file() and f.suffix.lower() in (".iso", ".cue")),
-                    key=lambda f: f.name.lower())
+                    key=lambda f: f.name.lower()) if src else []
     print(f"Found {len(images)} images")
     for path in images:
         process_image(path, a, names, games, unused)
