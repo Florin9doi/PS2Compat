@@ -1,12 +1,12 @@
 ### Usage:
 - Scan the games:
 ```bash
-python ps2_scanner.py --in "D:\path\to\ps2\games" --out "www" --extract-filter "usbd"
+python ps2_scanner.py --in "D:\path\to\ps2\games" --out "docs" --extract-filter "usbd"
 ```
 - Update the `modules.yml` file with more details.
 - Run the script again to rebuild the database with the new `modules.yml` changes.
 ```bash
-python ps2_scanner.py --out "www"
+python ps2_scanner.py --out "docs"
 ```
 - Test the server locally:
 ```bash
