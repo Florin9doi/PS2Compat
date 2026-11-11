@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PS2 Compatibility Database</title>
-<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script src="./js-yaml.min.js"></script>
 <style>
 :root {
   color-scheme: dark;
@@ -66,37 +66,8 @@ input {
 }
 input:focus { border-color: var(--accent); }
 .search { margin-bottom: 20px; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  gap: 13px;
-}
-.card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 17px;
-  cursor: pointer;
-  transition: .15s;
-}
-.card:hover { border-color: var(--accent); background: var(--panel2); }
-.card h3 { margin: 0 0 8px; font-size: 15px; }
-.card p { margin: 0; font-size: 13px; color: var(--muted); }
 .section-title { margin: 25px 0 14px; font-size: 17px; }
-.pills { display: flex; flex-wrap: wrap; gap: 9px; margin: 15px 0 22px; }
-.pill {
-  background: var(--panel2);
-  border: 1px solid var(--border);
-  color: var(--text);
-  padding: 9px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 13px;
-}
-.pill:hover, .pill.selected {
-  border-color: var(--accent);
-  background: #263b63;
-}
+a.game-row { display: block; color: inherit; text-decoration: none; }
 .game-row {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -129,16 +100,6 @@ input:focus { border-color: var(--accent); }
   color: var(--text);
   font-size: 14px;
 }
-.module {
-  display: block;
-  padding: 10px;
-  margin: 7px 0;
-  background: var(--bg);
-  border-radius: 6px;
-  color: #b6c9e9;
-  font: 12px monospace;
-  overflow-wrap: anywhere;
-}
 .detail {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -161,10 +122,9 @@ input:focus { border-color: var(--accent); }
   color: var(--muted);
   margin: 12px 0;
 }
-.loader { color: var(--accent); }
 
 .controller-layout { display:grid; grid-template-columns:260px minmax(0,1fr); gap:22px; align-items:start; }
-.filter-sidebar { position:sticky; top:0; align-self:start; height:calc(100vh - 18px); padding:16px; background:var(--panel); border:1px solid var(--border); border-radius:12px; }
+.filter-sidebar { position:sticky; top:12px; align-self:start; max-height:calc(100vh - 24px); overflow-y:auto; padding:16px; background:var(--panel); border:1px solid var(--border); border-radius:12px; }
 .filter-sidebar h3 { margin:0 0 12px; font-size:14px; }
 .filter-sidebar input { padding:11px 12px; font-size:13px; margin-bottom:12px; }
 .filter-hint { color:var(--muted); font-size:12px; line-height:1.5; margin:0; }
@@ -175,14 +135,12 @@ input:focus { border-color: var(--accent); }
 .category-nav button { width:100%; text-align:left; padding:11px 12px; border:1px solid transparent; border-radius:8px; background:transparent; color:var(--muted); cursor:pointer; font-size:13px; }
 .category-nav button:hover { background:var(--panel2); color:var(--text); }
 .category-nav button.active { background:#263b63; border-color:var(--accent); color:white; }
-.category-nav .count { float:right; color:var(--muted); font-size:11px; }
+.category-nav .chev { float:right; color:var(--muted); font-size:17px; line-height:1; transition:transform .15s; }
+.category-nav .chev.open { transform:rotate(90deg); color:var(--accent); }
 .category-list { min-width:0; }
 .category-heading { margin:2px 0 8px; font-size:21px; }
 .category-description { color:var(--muted); font-size:13px; margin:0 0 18px; }
-.controller-submenu { display:flex; flex-wrap:wrap; gap:8px; padding:12px; margin:0 0 18px; background:var(--panel); border:1px solid var(--border); border-radius:10px; }
-.controller-submenu .pill { margin:0; }
-#controllerFilterStatus { color:var(--muted); font-size:12px; margin:0 0 12px; }
-@media(max-width:760px) { .controller-layout { grid-template-columns:1fr; } .filter-sidebar { position:static; height:auto; } .category-nav { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:760px) { .controller-layout { grid-template-columns:1fr; } .filter-sidebar { position:static; max-height:none; overflow:visible; } .category-nav { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 
 .upload {
   margin-top: 25px;
@@ -193,15 +151,13 @@ input:focus { border-color: var(--accent); }
 }
 .upload label { display: block; font-size: 13px; margin-bottom: 10px; }
 .upload input { padding: 9px; font-size: 12px; }
-button:focus-visible, .card:focus-visible {
+button:focus-visible, a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
 @media(max-width:600px) {
   header { padding: 22px 17px; }
   main { padding: 18px 13px 40px; }
-  .grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .card { padding: 13px; }
   .tab { padding: 12px 13px; }
 }
 </style>
@@ -217,18 +173,18 @@ button:focus-visible, .card:focus-visible {
   <div class="status" id="status">Loading compatibility database...</div>
 
   <nav class="tabs">
-    <button class="tab active" data-tab="search">⌕ Search</button>
-    <button class="tab" data-tab="controller">🎮 Controllers</button>
+    <button class="tab active" data-tab="controller">🎮 Controllers</button>
     <button class="tab" data-tab="games">▤ Games</button>
+    <button class="tab" data-tab="search">⌕ Search</button>
   </nav>
 
-  <section class="panel active" id="search">
+  <section class="panel" id="search">
     <input class="search" id="globalSearch"
       placeholder="Search games, game IDs, controllers, modules...">
     <div id="searchResults"></div>
   </section>
 
-  <section class="panel" id="controller">
+  <section class="panel active" id="controller">
     <h2>Browse by accessory</h2>
     <p style="color:var(--muted);font-size:14px">
       Choose an accessory category, then select a controller.
@@ -240,7 +196,7 @@ button:focus-visible, .card:focus-visible {
         <nav id="groups" class="category-nav" aria-label="Accessory categories"></nav>
       </aside>
       <div class="category-list">
-        <p id="controllerFilterStatus"></p>
+        <input class="search" id="controllerGameFilter" type="search" placeholder="Filter games..." aria-label="Filter games" hidden>
         <div id="controllerBrowser"><p class="empty">Select a category to browse compatible games.</p></div>
       </div>
     </div>
@@ -266,387 +222,243 @@ button:focus-visible, .card:focus-visible {
 </main>
 
 <script>
-const FILES = [
-  "game_controllers.yml",
-  "accessories.yml",
-  "gameid_to_name.yml"
-];
+const FILES = ["game_controllers.yml", "accessories.yml", "gameid_to_name.yml"];
+const TABS = ["controller", "games", "search"];
 
-let gameControllers = {};
-let accessories = {};
-let gameNames = {};
 let games = [];
 let groups = {};
-let selectedGroup = null;
-let selectedController = null;
-let selectedGame = null;
+let categoryOf = {};
+let navigated = false;
+const state = { tab: "controller", group: null, controller: null, gameId: null };
 
 const $ = id => document.getElementById(id);
+const enc = encodeURIComponent;
+const byName = (a, b) => a.localeCompare(b);
+const escapeHtml = value => String(value).replace(/[&<>"']/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
-function parseYaml(text) {
-  return jsyaml.load(text) || {};
+const ctrlHash = (group, controller) =>
+  "#" + ["controller", group, controller].filter(Boolean).map(enc).join("/");
+
+const tabHash = tab =>
+  "#" + [tab, ...(tab === "controller" ? [state.group, state.controller]
+    : tab === "search" ? [$("globalSearch").value.trim()] : [])]
+    .filter(Boolean).map(enc).join("/");
+
+function match(game, query, deep) {
+  const haystack = [game.name, game.id, ...(deep ? [...game.controllers, ...game.modules] : [])]
+    .join(" ").toLowerCase();
+  return query.toLowerCase().split(/\s+/).filter(Boolean).every(word => haystack.includes(word));
 }
+
+const gameRow = (g, sub, extra = "") => `
+  <a class="game-row" href="#games/${enc(g.id)}">
+    <h3>${escapeHtml(g.name)}</h3>
+    <p>${escapeHtml(sub)}</p>${extra}
+  </a>`;
 
 async function loadFiles() {
   try {
-    const contents = await Promise.all(
+    const [controllers, accessories, names] = await Promise.all(
       FILES.map(async file => {
         const response = await fetch("./" + file);
         if (!response.ok) throw new Error("Could not load " + file);
-        return parseYaml(await response.text());
+        return jsyaml.load(await response.text()) || {};
       })
     );
-    initialize(contents[0], contents[1], contents[2]);
+    initialize(controllers, accessories, names);
   } catch (error) {
     $("status").textContent =
       "Automatic loading failed. Please select your three YAML files below.";
-    $("status").classList.remove("loader");
   }
 }
 
-function initialize(controllers, accessoryData, names) {
-  gameControllers = controllers || {};
-  accessories = accessoryData || {};
-  gameNames = names || {};
-
-  games = Object.entries(gameControllers).map(([id, data]) => ({
+function initialize(controllers, accessories, names) {
+  names = names || {};
+  games = Object.entries(controllers || {}).map(([id, data]) => ({
     id,
-    name: gameNames[id] || id,
-    controllers: Array.isArray(data?.controllers)
-      ? data.controllers : [],
+    name: names[id] || id,
+    controllers: Array.isArray(data?.controllers) ? data.controllers : [],
     modules: Array.isArray(data?.modules) ? data.modules : []
-  }));
+  })).sort((a, b) => byName(a.name, b.name));
 
-  buildGroups();
-  renderEverything();
-
-  $("status").textContent =
-    `Database loaded successfully · ${games.length} games · ` +
-    `${new Set(games.flatMap(g => g.controllers)).size} controllers`;
-
-  $("uploadArea").hidden = true;
-}
-
-function buildGroups() {
   groups = {};
-  const controllerGroups = {};
-
-  Object.entries(accessories).forEach(([category, list]) => {
+  categoryOf = {};
+  Object.entries(accessories || {}).forEach(([category, list]) => {
     if (!Array.isArray(list)) return;
-    groups[category] = [...new Set(list)];
-    list.forEach(controller => {
-      controllerGroups[controller] = category;
-    });
+    groups[category] = [...new Set(list)].sort(byName);
+    list.forEach(controller => { categoryOf[controller] ??= category; });
   });
 
-  // Include controllers that are not listed in accessories.yml.
-  games.forEach(game => {
-    game.controllers.forEach(controller => {
-      if (controllerGroups[controller]) return;
-
-      let category = "Other Accessories";
-      if (/gamepad|dualshock|game.?pad/i.test(controller))
-        category = "Gamepads";
-
-      if (!groups[category]) groups[category] = [];
-      if (!groups[category].includes(controller))
-        groups[category].push(controller);
-
-      controllerGroups[controller] = category;
-    });
-  });
+  $("status").hidden = true;
+  $("uploadArea").hidden = true;
+  readHash();
+  render();
 }
 
-function renderEverything() {
-  renderGroups();
-  renderGames();
-  renderSearch();
+function readHash() {
+  let tab, a, b;
+  try {
+    [tab, a, b] = location.hash.slice(1).split("/").map(decodeURIComponent);
+  } catch (error) {}
+  state.tab = TABS.includes(tab) ? tab : "controller";
+
+  if (state.tab === "controller") {
+    const previous = state.group + "/" + state.controller;
+    state.group = groups[a] ? a : null;
+    state.controller = state.group && groups[a].includes(b) ? b : null;
+    if (previous !== state.group + "/" + state.controller) $("controllerGameFilter").value = "";
+  } else if (state.tab === "games") {
+    state.gameId = games.some(g => g.id === a) ? a : null;
+  } else {
+    $("globalSearch").value = a || "";
+  }
 }
 
-function setTab(tab) {
+function render() {
   document.querySelectorAll(".tab").forEach(button =>
-    button.classList.toggle("active", button.dataset.tab === tab)
-  );
+    button.classList.toggle("active", button.dataset.tab === state.tab));
   document.querySelectorAll(".panel").forEach(panel =>
-    panel.classList.toggle("active", panel.id === tab)
-  );
-  window.scrollTo({ top: 0, behavior: "smooth" });
+    panel.classList.toggle("active", panel.id === state.tab));
+  if (state.tab === "controller") {
+    renderGroups();
+    renderControllerBrowser();
+  } else if (state.tab === "games") {
+    renderGames();
+  } else {
+    renderSearch();
+  }
 }
 
-document.querySelectorAll(".tab").forEach(button => {
-  button.addEventListener("click", () => setTab(button.dataset.tab));
+window.addEventListener("hashchange", () => {
+  navigated = true;
+  readHash();
+  render();
+  window.scrollTo({ top: 0 });
 });
 
-function openGame(game) {
-  selectedGame = game;
-  setTab("games");
-  $("gameBrowser").hidden = true;
-  $("gameDetail").hidden = false;
-  renderGameDetail(game);
-}
-
-function renderGameDetail(game) {
-  // Group this game's supported controllers using the categories in accessories.yml.
-  const groupedControllers = {};
-  game.controllers.forEach(controller => {
-    const category = Object.entries(groups).find(([, list]) => list.includes(controller))?.[0]
-      || "Other Accessories";
-    if (!groupedControllers[category]) groupedControllers[category] = [];
-    groupedControllers[category].push(controller);
-  });
-
-  const categoryOrder = Object.keys(accessories);
-  const orderedGroups = Object.entries(groupedControllers).sort(([a], [b]) => {
-    const ai = categoryOrder.indexOf(a);
-    const bi = categoryOrder.indexOf(b);
-    if (ai < 0 && bi < 0) return a.localeCompare(b);
-    if (ai < 0) return 1;
-    if (bi < 0) return -1;
-    return ai - bi;
-  });
-
-  const controllerGroupsHtml = orderedGroups.length
-    ? orderedGroups.map(([category, controllers]) => `
-        <section class="controller-group">
-          <h4>${escapeHtml(category)}</h4>
-          <div>${controllers.map(controller =>
-            `<span class="tag">${escapeHtml(controller)}</span>`
-          ).join("")}</div>
-        </section>
-      `).join("")
-    : '<p class="empty">No controller information available.</p>';
-
-  $("gameDetail").innerHTML = `
-    <button class="back" id="backGames">← Back to games</button>
-    <div class="detail">
-      <div class="id">${escapeHtml(game.id)}</div>
-      <h2>${escapeHtml(game.name)}</h2>
-      <p style="color:var(--muted);font-size:13px">
-        ${game.controllers.length} supported controller types
-      </p>
-    </div>
-    <h3 class="section-title">Supported controllers</h3>
-    <div class="controller-groups">${controllerGroupsHtml}</div>
-  `;
-
-  $("backGames").addEventListener("click", () => {
-    $("gameDetail").hidden = true;
-    $("gameBrowser").hidden = false;
-  });
-}
+document.addEventListener("click", event => {
+  const tab = event.target.closest(".tab");
+  const link = event.target.closest("[data-hash]");
+  if (tab) location.hash = tabHash(tab.dataset.tab);
+  else if (link) location.hash = link.dataset.hash;
+  else if (event.target.closest("[data-back]")) {
+    if (navigated) history.back();
+    else location.hash = "#games";
+  }
+});
 
 function renderGroups() {
-  const query = ($("controllerFilter")?.value || "").trim().toLowerCase();
-  const entries = Object.entries(groups).sort(([a], [b]) => {
-    return a.localeCompare(b);
-  }).filter(([name, list]) => !query || name.toLowerCase().includes(query) ||
-    list.some(controller => controller.toLowerCase().includes(query)));
+  const query = $("controllerFilter").value.trim().toLowerCase();
+  const entries = Object.entries(groups).sort(([a], [b]) => byName(a, b))
+    .filter(([name, list]) => !query || name.toLowerCase().includes(query) ||
+      list.some(controller => controller.toLowerCase().includes(query)));
 
-  const tree = entries.map(([name, list]) => {
-    const showCategory = !query ||
-      name.toLowerCase().includes(query) ||
-      list.some(controller => controller.toLowerCase().includes(query));
-
-    if (!showCategory) return '';
-
-    const categoryActive = selectedGroup === name && !selectedController;
-    const parent = `
-      <button type="button" class="${categoryActive ? "active" : ""}" data-category="${escapeHtml(name)}">
-        ${escapeHtml(name)} <span class="count">${list.length}</span>
-      </button>`;
-
-    // Only show subcategories when the group has more than one controller.
-    const children = list.length > 1
-      ? list
-          .filter(controller =>
-            !query ||
-            controller.toLowerCase().includes(query) ||
-            name.toLowerCase().includes(query)
-          )
-          .map(controller => `
-            <button type="button"
-              class="child ${selectedGroup === name && selectedController === controller ? "active" : ""}"
-              data-tree-controller="${escapeHtml(controller)}"
-              data-tree-group="${escapeHtml(name)}">
-              ${escapeHtml(controller)}
-            </button>
-          `).join("")
-      : "";
+  $("groups").innerHTML = entries.map(([name, list]) => {
+    const expandable = list.length > 1;
+    const open = expandable && (query || state.group === name);
+    const children = open ? list
+      .filter(controller => !query || controller.toLowerCase().includes(query) || name.toLowerCase().includes(query))
+      .map(controller => `
+        <button type="button" class="child ${state.group === name && state.controller === controller ? "active" : ""}"
+          data-hash="${escapeHtml(ctrlHash(name, controller))}">${escapeHtml(controller)}</button>`).join("") : "";
 
     return `
       <div class="category-tree">
-        ${parent}
+        <button type="button" class="${state.group === name && !state.controller ? "active" : ""}"
+          data-hash="${escapeHtml(ctrlHash(name))}"${expandable ? ` aria-expanded="${!!open}"` : ""}>
+          ${escapeHtml(name)}${expandable ? ` <span class="chev${open ? " open" : ""}" aria-hidden="true">›</span>` : ""}
+        </button>
         ${children ? `<div class="category-children">${children}</div>` : ""}
       </div>`;
-  }).join("");
-
-  $("groups").innerHTML = tree || '<p class="filter-hint">No matching categories.</p>';
-
-  document.querySelectorAll("[data-category]").forEach(button => {
-    button.addEventListener("click", () => {
-      selectedGroup = button.dataset.category;
-      selectedController = null;
-      renderGroups();
-      renderControllerBrowser();
-    });
-  });
-
-  document.querySelectorAll("[data-tree-controller]").forEach(button => {
-    button.addEventListener("click", () => {
-      selectedGroup = button.dataset.treeGroup;
-      selectedController = button.dataset.treeController;
-      renderGroups();
-      renderControllerBrowser();
-    });
-  });
-
-  $("controllerFilterStatus").textContent = `${entries.length} categories`;
+  }).join("") || '<p class="filter-hint">No matching categories.</p>';
 }
 
 function renderControllerBrowser() {
-  const container = $("controllerBrowser");
-  if (!selectedGroup || !groups[selectedGroup]) {
-    container.innerHTML = '<p class="empty">Select a category to browse compatible games.</p>';
+  const filter = $("controllerGameFilter");
+  filter.hidden = !state.group;
+  if (!state.group) {
+    $("controllerBrowser").innerHTML = '<p class="empty">Select a category to browse compatible games.</p>';
     return;
   }
 
-  const controllers = groups[selectedGroup];
-  const activeControllers = selectedController && controllers.includes(selectedController)
-    ? [selectedController] : controllers;
-  const matches = games.filter(game => game.controllers.some(controller => activeControllers.includes(controller)));
+  const active = state.controller ? [state.controller] : groups[state.group];
+  const matches = games.filter(game =>
+    game.controllers.some(controller => active.includes(controller)) && match(game, filter.value));
 
-  container.innerHTML = `
-    <h2 class="category-heading">${escapeHtml(selectedGroup)}</h2>
-    <p class="category-description">${matches.length} compatible game${matches.length === 1 ? "" : "s"}${selectedController ? ` for ${escapeHtml(selectedController)}` : ""}</p>
-    ${matches.length ? matches.map(game => `
-      <div class="game-row" data-open="${escapeHtml(game.id)}">
-        <h3>${escapeHtml(game.name)}</h3>
-        <p>${escapeHtml(game.id)} · ${game.controllers.filter(c => activeControllers.includes(c)).length} matching controller type(s)</p>
-      </div>
-    `).join("") : '<p class="empty">No compatible games found.</p>'}
-  `;
-
-  document.querySelectorAll("[data-controller-filter]").forEach(button => {
-    button.addEventListener("click", () => {
-      selectedController = button.dataset.controllerFilter || null;
-      renderControllerBrowser();
-    });
-  });
-  document.querySelectorAll("[data-open]").forEach(row => {
-    row.addEventListener("click", () => {
-      const game = games.find(item => item.id === row.dataset.open);
-      if (game) openGame(game);
-    });
-  });
+  $("controllerBrowser").innerHTML = `
+    <h2 class="category-heading">${escapeHtml(state.group)}</h2>
+    <p class="category-description">${matches.length} compatible game${matches.length === 1 ? "" : "s"}${state.controller ? ` for ${escapeHtml(state.controller)}` : ""}</p>
+    ${matches.map(game => gameRow(game,
+      `${game.id} · ${game.controllers.filter(c => active.includes(c)).length} matching controller type(s)`)).join("")
+      || '<p class="empty">No compatible games found.</p>'}`;
 }
 
 function renderGames() {
-  const query = ($("gameSearch").value || "").toLowerCase();
-  const matches = games.filter(g =>
-    g.name.toLowerCase().includes(query) ||
-    g.id.toLowerCase().includes(query)
-  );
+  const game = games.find(g => g.id === state.gameId);
+  $("gameBrowser").hidden = !!game;
+  $("gameDetail").hidden = !game;
+  if (game) return renderGameDetail(game);
 
+  const matches = games.filter(g => match(g, $("gameSearch").value));
   $("gameList").innerHTML = matches.length
-    ? matches.map(g => `
-      <div class="game-row" data-game="${escapeHtml(g.id)}">
-        <h3>${escapeHtml(g.name)}</h3>
-        <p>${escapeHtml(g.id)} · ${g.controllers.length} controllers</p>
-      </div>
-    `).join("")
+    ? matches.map(g => gameRow(g, `${g.id} · ${g.controllers.length} controllers`)).join("")
     : '<p class="empty">No games found.</p>';
-
-  document.querySelectorAll("[data-game]").forEach(row => {
-    row.addEventListener("click", () => {
-      const game = games.find(g => g.id === row.dataset.game);
-      if (game) openGame(game);
-    });
-  });
 }
 
-$("gameSearch").addEventListener("input", renderGames);
-$("controllerFilter").addEventListener("input", renderGroups);
+function renderGameDetail(game) {
+  const grouped = {};
+  game.controllers.forEach(controller => (grouped[categoryOf[controller] || "Other"] ??= []).push(controller));
+
+  $("gameDetail").innerHTML = `
+    <button class="back" data-back>← Back</button>
+    <div class="detail">
+      <div class="id">${escapeHtml(game.id)}</div>
+      <h2>${escapeHtml(game.name)}</h2>
+    </div>
+    <h3 class="section-title">Supported controllers</h3>
+    <div class="controller-groups">${Object.entries(grouped).sort(([a], [b]) => byName(a, b)).map(([category, list]) => `
+      <section class="controller-group">
+        <h4>${escapeHtml(category)}</h4>
+        <div>${list.sort(byName).map(c => `<span class="tag">${escapeHtml(c)}</span>`).join("")}</div>
+      </section>`).join("") || '<p class="empty">No controller information available.</p>'}</div>`;
+}
 
 function renderSearch() {
-  const query = ($("globalSearch").value || "").toLowerCase().trim();
-
+  const query = $("globalSearch").value.trim();
   if (!query) {
     $("searchResults").innerHTML = `
       <div class="detail">
         <h2>Welcome to the compatibility database</h2>
-        <p style="color:var(--muted)">
-          Search for a game, game ID, controller or IRX module.
-        </p>
+        <p style="color:var(--muted)">Search for a game, game ID, controller or IRX module.</p>
         <p>${games.length} games indexed</p>
-      </div>
-      <h3 class="section-title">Recently indexed games</h3>
-      ${games.slice(0, 8).map(g => `
-        <div class="game-row" data-search-game="${escapeHtml(g.id)}">
-          <h3>${escapeHtml(g.name)}</h3>
-          <p>${escapeHtml(g.id)}</p>
-        </div>
-      `).join("")}
-    `;
-  } else {
-    const matches = games.filter(g =>
-      g.name.toLowerCase().includes(query) ||
-      g.id.toLowerCase().includes(query) ||
-      g.controllers.some(c => c.toLowerCase().includes(query)) ||
-      g.modules.some(m => m.toLowerCase().includes(query))
-    );
-
-    $("searchResults").innerHTML = `
-      <p style="color:var(--muted);font-size:13px">
-        ${matches.length} matching games
-      </p>
-      ${matches.map(g => `
-        <div class="game-row" data-search-game="${escapeHtml(g.id)}">
-          <h3>${escapeHtml(g.name)}</h3>
-          <p>${escapeHtml(g.id)}</p>
-          <div style="margin-top:8px">
-            ${g.controllers.map(c => `<span class="tag">${escapeHtml(c)}</span>`).join("")}
-          </div>
-        </div>
-      `).join("") || '<p class="empty">No matching games.</p>'}
-    `;
+      </div>`;
+    return;
   }
-
-  document.querySelectorAll("[data-search-game]").forEach(row => {
-    row.addEventListener("click", () => {
-      const game = games.find(g => g.id === row.dataset.searchGame);
-      if (game) openGame(game);
-    });
-  });
+  const matches = games.filter(g => match(g, query, true));
+  $("searchResults").innerHTML = `
+    <p style="color:var(--muted);font-size:13px">${matches.length} matching games</p>
+    ${matches.map(g => gameRow(g, g.id,
+      `<div style="margin-top:8px">${g.controllers.map(c => `<span class="tag">${escapeHtml(c)}</span>`).join("")}</div>`)
+    ).join("") || '<p class="empty">No matching games.</p>'}`;
 }
 
-$("globalSearch").addEventListener("input", renderSearch);
-
-function escapeHtml(value) {
-  return String(value).replace(/[&<>"']/g, c => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#39;"
-  })[c]);
-}
+$("gameSearch").addEventListener("input", renderGames);
+$("controllerFilter").addEventListener("input", renderGroups);
+$("controllerGameFilter").addEventListener("input", renderControllerBrowser);
+$("globalSearch").addEventListener("input", () => {
+  history.replaceState(null, "", tabHash("search"));
+  renderSearch();
+});
 
 // Manual YAML loading, useful when running without a web server.
 $("fileInput").addEventListener("change", async event => {
-  const files = [...event.target.files];
   const contents = {};
-
-  for (const file of files) {
-    const name = FILES.find(f => f === file.name);
-    if (name) contents[name] = parseYaml(await file.text());
+  for (const file of event.target.files) {
+    if (FILES.includes(file.name)) contents[file.name] = jsyaml.load(await file.text()) || {};
   }
-
   if (FILES.every(f => contents[f])) {
-    initialize(
-      contents["game_controllers.yml"],
-      contents["accessories.yml"],
-      contents["gameid_to_name.yml"]
-    );
+    initialize(contents["game_controllers.yml"], contents["accessories.yml"], contents["gameid_to_name.yml"]);
   } else {
     $("status").textContent = "Please select all three YAML files.";
   }
