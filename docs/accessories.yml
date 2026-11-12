@@ -1,6 +1,9 @@
 Audio:
+- Konami Mic
 - Microphone
 - Taito Voice Recognition
+Buzz:
+- Buzz
 Flight Sim:
 - Compact Flight Controller
 - Hori Flight Stick
@@ -10,6 +13,9 @@ Keyboards:
 Light Guns:
 - GunCon2
 MIDI:
+- IO-Data/Generic?
+- Roland PC-300
+- Roland SC-8850
 - Yamaha
 Mice:
 - Mouse
@@ -31,16 +37,50 @@ Pachi-Slot:
 - Pachi-Slot
 Printers:
 - Epson
+- HP
 - Sony PopEgg
 Rhythm Controllers:
+- Dancing with the Stars Mat
+- DJ Hero
 - Guitar/Drum
+- Mat
 - Para Para Paradise
+- Pump it up Mat
 Steering wheels:
-- Driving Force
-- Driving Force Pro
-- GT Force
+- 360 Modena (Pro)
+- ACT LABS Force RS
+- ACT LABS Force RS 2
+- ACT LABS RS
+- Gravis Xterminator Force
+- Guillemot Afterburner Force Feedback
+- Guillemot F1 Force Feedback Racing Wheel
+- Guillemot Force Feedback Fox 2 Pro
+- Guillemot Force Feedback Joystick
+- Guillemot Force Feedback Racing Wheel
+- Guillemot Freestyler Bike Force Feedback
+- Guillemot Nascar 2002 FF Racing Wheel
+- Logitech Driving Force
+- Logitech Driving Force Pro
+- Logitech Force 3D Joystick
+- Logitech Formula Force
+- Logitech Formula Force GP Wheel
+- Logitech GT Force
+- Logitech Momo
+- Logitech MOMO Force
+- Logitech Strike Force 3D Joystick
+- Logitech Wheel A
+- Logitech Wheel B
+- Logitech Wingman Force Joystick
+- Logitech Wingman Formula Force Wheel
+- Saitek Cyborg 3D Force Stick
+- Saitek R440
+- Saitek R440 Force Feedback Wheel
+- Saitek R550
+- Saitek RX550 Force Feedback Wheel
 - SideWinder Force Feedback
+- ThrustMaster
 Storage:
+- DMC
 - Storage
 Train Sim:
 - Master Controller
@@ -51,6 +91,8 @@ Train Sim:
 - Type 2
 Trance Vibrator:
 - Trance Vibrator
+UART:
+- UART
 Webcams:
 - CaptureEye
 - EyeToy

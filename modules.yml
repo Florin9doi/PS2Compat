@@ -1,8 +1,25 @@
+
+USBDCON.IRX:
+  type: "Steering wheels"
+  support:
+    - Logitech GT Force
+PDIUSB.IRX:
+  type: "Steering wheels"
+  support:
+    - Logitech GT Force
+    - Logitech Driving Force
+Wheels - Logitech + SideWinder:
+  modules: USB_DRV.IRX
+  type: "Steering wheels"
+  support:
+    - Logitech GT Force
+    - SideWinder Force Feedback
+
 # per revision support
 # LGDEV.IRX__119a64528936a42e253a68b67c18de1c:
 #   type: "Steering wheels"
 #   version: "1.04 2006-03"
-#   support: ["Driving Force", "Driving Force Pro"]
+#   support: "Driving Force", "Driving Force Pro"
 Wheels - Logitech:
   modules:
     - LGDEV.IRX   # Wheel + Joystick
@@ -10,101 +27,190 @@ Wheels - Logitech:
     - LGDEVJ.IRX  # Joystick
   type: "Steering wheels"
   support:
-    - "Driving Force"
-    - "Driving Force Pro"
-Wheels - Logitech + SideWinder:
-  modules: USB_DRV.IRX
+    - Logitech GT Force
+    - Logitech Driving Force
+    - Logitech Driving Force Pro
+
+IMDLGIS.IRX:
   type: "Steering wheels"
   support:
-    - "GT Force"
-    - "SideWinder Force Feedback"
+    - Logitech Force 3D Joystick
+    - Logitech Strike Force 3D Joystick
+    - Logitech Formula Force GP Wheel
+    - Logitech MOMO Force
+    - Logitech Driving Force
+IMDFF.IRX:
+  type: "Steering wheels"
+  support:
+    - ACT LABS Force RS
+    - ACT LABS Force RS 2
+    - Gravis Xterminator Force
+    - Guillemot Force Feedback Racing Wheel
+    - Guillemot F1 Force Feedback Racing Wheel
+    - Guillemot Nascar 2002 FF Racing Wheel
+    - Guillemot Freestyler Bike Force Feedback
+    - Guillemot Force Feedback Joystick
+    - Guillemot Force Feedback Fox 2 Pro
+    - Guillemot Afterburner Force Feedback
+    - Guillemot Afterburner Force Feedback
+    - Logitech Wingman Force Joystick
+    - Logitech Wingman Formula Force Wheel
+    - Saitek Cyborg 3D Force Stick
+    - Saitek RX550 Force Feedback Wheel
+    - Saitek R440 Force Feedback Wheel
+WHEEL.IRX__1518484c60ed27f951181773b5bb91e9:
+  type: "Steering wheels"
+  version: "EA v1"
+  support:
+    - Logitech Wheel A
+    - Logitech Wheel B
+    - ThrustMaster
+WHEEL.IRX__2a583d3394da149ebf68647ca87978b5:
+  type: "Steering wheels"
+  version: "EA v2"
+  support:
+    - ACT LABS RS
+    - Logitech Momo
+    - Logitech Wheel A
+    - Logitech Wheel B
+    - ThrustMaster
+WHEEL.IRX__6e1a8be36f256a2e2c8c0519b6518dda:
+  type: "Steering wheels"
+  version: "EA v3"
+  support:
+    - 360 Modena (Pro)
+    - Saitek R550
+    - Saitek R440
+    - ACT LABS RS
+    - Logitech Momo
+    - Logitech Formula Force
+    - Logitech Driving Force
+    - ThrustMaster
 
-USBCFC.IRX:
-  type: "Flight Sim"
-  support: ["Compact Flight Controller"]
-USBJOY.IRX:
-  type: "Flight Sim"
-  support: ["Hori Flight Stick"]
-FS2.IRX:
-  type: "Flight Sim"
-  support: ["Hori Flight Stick 2"]
-
-USBDENCO.IRX:
+Train Sim - Type 2:
+  modules: USBDENCI.IRX, USBDENCO.IRX
   type: "Train Sim"
-  support: ["Type 2"]
-USBRJCON.IRX:
+  support: "Type 2"
+Train Sim - Ryojouhen:
+  modules: USBRJCON.IRX
   type: "Train Sim"
-  support: ["Ryojouhen"]
-USBSHINC.IRX:
+  support: "Ryojouhen"
+Train Sim - Shinkansen:
+  modules: USBSHINC.IRX, USBSNCON.IRX
   type: "Train Sim"
-  support: ["Shinkansen"]
-USBKQCON.IRX:
+  support: "Shinkansen"
+Train Sim - Train Mascon:
+  modules: USBKQCON.IRX
   type: "Train Sim"
-  support: ["Train Mascon"]
-USBMTCON.IRX:
+  support: "Train Mascon"
+Train Sim - Multi Train Controller:
+  modules: USBMTCON.IRX
   type: "Train Sim"
-  support: ["Multi Train Controller"]
+  support: "Multi Train Controller"
 Train Sim - Master Controller:
   modules: USBTSCON.IRX, USBMCKQ.IRX
   type: "Train Sim"
-  support: ["Master Controller"]
+  support: "Master Controller"
 
-USBPRT.IRX:
-  type: "Printers"
-  support: ["Sony PopEgg"]
-Printers - Epson:
-  modules: EPUSBPRT.IRX, EPSPRINT.IRX
-  type: "Printers"
-  support: ["Epson"]
+USBCFC.IRX:
+  type: "Flight Sim"
+  support: "Compact Flight Controller"
+USBJOY.IRX:
+  type: "Flight Sim"
+  support: "Hori Flight Stick"
+FS2.IRX:
+  type: "Flight Sim"
+  support: "Hori Flight Stick 2"
+
+Guitar - Drum:
+  modules: USBHMX_S.IRX, HIDMOD.IRX
+  type: "Rhythm Controllers"
+  support: "Guitar/Drum"
+10.IRX__a357c2ec7b46250047820f52d65413b0:
+  type: "Rhythm Controllers"
+  support: "DJ Hero"
+USBKB.IRX__b1a7c6a3b67c93d865517bcf303aea95:
+  type: "Rhythm Controllers"
+  support: "Para Para Paradise"
+DWTS_MAT.IRX:
+  type: "Rhythm Controllers"
+  support: "Dancing with the Stars Mat"
+PIUMAT.IRX:
+  type: "Rhythm Controllers"
+  support: "Pump it up Mat"
+USBMAT.IRX:
+  type: "Rhythm Controllers"
+  support: "Mat"
+
+Microphones:
+  modules: LGAUD.IRX, USBMIC.IRX, USBMICRO.IRX, SINGSTAR.IRX, KARAOKE.IRX, 3.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
+  type: "Audio"
+  support: "Microphone"
+Microphones - Konami:
+  modules: USBAD.IRX
+  type: "Audio"
+  support: "Konami Mic"
+USBVR.IRX:
+  type: "Audio"
+  support: "Taito Voice Recognition"
+YMIDUSB.IRX:
+  type: "MIDI"
+  support: "Yamaha"
+MIDI - KeyboardMania:
+  modules: UMIODATA.IRX, UMLIB.IRX, UMSERIAL.IRX, IUMLIB.IRX, NIS.IRX
+  type: "MIDI"
+  support: "IO-Data/Generic?"
+UMPC300.IRX:
+  type: "MIDI"
+  support: "Roland PC-300"
+UMSC8850.IRX:
+  type: "MIDI"
+  support: "Roland SC-8850"
 
 USBPSPCM.IRX:
   type: "PSPCM"
-  support: ["PlayStation Portable"]
+  support: "PlayStation Portable"
 USBGUN.IRX:
   type: "Light Guns"
-  support: ["GunCon2"]
-YMIDUSB.IRX:
-  type: "MIDI"
-  support: ["Yamaha"]
-USTORAGE.IRX:
-  type: "Storage"
-  support: ["Storage"]
-USBVR.IRX:
-  type: "Audio"
-  support: ["Taito Voice Recognition"]
+  support: "GunCon2"
 USBHT.IRX:
   type: "Motion Tracking"
-  support: ["HMD"]
+  support: "HMD"
 USBTVR.IRX:
   type: "Trance Vibrator"
-  support: ["Trance Vibrator"]
-USBHMX_S.IRX:
-  type: "Rhythm Controllers"
-  support: ["Guitar/Drum"]
-USBKB.IRX__b1a7c6a3b67c93d865517bcf303aea95:
-  type: "Rhythm Controllers"
-  support: ["Para Para Paradise"]
+  support: "Trance Vibrator"
 SLOTCNTR.IRX:
   type: "Pachi-Slot"
-  support: ["Pachi-Slot"]
+  support: "Pachi-Slot"
+Buzz:
+  modules: USB_BUZR.IRX, BUZZER.IRX
+  type: "Buzz"
+  support: "Buzz"
 
-Microphones:
-  modules: LGAUD.IRX, USBMIC.IRX, USBMICRO.IRX
-  type: "Audio"
-  support: ["Microphone"]
+USBPRT.IRX:
+  type: "Printers"
+  support: "Sony PopEgg"
+HP.IRX:
+  type: "Printers"
+  support: "HP"
+Printers - Epson:
+  modules: EPUSBPRT.IRX, EPSPRINT.IRX
+  type: "Printers"
+  support: "Epson"
+
 Keyboards:
-  modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX
+  modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX, PDUKEYBD.IRX, KEYBD.IRX, KEYBOA~1.IRX, MODUSBKB.IRX
   type: "Keyboards"
-  support: ["Keyboard"]
+  support: "Keyboard"
 Mice:
-  modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX
+  modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX, PDUMOUSE.IRX, MODUSBMS.IRX
   type: "Mice"
-  support: ["Mouse"]
+  support: "Mouse"
 
 GameTrak:
   modules: GTD.IRX, GAMETRAK.IRX, APEMOD.IRX__337805cb451e23297247170105f50003
   type: "Motion Tracking"
-  support: ["GameTrak"]
+  support: "GameTrak"
 RealPlay:
   modules:
     - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Pool
@@ -112,42 +218,62 @@ RealPlay:
     - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Racing
     - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Puzzlesphere
   type: "Motion Tracking"
-  support: ["RealPlay"]
+  support: "RealPlay"
+# Fishing:
+#   modules: USBDRV.IRX
+#   comment: "not loaded"
+#   type: "Motion Tracking"
+#   support: "Fishing"
+
+Storage:
+  modules: DSCDRV.IRX, USBSTOR.IRX, USBSTORE.IRX, USTORAGE.IRX, STORAGE.IRX
+  type: "Storage"
+  support: "Storage"
+Storage - DMC:
+  modules: DMCDRV.IRX
+  comment: "a kind of camera"
+  type: "Storage"
+  support: "DMC"
 
 Webcams - EyeToy:
-  modules: EYETOY.IRX, OV519.IRX
+  modules: EYETOY.IRX, OV519.IRX, LGVID.IRX
   type: "Webcams"
-  support: ["EyeToy"]
+  support: "EyeToy"
 Webcams - CaptureEye:
-  modules: WEBCAM_N.IRX, WEBCAM.IRX
+  modules: WEBCAM_N.IRX, WEBCAM.IRX, USBCAM.IRX, USBARLSI.IRX # Artificial Retina Sensor Capture Eye
   type: "Webcams"
-  support: ["CaptureEye"]
+  support: "CaptureEye"
 
 Ethernet:
-  modules: AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX
+  modules: AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX, LANEGG.IRX
   type: "Network adapters"
-  support: ["Pegasus"]
+  support: "Pegasus"
 Modem - Omron:
   modules: OMMODEM.IRX
   type: "Network adapters"
-  support: ["Omron"]
+  support: "Omron"
 Modem - Suntac:
   modules: OSTMDM_A.IRX, OSTMDM_S.IRX
   type: "Network adapters"
-  support: ["Suntac OnlineStation"]
+  support: "Suntac OnlineStation"
 Modem - SmartSCM:
-  modules: CXTMDM.IRX, PWCXTMDM.IRX, SNDRV003.IRX
+  modules: CXTMDM.IRX, PWCXTMDM.IRX, SNDRV003.IRX, PWMODEM.IRX
   type: "Network adapters"
-  support: ["Conexant SmartSCM"]
+  support: "Conexant SmartSCM"
 Modem - NTT-ME:
   modules: MINIJPS2.IRX
   type: "Network adapters"
-  support: ["NTT-ME MN128"]
+  support: "NTT-ME MN128"
 Modem - Aterm:
-  modules: ATERMAS.IRX, ATERMCS.IRX
+  modules: ATERM.IRX, ATERMAS.IRX, ATERMCS.IRX, ATCDC.IRX
   type: "Network adapters"
-  support: ["Aterm IT/ITX"]
+  support: "Aterm IT/ITX"
 Modem - Lucent:
   modules: SNDRV002.IRX
   type: "Network adapters"
-  support: ["Lucent"]
+  support: "Lucent"
+
+UART:
+  modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX
+  type: "UART"
+  support: "UART"
