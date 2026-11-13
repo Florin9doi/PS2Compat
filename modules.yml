@@ -126,6 +126,9 @@ Guitar - Drum:
   modules: USBHMX_S.IRX, HIDMOD.IRX
   type: "Rhythm Controllers"
   support: "Guitar/Drum"
+BCUI.IRX:
+  type: "Rhythm Controllers"
+  support: "Guitar Hero"
 10.IRX__a357c2ec7b46250047820f52d65413b0:
   type: "Rhythm Controllers"
   support: "DJ Hero"
@@ -142,14 +145,19 @@ USBMAT.IRX:
   type: "Rhythm Controllers"
   support: "Mat"
 
+USBAD.IRX:
+  type: "Audio"
+  support: "Konami Mic"
+MUSIC.IRX:
+  type: "Audio"
+  support: "Jester Sampler"
+USBMIC.IRX__8da6f2b5b40cc1f29d32a8441c70a070:
+  type: "Audio"
+  support: "Seamic"
 Microphones:
   modules: LGAUD.IRX, USBMIC.IRX, USBMICRO.IRX, SINGSTAR.IRX, KARAOKE.IRX, 3.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
   type: "Audio"
   support: "Microphone"
-Microphones - Konami:
-  modules: USBAD.IRX
-  type: "Audio"
-  support: "Konami Mic"
 USBVR.IRX:
   type: "Audio"
   support: "Taito Voice Recognition"
@@ -199,31 +207,30 @@ Printers - Epson:
   support: "Epson"
 
 Keyboards:
-  modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX, PDUKEYBD.IRX, KEYBD.IRX, KEYBOA~1.IRX, MODUSBKB.IRX
+  modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX, PDUKEYBD.IRX,
+    KEYBD.IRX, KEYBOA~1.IRX, MODUSBKB.IRX, AUKWDRV.IRX, USBK_D_T.IRX, USBK_R_T.IRX
   type: "Keyboards"
   support: "Keyboard"
 Mice:
-  modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX, PDUMOUSE.IRX, MODUSBMS.IRX
+  modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX,
+    PDUMOUSE.IRX, MODUSBMS.IRX, AUMWDRV.IRX, AUEWDRV.IRX, USBDEV.IRX
   type: "Mice"
   support: "Mouse"
+Tablet:
+  modules: AUTWDRV.IRX
+  type: "Mice"
+  support: "Agatha Tablet"
 
 GameTrak:
-  modules: GTD.IRX, GAMETRAK.IRX, APEMOD.IRX__337805cb451e23297247170105f50003
+  modules: GTD.IRX, GAMETRAK.IRX, APEMOD.IRX
   type: "Motion Tracking"
   support: "GameTrak"
 RealPlay:
   modules:
-    - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Pool
     - REALPLAY.IRX__e136cc84d127f05d99b19613ecce7e4b # Golf
-    - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Racing
-    - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Puzzlesphere
+    - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Pool, Racing, Puzzlesphere
   type: "Motion Tracking"
   support: "RealPlay"
-# Fishing:
-#   modules: USBDRV.IRX
-#   comment: "not loaded"
-#   type: "Motion Tracking"
-#   support: "Fishing"
 
 Storage:
   modules: DSCDRV.IRX, USBSTOR.IRX, USBSTORE.IRX, USTORAGE.IRX, STORAGE.IRX
@@ -245,7 +252,7 @@ Webcams - CaptureEye:
   support: "CaptureEye"
 
 Ethernet:
-  modules: AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX, LANEGG.IRX
+  modules: AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX, LANEGG.IRX, ENT_ETH.IRX, SNDRV001.IRX, SNDRV201.IRX
   type: "Network adapters"
   support: "Pegasus"
 Modem - Omron:
@@ -274,6 +281,19 @@ Modem - Lucent:
   support: "Lucent"
 
 UART:
-  modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX
+  modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX
   type: "UART"
   support: "UART"
+USB Bridge:
+  modules: FLSHLNK.IRX, USBFLK.IRX, USBLINK.IRX
+  type: "Bridge"
+  support: "Bridge"
+
+USBDRV.IRX:
+  comment: "unreleased, not loaded"
+  type: "Motion Tracking"
+  support: "Fishing"
+USBHANDL.IRX:
+  comment: "unreleased"
+  type: "Motion Tracking"
+  support: "Konami Handle"
