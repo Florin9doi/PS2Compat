@@ -13,7 +13,7 @@ Wheels - Tokyo Xtreme Racer:
   type: "Steering wheels"
   support:
     - Logitech GT Force # [046d:c293]
-    - SideWinder Force Feedback # [045e:0034]
+    - Microsoft SideWinder Force Feedback # [045e:0034]
 Wheels - GT3:
   modules:
     - PDIUSB.IRX__75a847581fa5fa97c37aa1b1c05ee34c # Concept - 2002 Tokyo-Geneva
