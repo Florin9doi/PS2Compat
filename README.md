@@ -28,6 +28,5 @@ python -m http.server 8000
 - Scans add new games and modules to the existing database. Controllers are recomputed from the current `modules.yml` on every run.
 
 ## Todo
-- [ ] Document the Logitech wheel driver versions and the controllers each one supports
 - [ ] Split SingStar/Logitech/universal mic drivers
 - [ ] Check DMC storage support

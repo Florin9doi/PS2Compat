@@ -105,8 +105,9 @@ SCES_501.39: # WRC - World Rally Championship (Europe, Australia) (En,Fr,De,Es,I
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_502.41: # Bouncer, The (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
@@ -149,8 +150,9 @@ SCES_503.60: # Twisted Metal - Black (Europe) (En,Fr,De,Es,It)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_504.10: # Ace Combat - Distant Thunder (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
@@ -203,7 +205,6 @@ SCES_507.81: # Destruction Derby Arenas (Europe) (En,Fr,De,Es,It,Pt)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
     - Microphone
     - Mouse
@@ -266,8 +267,9 @@ SCES_509.34: # WRC II Extreme (Europe, Australia) (En,Fr,De,Es,It,Pt,Fi)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Pegasus
 SCES_509.56: # Ferrari F355 Challenge (Europe, Australia) (En,Fr,De,Es,It)
   modules:
@@ -275,8 +277,9 @@ SCES_509.56: # Ferrari F355 Challenge (Europe, Australia) (En,Fr,De,Es,It)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_510.03: # Network Access Disc (Europe) (v0.02)
   modules:
     - USBD.IRX__00cbb7698b4a45c6761d86da2cf44b26
@@ -292,8 +295,9 @@ SCES_510.04: # Formula One 2002 (Europe) (En,Fr,De,Es,It,Fi)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_511.77: # Disney's Treasure Planet (Europe) (En,Es,It,Sv,Da)
   modules:
     - AN986.IRX__7507a5133920bbcb4baf03244b881e66
@@ -323,8 +327,9 @@ SCES_514.80: # Twisted Metal - Black Online (Europe)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_515.13: # EyeToy - Play (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi)
   modules:
     - OV519.IRX__bb38700c944a331dd00b7f9bfb17cfd6
@@ -352,8 +357,9 @@ SCES_515.92: # Formula One 2003 (Europe) (En,Fr,De,Es,It,Fi)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_515.93: # Hardware - Online Arena (Europe) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__dbaee103500b9fc7ee81c186ba18629a
@@ -393,8 +399,9 @@ SCES_516.84: # WRC 3 - The Official Game of the FIA World Rally Championship (Eu
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_517.06: # Amplitude (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -415,6 +422,8 @@ SCES_517.19: # Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Storage
 SCES_517.25: # EverQuest - Online Adventures (Europe) (En,Fr,De)
   modules:
@@ -486,6 +495,8 @@ SCES_520.42: # Formula One 04 (Europe) (En,Fr,De,Es,It,Fi) (v2.02)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SCES_521.54: # EyeToy - Chat (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi)
   modules:
     - EYETOY.IRX__82fee2b1312b2e3ecf83a72d775ef0f5
@@ -516,7 +527,11 @@ SCES_523.89: # WRC 4 - The Official Game of the FIA World Rally Championship (Eu
     - Keyboard
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SCES_524.05: # DJ - Decks & FX - House Edition (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,No,Da)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
@@ -541,8 +556,9 @@ SCES_524.24: # Ace Combat - Squadron Leader (Europe, Australia) (En,Fr,De,Es,It)
   controllers:
     - Hori Flight Stick 2
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_524.26: # This Is Football 2005 (Europe) (En,Es,Pt,Ar)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
@@ -563,6 +579,8 @@ SCES_524.38: # Gran Turismo 4 - Prologue (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SCES_524.56: # Ratchet & Clank 3 (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -637,6 +655,8 @@ SCES_530.33: # Formula One 05 (Europe, Australia) (En,Fr,De,Es,It,Pt,Fi)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SCES_530.55: # EyeToy - Antigrav (Europe, Australia) (En,Fr,De,Es,It)
   modules:
@@ -665,7 +685,11 @@ SCES_532.47: # WRC - Rally Evolved (Europe) (En,Fr,De,Es,It,Pt,No,Fi) (v2.00)
     - Keyboard
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SCES_532.85: # Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -788,6 +812,8 @@ SCES_539.50: # Formula One 06 (Europe, Australia) (En,Fr,De,Es,It,Pt,Fi)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - PlayStation Portable
 SCES_539.60: # B-Boy (Europe) (En,Fr,De,Es,It)
   modules:
@@ -803,8 +829,9 @@ SCES_540.41: # Ace Combat - The Belkan War (Europe, Australia) (En,Fr,De,Es,It)
   controllers:
     - Hori Flight Stick 2
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SCES_540.68: # AFL Premiership 2006 (Australia)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
@@ -1253,8 +1280,9 @@ SCUS_971.96: # Twisted Metal - Black Online (USA)
     - Conexant SmartSCM
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Pegasus
 SCUS_972.11: # ATV Offroad Fury 2 (USA) (v2.00)
   modules:
@@ -1356,6 +1384,8 @@ SCUS_973.28: # Gran Turismo 4 (USA) (v2.00)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Storage
 SCUS_973.47: # MLB 2006 (USA)
   modules:
@@ -1735,8 +1765,9 @@ SLES_502.14: # 18 Wheeler - American Pro Trucker (Europe) (En,Fr,De,Es)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Mouse
 SLES_502.15: # Crazy Taxi (Europe, Australia) (En,Fr,De,Es)
   modules:
@@ -1764,8 +1795,9 @@ SLES_502.30: # Lotus Challenge (Europe) (En,Fr,De,Es,It)
     - USBNET.IRX__2e85708d2917d1ead3f8aab7999f452b
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_502.32: # Off-Road - Wide Open (Europe) (En,Fr,De,Es,It)
   modules:
     - AN986.IRX__2da9fc6c471a0f57d4b1b74262b71de4
@@ -1774,8 +1806,9 @@ SLES_502.32: # Off-Road - Wide Open (Europe) (En,Fr,De,Es,It)
     - USBNET.IRX__734aac5fc9fa84ac3e3aab1ddbb4f1a5
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Pegasus
 SLES_502.33: # Army Men - Air Attack - Blade's Revenge (Europe) (En,Fr,De,Es,It)
   modules:
@@ -1871,8 +1904,9 @@ SLES_503.41: # Smuggler's Run 2 - Hostile Territory (Europe) (En,Fr,De,It)
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_503.50: # Disney's Tarzan - Freeride (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__ade652ce63530751d2c654fc55c88201
@@ -1904,8 +1938,9 @@ SLES_503.90: # Driven (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__ade652ce63530751d2c654fc55c88201
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_503.96: # Mike Tyson Heavyweight Boxing (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
@@ -1920,8 +1955,9 @@ SLES_504.19: # Supercar Street Challenge (Europe)
     - USBD.IRX__ade652ce63530751d2c654fc55c88201
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_504.22: # Madden NFL 2002 (Europe, Australia)
   modules:
     - FLSHLNK.IRX__0da4a7066efa0dd40d907057ba1b9211
@@ -1978,16 +2014,18 @@ SLES_504.38: # Vehicular Combat League Presents - Motor Mayhem (Europe) (En,Fr,D
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_504.45: # Burnout (Europe) (En,Fr,De,Es,It)
   modules:
     - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_504.47: # All-Star Baseball 2003 featuring Derek Jeter (Europe)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -2028,8 +2066,9 @@ SLES_505.40: # Simpsons, The - Road Rage (Europe)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_505.41: # Capcom vs. SNK 2 - Mark of the Millennium 2001 (Europe)
   modules:
     - ACC_COM.IRX__f394a5fac18327efbc2aa9b16d94de5e
@@ -2071,8 +2110,9 @@ SLES_506.28: # Simpsons, The - Road Rage (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_506.30: # Dragon Rage (Europe)
   modules:
     - SNDBGET.IRX__44721e017f49e684b2363ad81b380792
@@ -2099,7 +2139,6 @@ SLES_506.37: # Pro Rally 2002 (Europe) (En,Fr,De,Es,It)
     - Guillemot Freestyler Bike Force Feedback
     - Guillemot Nascar 2002 FF Racing Wheel
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech Force 3D
     - Logitech GT Force
     - Logitech MOMO Force
@@ -2171,8 +2210,9 @@ SLES_507.23: # TOCA Race Driver (Europe) (En,Fr,Es) (v2.00)
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_507.26: # Myst III - Exile (Europe) (En,Fr,De,Es,It,Nl)
   modules:
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
@@ -2186,8 +2226,9 @@ SLES_507.31: # Need for Speed - Hot Pursuit 2 (Europe, Australia) (En,Fr,De,Es,I
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_507.38: # Star Trek - Voyager - Elite Force (Europe) (En,Fr,De,Es,It)
   modules:
     - PDUKEYBD.IRX__74103aabddf2d96279396f5f10e7ede7
@@ -2217,8 +2258,9 @@ SLES_507.63: # Rally Championship (Europe) (En,Fr,De,Es,It,Sv)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_507.76: # Slam Tennis (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -2232,8 +2274,9 @@ SLES_507.78: # TD Overdrive - The Brotherhood of Speed (Europe) (En,Fr,De,Es,It)
     - USBMLOAD.IRX__dbf6219d17d24bf00fe246640f0345fb
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_507.95: # Superman - Shadow of Apokolips (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -2252,8 +2295,9 @@ SLES_508.16: # DTM Race Driver (Europe) (En,Fr,De) (v2.00)
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_508.22: # Shadow Hearts (Europe) (En,Fr,De)
   modules:
     - HUSB.IRX__0affebfb9ced1cd60ab5933b1d2a5476
@@ -2310,8 +2354,9 @@ SLES_508.79: # Dakar 2 (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_508.82: # Mary-Kate and Ashley - Sweet 16 - Licensed to Drive (Europe)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -2324,8 +2369,9 @@ SLES_508.97: # Super Trucks (Europe) (En,Fr,De,Es,It,Nl)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_509.02: # Conflict - Desert Storm (Europe) (En,Fr,De,Es)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -2400,7 +2446,6 @@ SLES_509.97: # Rally Fusion - Race of Champions (Europe) (En,Fr,De)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_510.11: # Knight Rider - The Game (Europe) (En,Fr,De,Nl)
   modules:
@@ -2408,7 +2453,6 @@ SLES_510.11: # Knight Rider - The Game (Europe) (En,Fr,De,Nl)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_510.22: # Speed Challenge - Jacques Villeneuve's Racing Vision (Europe) (En,Fr)
   modules:
@@ -2416,8 +2460,9 @@ SLES_510.22: # Speed Challenge - Jacques Villeneuve's Racing Vision (Europe) (En
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_510.23: # LMA Manager 2003 (Europe)
   modules:
     - AN986.IRX__7507a5133920bbcb4baf03244b881e66
@@ -2443,7 +2488,6 @@ SLES_510.44: # Burnout 2 - Point of Impact (Europe, Australia) (En,Fr,De,Es,It)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_510.46: # State of Emergency (Europe) (En,Fr,Es,It) (v3.00)
   modules:
@@ -2459,8 +2503,9 @@ SLES_510.54: # Midnight Club II (Europe) (En,Fr,De,Es,It)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_510.55: # Go Go Golf (Europe)
   modules:
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
@@ -2480,8 +2525,9 @@ SLES_510.63: # Hot Wheels - Velocity X - Maximum Justice (Europe)
     - USBMOUSE.IRX__9fe5b9c4306a8ba3ea2eccf99213ea19
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Mouse
     - Pegasus
 SLES_510.69: # RTX - Red Rock (Europe)
@@ -2507,8 +2553,9 @@ SLES_511.17: # Colin McRae Rally 3 (Europe, Australia) (En,Fr,De,Es,It)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Microphone
     - Mouse
 SLES_511.28: # Total Immersion Racing (Europe) (En,Fr,De,Es,It)
@@ -2517,8 +2564,9 @@ SLES_511.28: # Total Immersion Racing (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_511.30: # Tony Hawk's Pro Skater 4 (Europe, Australia)
   modules:
     - SNDRV001.IRX__7bfdb408370bf9766803293cc5adc725
@@ -2601,7 +2649,6 @@ SLES_511.91: # Auto Modellista (Europe) (En,Fr,De,Es,It)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_511.92: # Harry Potter and the Chamber of Secrets (Europe)
   modules:
@@ -2615,8 +2662,9 @@ SLES_511.99: # 4x4 Evo 2 (Europe) (En,Fr,De)
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_512.02: # Wreckless - The Yakuza Missions (Europe) (En,Fr,De)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -2714,7 +2762,6 @@ SLES_513.55: # Big Mutha Truckers (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_513.63: # Music 3000 (Europe) (En,Fr,De,Es,It)
   modules:
@@ -2749,8 +2796,9 @@ SLES_514.25: # Fatman & Slim (Europe) (Proto)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_514.33: # Ghost Vibration (Europe)
   modules:
     - USBD.IRX__ade652ce63530751d2c654fc55c88201
@@ -2783,16 +2831,18 @@ SLES_514.74: # BloodRayne (Europe) (En,Fr,Es,It)
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_514.82: # Downtown Run (Europe) (En,Fr,De)
   modules:
     - LGDEV.IRX__87177d2349e901f17f93d5ae2151a8c9
     - USBD.IRX__00cbb7698b4a45c6761d86da2cf44b26
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_514.96: # Breath of Fire - Dragon Quarter (Europe) (En,Fr,De,Es,It)
   modules:
     - IPSET.IRX__396036d126105e7d203a0c305b2ad2eb
@@ -2806,23 +2856,24 @@ SLES_515.08: # Hulk (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_515.09: # World of Outlaws - Sprint Cars (Europe)
   modules:
     - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_515.11: # Crash Nitro Kart (Europe) (En,Fr,De,Es,It,Nl)
   modules:
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_515.23: # Conflict - Desert Storm II (Europe) (En,Fr,De,Es,It)
   modules:
@@ -2836,7 +2887,6 @@ SLES_515.80: # World Challenge (Europe) (En,Fr,De,Nl)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_515.84: # F1 Career Challenge (Europe) (En,Fr,De,It)
   modules:
@@ -2857,8 +2907,9 @@ SLES_515.90: # Cabela's Big Game Hunter (Europe, Australia)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Mouse
 SLES_516.02: # All-Star Baseball 2004 featuring Derek Jeter (Europe)
   modules:
@@ -2879,16 +2930,18 @@ SLES_516.17: # Starsky & Hutch (Europe) (En,Fr,De,Es,It)
   controllers:
     - GunCon2
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_516.21: # Dirt Track Devils (Europe)
   modules:
     - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_516.33: # Racing Simulation 3 (Europe) (En,Fr,De,Es,It)
   modules:
     - LGDEV.IRX__42aec43e08ed57c5e03c35f80c303439
@@ -2897,8 +2950,9 @@ SLES_516.33: # Racing Simulation 3 (Europe) (En,Fr,De,Es,It)
     - USBMLOAD.IRX__1f80adcd17801a6af344618056e29717
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_516.46: # Energy Airforce (Europe) (En,Fr,De,Es)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -2933,8 +2987,9 @@ SLES_517.05: # Ford Racing 2 (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_517.13: # Bust-A-Bloc (Europe)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -3022,8 +3077,9 @@ SLES_518.21: # Alias (Europe) (En,Fr,De,Es)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Mouse
 SLES_518.24: # Colin McRae Rally 04 (Europe) (En,Fr,De,Es,It)
   modules:
@@ -3039,8 +3095,9 @@ SLES_518.24: # Colin McRae Rally 04 (Europe) (En,Fr,De,Es,It)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Microphone
     - Mouse
 SLES_518.31: # Sphinx and the Cursed Mummy (Europe) (En,Fr,De,Es,It)
@@ -3077,8 +3134,9 @@ SLES_518.42: # RoadKill (Europe) (En,Fr,Es,It)
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_518.43: # Worms 3D (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -3134,7 +3192,6 @@ SLES_518.97: # Simpsons, The - Hit & Run (Europe, Australia) (En,Fr,De,Es)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_519.26: # Outlaw Golf (Europe) (En,Fr,De)
   modules:
@@ -3220,7 +3277,6 @@ SLES_520.63: # Alarm for Cobra 11 (Europe) (En,De)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_520.96: # Firefighter F.D.18 (Europe) (En,Fr,De,Es,It)
   modules:
@@ -3240,8 +3296,9 @@ SLES_521.06: # Cabela's Dangerous Hunts (Europe, Australia)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Mouse
 SLES_521.17: # Go Go Copter - Remote Control Helicopter (Europe) (En,Fr,De)
   modules:
@@ -3280,7 +3337,6 @@ SLES_521.90: # RPM Tuning (Europe) (En,Fr,De,Es,It,Pt)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_522.02: # Downhill Domination (Europe) (En,Fr,De,Es,It)
   modules:
@@ -3304,7 +3360,6 @@ SLES_522.19: # Corvette (Europe) (En,Fr,De)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_522.41: # Myth Makers - Orbs of Doom (Europe)
   modules:
@@ -3344,7 +3399,6 @@ SLES_522.98: # IndyCar Series 2005 (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_523.08: # Karaoke Stage (Europe) (En,Fr,De,Es,It)
   modules:
@@ -3361,7 +3415,11 @@ SLES_523.23: # Richard Burns Rally (Europe) (En,Fr,De,Es,It)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLES_523.25: # Champions of Norrath (Europe) (En,Fr,De)
   modules:
     - LGAUD.IRX__57140338edddd842250fdae6e3078d8f
@@ -3391,7 +3449,6 @@ SLES_523.78: # Euro Rally Champion (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_523.86: # World Championship Snooker 2004 (Europe)
   modules:
@@ -3427,7 +3484,6 @@ SLES_524.44: # Hyper Street Fighter II - The Anniversary Edition (Europe)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_524.48: # Knights of the Temple - Infernal Crusade (Europe) (En,Fr,De,Es)
   modules:
@@ -3547,6 +3603,8 @@ SLES_525.84: # Burnout 3 - Takedown (Europe, Australia) (En,Es,Nl,Sv)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_525.94: # U-Move Super Sports (Europe) (En,Fr,De,Es,It)
   modules:
@@ -3597,7 +3655,11 @@ SLES_526.36: # Colin McRae Rally 2005 (Europe) (En,Fr,De,Es,It)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
     - Microphone
 SLES_526.37: # TOCA Race Driver 2 (Europe) (En,Fr,De,Es,It)
   modules:
@@ -3613,6 +3675,8 @@ SLES_526.37: # TOCA Race Driver 2 (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
     - Mouse
 SLES_526.40: # Dance-UK XL (UK)
@@ -3693,6 +3757,8 @@ SLES_527.20: # Ford Racing 3 (Europe, Australia) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_527.22: # Kidz Sports Ice Hockey (Europe)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -3711,6 +3777,8 @@ SLES_527.25: # Need for Speed - Underground 2 (Europe) (En,Fr,De,Es,It,Nl,Sv,Da)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_527.33: # Driven to Destruction (Europe)
   modules:
     - LGDEV.IRX__fec70a01f7666d972d3b8afd267cbd82
@@ -3720,7 +3788,11 @@ SLES_527.33: # Driven to Destruction (Europe)
     - Keyboard
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLES_527.53: # FlatOut (Europe) (En,Fr,Es,It)
   modules:
     - LGDEVW.IRX__82ed771aae0d8264f601ea8f314985cb
@@ -3729,6 +3801,8 @@ SLES_527.53: # FlatOut (Europe) (En,Fr,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_527.68: # Commandos - Strike Force (Europe) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -3745,7 +3819,6 @@ SLES_527.74: # Sprint Car Challenge (Europe) (En,Fr,De,Es,It,Nl)
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_527.76: # Junior Board Games (Europe) (En,Fr,De,Es,It) (v2.00)
   modules:
@@ -3822,8 +3895,9 @@ SLES_529.00: # Rapala Pro Fishing (Europe, Australia)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Mouse
 SLES_529.09: # UEFA Champions League 2004-2005 (Europe)
   modules:
@@ -3842,7 +3916,6 @@ SLES_529.20: # Alarm for Cobra 11 - Vol. II (Europe) (En,De)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_529.21: # Rogue Trooper (Europe) (En,Fr,De,Es,It)
   modules:
@@ -3882,6 +3955,8 @@ SLES_529.42: # Midnight Club 3 - DUB Edition (Europe, Australia) (En,Fr,De,Es,It
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_529.43: # ESPN NFL 2K5 (Europe)
   modules:
@@ -3923,6 +3998,8 @@ SLES_529.80: # Big Mutha Truckers 2 - Truck Me Harder (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_529.82: # NFL Street 2 (Europe)
   modules:
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
@@ -3934,8 +4011,9 @@ SLES_529.89: # Blowout (Europe)
     - LGDEV.IRX__42aec43e08ed57c5e03c35f80c303439
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_529.93: # TimeSplitters - Future Perfect (Europe) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__62afd0e1eddae8220778312846bfc687
@@ -3973,6 +4051,8 @@ SLES_530.44: # Juiced (Europe, Australia) (En,Fr,De,Es)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_530.45: # SRS - Street Racing Syndicate (Europe) (En,Fr,De,Es,It)
   modules:
@@ -3986,6 +4066,8 @@ SLES_530.45: # SRS - Street Racing Syndicate (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_530.78: # Spy vs. Spy (Europe) (En,Fr,De,Es)
   modules:
@@ -4021,6 +4103,8 @@ SLES_530.87: # TOCA Race Driver 3 (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
     - Mouse
 SLES_531.00: # Scooby-Doo! Unmasked (Europe) (En,Fr,Es,It)
@@ -4054,6 +4138,8 @@ SLES_531.25: # Enthusia - Professional Racing (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_531.38: # Outlaw Volleyball Remixed (Europe, Australia) (En,Fr,De,Es)
   modules:
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -4067,21 +4153,18 @@ SLES_531.40: # Choro Q (Europe)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_531.73: # Truck Racing 2 (Europe)
   modules:
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_531.74: # Golden Age of Racing (Europe)
   modules:
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_531.75: # Top Spin (Europe, Australia) (En,Fr,De,Es,It)
   modules:
@@ -4096,7 +4179,6 @@ SLES_531.86: # International Super Karts (Europe)
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_531.91: # Kaido Racer (Europe) (En,Fr,De,Es,It)
   modules:
@@ -4104,8 +4186,9 @@ SLES_531.91: # Kaido Racer (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLES_531.99: # 25 to Life (Europe)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -4127,6 +4210,8 @@ SLES_532.96: # Ford Mustang - The Legend Lives (Europe) (En,Fr,De,Es)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_532.99: # Delta Force - Black Hawk Down (Europe) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -4178,7 +4263,11 @@ SLES_534.19: # L.A. Rush (Europe, Australia) (En,Fr,De,Es,It)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLES_534.33: # NHL 06 (Europe) (En,Fr,De,Sv,Fi,Cs)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -4209,7 +4298,11 @@ SLES_534.41: # Heroes of the Pacific (Europe) (En,Fr,De,Es,It)
     - Keyboard
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
     - Microphone
 SLES_534.71: # LMA Manager 2006 (Europe) (En,Fr,De,Es,It)
   modules:
@@ -4254,6 +4347,8 @@ SLES_535.07: # Burnout Revenge (Europe) (En,Fr,De)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_535.10: # Madden NFL 06 (Europe)
   modules:
@@ -4326,6 +4421,8 @@ SLES_536.35: # NASCAR 06 - Total Team Control (Europe)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_536.39: # Ford Street Racing (Europe) (En,Fr,De,Es,It)
   modules:
@@ -4335,6 +4432,8 @@ SLES_536.39: # Ford Street Racing (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_536.46: # World Racing 2 (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -4414,6 +4513,8 @@ SLES_536.98: # Ford vs. Chevy (Europe, Australia) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_536.99: # Swords of Destiny (Europe) (En,Fr,Es)
   modules:
@@ -4440,6 +4541,8 @@ SLES_537.17: # Midnight Club 3 - DUB Edition Remix (Europe, Australia) (En,Fr,De
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_537.22: # Call of Duty 2 - Big Red One (Europe, Australia) (Collector's Edition)
   modules:
@@ -4495,7 +4598,11 @@ SLES_539.00: # Kaido Racer 2 (Europe) (En,Fr,De)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLES_539.02: # Leaderboard Golf (Europe)
   modules:
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -4509,12 +4616,13 @@ SLES_539.04: # DT Racer (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_539.58: # Noble Racing (Europe)
   modules:
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_539.59: # Pac-Man World 3 (Europe) (En,Fr,De,Es,It)
   modules:
@@ -4527,7 +4635,6 @@ SLES_539.72: # Stock Car Crash (Europe)
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_539.76: # Evolution GT (Europe) (En,Fr,De,Es,It)
   modules:
@@ -4536,7 +4643,11 @@ SLES_539.76: # Evolution GT (Europe) (En,Fr,De,Es,It)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLES_539.91: # Urban Chaos - Riot Response (Europe) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -4623,6 +4734,8 @@ SLES_541.58: # Hummer Badlands (Europe)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_541.66: # Call of Duty 3 (Europe)
   modules:
     - LGAUD.IRX__f59443b498af0c1308ad226074cfeaa2
@@ -4678,7 +4791,11 @@ SLES_542.22: # Super-Bikes Riding Challenge (Europe) (En,Fr,De,Es,It)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLES_542.23: # NASCAR 07 (Europe)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -4690,6 +4807,8 @@ SLES_542.23: # NASCAR 07 (Europe)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_542.24: # Australian Idol Sing (Australia)
   modules:
@@ -4734,7 +4853,6 @@ SLES_543.26: # Raceway - Drag & Stock Racing (Europe)
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_543.31: # Street Dance (Europe) (En,Fr,De,Es,It,Nl)
   modules:
@@ -4790,7 +4908,6 @@ SLES_544.71: # Captain Scarlet (Europe) (En,Fr,De,Es,It,Nl)
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_544.83: # Fast and the Furious, The (Europe)
   modules:
@@ -4804,6 +4921,8 @@ SLES_544.83: # Fast and the Furious, The (Europe)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_544.89: # WWE SmackDown vs. Raw 2007 (Europe, Australia)
   modules:
@@ -4842,7 +4961,11 @@ SLES_545.84: # Pac-Man Rally (Europe) (En,Fr,De,Es,It)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLES_545.88: # Brunswick Pro Bowling (Europe)
   modules:
     - LGKBM.IRX__b9773b7fed1e3da8cfd01bfdd9b4575a
@@ -4853,7 +4976,6 @@ SLES_546.17: # Action Man A.T.O.M. - Alpha Teens on Machines (Europe) (En,Fr,De,
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLES_546.56: # Bob the Builder (Europe)
   modules:
@@ -4868,7 +4990,11 @@ SLES_547.05: # SBK-07 - Superbike World Championship (Europe, Australia) (En,Fr,
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLES_548.12: # Madden NFL 08 (Europe, Australia)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -4887,6 +5013,8 @@ SLES_548.13: # NASCAR 08 (Europe, Australia)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLES_548.19: # Manhunt 2 (Europe) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -4907,7 +5035,11 @@ SLES_548.34: # Juiced 2 - Hot Import Nights (Europe, Australia) (En,Fr,De,Es,It)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
     - PlayStation Portable
 SLES_548.36: # Disney High School Musical - Sing It! (Europe) (En,Fr,De,Es,It)
   modules:
@@ -5085,6 +5217,8 @@ SLES_551.99: # NASCAR 09 (Europe)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_552.38: # Madden NFL 09 (Europe)
   modules:
@@ -5123,6 +5257,8 @@ SLES_552.94: # Ferrari Challenge - Trofeo Pirelli (Europe) (En,Fr,De,Es,It)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Microphone
 SLES_553.44: # Rock Band - Song Pack 1 (Europe, Australia) (En,Fr,De,Es,It)
   modules:
@@ -5500,8 +5636,9 @@ SLPM_620.87: # Touge 3 (Japan)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLPM_620.97: # Keisatsukan, The - Shinjuku 24-ji (Japan)
   modules:
     - USBARLSI.IRX__b36a176f36fbf58237c1c45b62546f60
@@ -5934,8 +6071,9 @@ SLPM_651.24: # Auto Modellista (Japan)
     - Conexant SmartSCM
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Suntac OnlineStation
 SLPM_651.48: # Densha de Go! Ryojou-hen (Japan)
   modules:
@@ -5980,7 +6118,6 @@ SLPM_653.26: # Choro Q HG 4 (Japan)
   controllers:
     - HMD
     - Logitech Driving Force
-    - Logitech Driving Force Pro
     - Logitech GT Force
 SLPM_653.74: # Energy Airforce AimStrike! (Japan)
   modules:
@@ -6425,8 +6562,9 @@ SLPS_201.85: # Wangan Midnight (Japan)
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLPS_202.07: # Usagi - Yasei no Touhai - Dramatic Mahjong (Japan)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -6563,8 +6701,9 @@ SLPS_250.76: # Sidewinder F (Japan)
   controllers:
     - Hori Flight Stick
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLPS_251.06: # America Oudan Ultra Quiz (Japan)
   modules:
     - DMCDRV.IRX__3aaa7cb9d80dee97568d19016d66f439
@@ -6660,8 +6799,9 @@ SLPS_252.71: # Sidewinder V (Japan) (En,Ja)
     - HMD
     - Hori Flight Stick
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLPS_255.03: # NeoGeo Online Collection Vol. 2 - Bakumatsu Roman - Gekka no Kenshi 1, 2 (Japan) (En,Ja,Es,Pt)
   modules:
     - AVEPPP.IRX__84014bb7ea55111b28f9bbe49a057aab
@@ -6814,8 +6954,9 @@ SLUS_201.76: # NASCAR Heat 2002 (USA)
     - USBD.IRX__d11986572ef8e4f9bd153c0c24225fb9
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLUS_201.90: # Monster Rancher 3 (USA) (v2.01)
   modules:
     - DSCDRV.IRX__697541933f03bd2257fcf7aa8efe6c40
@@ -6835,8 +6976,9 @@ SLUS_202.66: # NASCAR Thunder 2002 (USA)
     - Guillemot Force Feedback Racing Wheel
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Logitech WingMan Force
     - Logitech WingMan Formula Force
 SLUS_202.73: # Namco Museum (USA)
@@ -6882,11 +7024,12 @@ SLUS_204.41: # NASCAR - Dirt to Daytona (USA)
     - USBJOY.IRX__402417f9babfc2773f7001e45d8c5a49
     - USBKEYBD.IRX__b61ddc4a82882533059884c119094ab7
   controllers:
-    - Hori Flight Stick
+    - ACT LABS Force RS
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLUS_204.53: # NCAA College Football 2K3 (USA)
   modules:
     - AN986.IRX__7507a5133920bbcb4baf03244b881e66
@@ -6952,8 +7095,9 @@ SLUS_205.35: # NASCAR Thunder 2003 (USA)
   controllers:
     - Bridge
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLUS_205.36: # NBA Live 2003 (USA)
   modules:
     - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
@@ -7043,8 +7187,9 @@ SLUS_206.65: # Cabela's Deer Hunt - 2004 Season (USA)
   controllers:
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Mouse
 SLUS_206.76: # Lowrider (USA)
   modules:
@@ -7088,8 +7233,9 @@ SLUS_207.35: # Lethal Skies II (USA)
   controllers:
     - Hori Flight Stick
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLUS_207.40: # Mobile Suit Gundam - Encounters in Space (USA)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -7174,8 +7320,9 @@ SLUS_208.24: # NASCAR Thunder 2004 (USA)
     - Bridge
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Microphone
     - Pegasus
 SLUS_208.31: # Tokyo Xtreme Racer 3 (USA)
@@ -7206,8 +7353,9 @@ SLUS_208.51: # Ace Combat 5 - The Unsung War (USA) (En,Ja)
   controllers:
     - Hori Flight Stick 2
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLUS_208.68: # MVP Baseball 2004 (USA)
   modules:
     - LGAUD.IRX__22e950624c6e1062423152a915602448
@@ -7280,8 +7428,9 @@ SLUS_210.03: # NASCAR 2005 - Chase for the Cup (USA)
     - Bridge
     - Keyboard
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
     - Microphone
 SLUS_210.11: # Cabela's Deer Hunt - 2005 Season (USA)
   modules:
@@ -7336,7 +7485,11 @@ SLUS_211.14: # NHRA Championship Drag Racing (USA)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLUS_211.28: # Blitz - The League (USA)
   modules:
     - LGAUD.IRX__62afd0e1eddae8220778312846bfc687
@@ -7447,8 +7600,9 @@ SLUS_212.36: # Tokyo Xtreme Racer - Drift (USA)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
   controllers:
     - Logitech Driving Force
-    - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech Strike Force 3D
 SLUS_212.59: # Stacked with Daniel Negreanu (USA)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -7547,7 +7701,11 @@ SLUS_213.80: # Snoopy vs. the Red Baron (USA)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
     - Mouse
 SLUS_214.07: # NFL Head Coach (USA)
   modules:
@@ -7616,7 +7774,11 @@ SLUS_215.00: # Suzuki Super-Bikes II - Riding Challenge (USA) (En,Fr,Es)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLUS_215.39: # Greg Hastings' Tournament Paintball Max'd (USA)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -7645,7 +7807,11 @@ SLUS_215.47: # NHRA Drag Racing - Countdown to the Championship (USA)
   controllers:
     - Logitech Driving Force
     - Logitech Driving Force Pro
+    - Logitech Force 3D
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Logitech Strike Force 3D
 SLUS_215.61: # Major League Baseball 2K7 (USA)
   modules:
     - IOP.IRX__2448d7aa251717d32f35207580021fe0
@@ -7770,6 +7936,8 @@ SLUS_217.93: # DT Carnage (USA)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLUS_218.57: # Short Track Racing - Trading Paint (USA)
   modules:
     - LGDEVW.IRX__693804956935cba151375a7933c1159e
@@ -7778,6 +7946,8 @@ SLUS_218.57: # Short Track Racing - Trading Paint (USA)
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLUS_218.67: # Guitar Hero - Van Halen (USA) (En,Fr)
   modules:
     - BCUI.IRX__698b3fd4125fe51491fe88bade3af5f8
