@@ -84,8 +84,10 @@ PCPX_966.34: # Gran Turismo - Subaru Driving Simulator Version (Japan)
     - PDIUSB.IRX__7ab9cb4c3d807899a24efa1be5b6179d
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
   controllers:
+    - Guillemot Force Feedback Racing Wheel
     - Logitech Driving Force
     - Logitech GT Force
+    - Logitech MOMO Force
 SCCS_400.22: # World Soccer Winning Eleven 8 - Asia Championship (China)
   modules:
     - AVEPPP.IRX__2e87237dd571e58d383f1e36c8ce03c1
@@ -114,8 +116,10 @@ SCES_502.94: # Gran Turismo 3 - A-Spec (Europe, Australia) (En,Fr,De,Es,It) (v2.
     - PDIUSB.IRX__83708ada14b1672fec1aa569cebc8e8d
     - USBD.IRX__ade652ce63530751d2c654fc55c88201
   controllers:
+    - Guillemot Force Feedback Racing Wheel
     - Logitech Driving Force
     - Logitech GT Force
+    - Logitech MOMO Force
 SCES_502.95: # Dark Cloud (Europe) (En,Fr,De,Es,It)
   modules:
     - AN986.IRX__2da9fc6c471a0f57d4b1b74262b71de4
@@ -214,8 +218,10 @@ SCES_508.58: # Gran Turismo Concept - 2002 Tokyo-Geneva (Europe) (En,Fr,De,Es,It
     - PDIUSB.IRX__75a847581fa5fa97c37aa1b1c05ee34c
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   controllers:
+    - Guillemot Force Feedback Racing Wheel
     - Logitech Driving Force
     - Logitech GT Force
+    - Logitech MOMO Force
 SCES_508.85: # Ape Escape 2 (Europe)
   modules:
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
@@ -719,8 +725,6 @@ SCES_533.72: # Tourist Trophy - The Real Riding Simulator (Europe) (En,Fr,De,Es,
     - USTORAGE.IRX__fdbeec1e620f1be99a8dd3f729dcda4a
   controllers:
     - Epson
-    - Logitech Driving Force
-    - Logitech GT Force
     - Storage
 SCES_534.22: # Stuart Little 3 - Big Photo Adventure (Europe) (En,Fr,De,Es,It,Nl,Pt,Fi,Pl)
   modules:
@@ -1469,8 +1473,6 @@ SCUS_975.02: # Tourist Trophy (USA)
     - USTORAGE.IRX__fdbeec1e620f1be99a8dd3f729dcda4a
   controllers:
     - Epson
-    - Logitech Driving Force
-    - Logitech GT Force
     - Storage
 SCUS_975.44: # NBA 07 featuring the Life Vol. 2 (USA)
   modules:
@@ -1933,9 +1935,9 @@ SLES_504.23: # F1 2001 (Europe) (En,Fr,De,Nl)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - WHEEL.IRX__1518484c60ed27f951181773b5bb91e9
   controllers:
-    - Logitech Wheel A
-    - Logitech Wheel B
-    - ThrustMaster
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
 SLES_504.25: # NHL 2002 (Europe) (En,Sv,Fi)
   modules:
     - AN986.IRX__7507a5133920bbcb4baf03244b881e66
@@ -1948,9 +1950,9 @@ SLES_504.31: # F1 2001 (Europe) (En,Es,It,Sv)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - WHEEL.IRX__1518484c60ed27f951181773b5bb91e9
   controllers:
-    - Logitech Wheel A
-    - Logitech Wheel B
-    - ThrustMaster
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
 SLES_504.33: # GoDai - Elemental Force (Europe)
   modules:
     - SNDBGET.IRX__44721e017f49e684b2363ad81b380792
@@ -2098,11 +2100,10 @@ SLES_506.37: # Pro Rally 2002 (Europe) (En,Fr,De,Es,It)
     - Guillemot Nascar 2002 FF Racing Wheel
     - Logitech Driving Force
     - Logitech Driving Force Pro
-    - Logitech Force 3D Joystick
-    - Logitech Formula Force GP Wheel
+    - Logitech Force 3D
     - Logitech GT Force
     - Logitech MOMO Force
-    - Logitech Strike Force 3D Joystick
+    - Logitech Strike Force 3D
     - Logitech WingMan Force
     - Logitech WingMan Formula Force
     - Saitek Cyborg 3D Force Stick
@@ -2289,11 +2290,11 @@ SLES_508.74: # F1 2002 (Europe) (En,Fr,De,Nl)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - WHEEL.IRX__2a583d3394da149ebf68647ca87978b5
   controllers:
-    - ACT LABS RS
-    - Logitech Momo
-    - Logitech Wheel A
-    - Logitech Wheel B
-    - ThrustMaster
+    - ACT LABS Force RS
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SLES_508.77: # TimeSplitters 2 (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -2543,14 +2544,14 @@ SLES_511.44: # Shox - Rally Reinvented (Europe) (En,Fr,De,Es,It,Sv,Fi)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
     - WHEEL.IRX__6e1a8be36f256a2e2c8c0519b6518dda
   controllers:
-    - 360 Modena (Pro)
-    - ACT LABS RS
+    - ACT LABS Force RS
+    - Guillemot Force Feedback Racing Wheel
     - Logitech Driving Force
-    - Logitech Formula Force
-    - Logitech Momo
-    - Saitek R440
-    - Saitek R550
-    - ThrustMaster
+    - Logitech GT Force
+    - Logitech MOMO Force
+    - Saitek R440 Force Feedback Wheel
+    - Saitek RX550 Force Feedback Wheel
+    - ThrustMaster 360 Modena (Pro)
 SLES_511.54: # Madden NFL 2003 (Europe)
   modules:
     - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
@@ -2842,11 +2843,11 @@ SLES_515.84: # F1 Career Challenge (Europe) (En,Fr,De,It)
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
     - WHEEL.IRX__2a583d3394da149ebf68647ca87978b5
   controllers:
-    - ACT LABS RS
-    - Logitech Momo
-    - Logitech Wheel A
-    - Logitech Wheel B
-    - ThrustMaster
+    - ACT LABS Force RS
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SLES_515.90: # Cabela's Big Game Hunter (Europe, Australia)
   modules:
     - LGDEV.IRX__87177d2349e901f17f93d5ae2151a8c9

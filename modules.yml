@@ -8,78 +8,91 @@ Wheels - Battle Gear 2:
   type: "Steering wheels"
   support:
     - Logitech GT Force # [046d:c293]
-Wheels - Logitech + SideWinder:
+Wheels - Tokyo Xtreme Racer:
   modules: USB_DRV.IRX
   type: "Steering wheels"
   support:
-    - Logitech GT Force
-    - SideWinder Force Feedback
-PDIUSB.IRX:
+    - Logitech GT Force # [046d:c293]
+    - SideWinder Force Feedback # [045e:0034]
+Wheels - GT3:
+  modules:
+    - PDIUSB.IRX__75a847581fa5fa97c37aa1b1c05ee34c # Concept - 2002 Tokyo-Geneva
+    - PDIUSB.IRX__7ab9cb4c3d807899a24efa1be5b6179d # Subaru Driving Simulator
+    - PDIUSB.IRX__83708ada14b1672fec1aa569cebc8e8d # A-Spec
   type: "Steering wheels"
   support:
-    - Logitech GT Force
-    - Logitech Driving Force
-IMDLGIS.IRX:
+    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+    - Logitech Driving Force # [046d:c294]
+    - Logitech MOMO Force # [046d:c295]
+    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004] # TBD
+Wheels - GT4/TT:
+  modules: PDIUSB.IRX__340f9eabb93f09c3a2934c45a1182798
+  type: "Steering wheels"
+  support: # TBD if any
+Wheels - Pro Rally 2002 - Logi:
+  modules: IMDLGIS.IRX
   type: "Steering wheels"
   support:
-    - Logitech Force 3D Joystick
-    - Logitech Strike Force 3D Joystick
-    - Logitech Formula Force GP Wheel
-    - Logitech MOMO Force
-    - Logitech Driving Force
-IMUSBPS2.IRX:
+    - Logitech Force 3D # Joystick [046d:c283]
+    - Logitech Strike Force 3D # Joystick [046d:c285]
+    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+    - Logitech Driving Force # [046d:c294]
+    - Logitech MOMO Force # [046d:c295]
+Wheels - NASCAR Thunder 2002:
+  modules: IMUSBPS2.IRX
   type: "Steering wheels"
   support:
-    - Gravis Xterminator Force # 047d:4007
-    - Logitech WingMan Force # 046d:c281
-    - Logitech WingMan Formula Force # 046d:c291
-    - Guillemot Force Feedback Racing Wheel # ThrustMaster 06f8:0004
-IMDFF.IRX:
+    - Gravis Xterminator Force # Gamepad [047d:4007]
+    - Logitech WingMan Force # Joystick [046d:c281]
+    - Logitech WingMan Formula Force # [046d:c291]
+    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
+Wheels - Pro Rally 2002 - FF:
+  modules: IMDFF.IRX
   type: "Steering wheels"
   support:
-    - ACT LABS Force RS
-    - ACT LABS Force RS 2
-    - Gravis Xterminator Force
-    - Guillemot Afterburner Force Feedback
-    - Guillemot F1 Force Feedback Racing Wheel
-    - Guillemot Force Feedback Fox 2 Pro
-    - Guillemot Force Feedback Joystick
-    - Guillemot Force Feedback Racing Wheel
-    - Guillemot Freestyler Bike Force Feedback
-    - Guillemot Nascar 2002 FF Racing Wheel
-    - Logitech WingMan Force # Joystick
-    - Logitech WingMan Formula Force # Wheel
-    - Saitek Cyborg 3D Force Stick
-    - Saitek R440 Force Feedback Wheel
-    - Saitek RX550 Force Feedback Wheel
+    - ACT LABS Force RS # 3 records: [061c:c084], [061c:c094], [061c:c0a4]
+    - ACT LABS Force RS 2 # [061c:a001]
+    - Gravis Xterminator Force # Gamepad [047d:4007]
+    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
+    - Guillemot F1 Force Feedback Racing Wheel # [044f:0602]
+    - Guillemot Nascar 2002 FF Racing Wheel # [044f:0601]
+    - Guillemot Freestyler Bike Force Feedback # [044f:0706]
+    - Guillemot Force Feedback Joystick # [06f8:0003]
+    - Guillemot Force Feedback Fox 2 Pro # [044f:0552]
+    - Guillemot Afterburner Force Feedback # 2 records: [044f:0550], [044f:0551]
+    - Logitech WingMan Force # Joystick [046d:c281]
+    - Logitech WingMan Formula Force # [046d:c291]
+    - Saitek Cyborg 3D Force Stick # [06a3:ff12]
+    - Saitek RX550 Force Feedback Wheel # [06a3:ff28]
+    - Saitek R440 Force Feedback Wheel # [06a3:ff04]
 WHEEL.IRX__1518484c60ed27f951181773b5bb91e9:
   type: "Steering wheels"
   version: "EA v1"
   support:
-    - Logitech Wheel A
-    - Logitech Wheel B
-    - ThrustMaster
+    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+    - Logitech Driving Force # [046d:c294]
+    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
 WHEEL.IRX__2a583d3394da149ebf68647ca87978b5:
   type: "Steering wheels"
   version: "EA v2"
   support:
-    - ACT LABS RS
-    - Logitech Momo
-    - Logitech Wheel A
-    - Logitech Wheel B
-    - ThrustMaster
+    - ACT LABS Force RS # [061c:c084], [061c:c094], [061c:c0a4]
+    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+    - Logitech Driving Force # [046d:c294]
+    - Logitech MOMO Force # [046d:c295]
+    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
 WHEEL.IRX__6e1a8be36f256a2e2c8c0519b6518dda:
   type: "Steering wheels"
   version: "EA v3"
   support:
-    - 360 Modena (Pro)
-    - Saitek R550
-    - Saitek R440
-    - ACT LABS RS
-    - Logitech Momo
-    - Logitech Formula Force
-    - Logitech Driving Force
-    - ThrustMaster
+    - ThrustMaster 360 Modena (Pro) # [044f:b203]
+    - Saitek RX550 Force Feedback Wheel # [06a3:ff28]
+    - Saitek R440 Force Feedback Wheel # [06a3:ff04]
+    - ACT LABS Force RS # [061c:c084], [061c:c094], [061c:c0a4]
+    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+    - Logitech Driving Force # [046d:c294]
+    - Logitech MOMO Force # [046d:c295]
+    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
 
 # per revision support
 # LGDEV.IRX__119a64528936a42e253a68b67c18de1c:
