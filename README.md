@@ -26,3 +26,9 @@ python -m http.server 8000
   - `gameid_to_name.yml` maps game IDs to names. Existing names are never overwritten, so you can edit them by hand.
   - `accessories.yml` lists controllers by type, and is rebuilt from `modules.yml` on every run.
 - Scans add new games and modules to the existing database. Controllers are recomputed from the current `modules.yml` on every run.
+
+## Todo
+- [ ] Rename or merge the Logitech and TMS wheel entries
+- [ ] Document the Logitech wheel driver versions and the controllers each one supports
+- [ ] Split SingStar/Logitech/universal mic drivers
+- [ ] Check DMC storage support
