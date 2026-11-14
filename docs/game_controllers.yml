@@ -1141,7 +1141,7 @@ SCPS_150.18: # Yamanote-sen, The - Train Simulator Real (Japan)
     - USRFTDI.IRX__8e776940be52f4e296347d52efcbb08a
     - USRPL.IRX__450cec22c7457f8e93482eb141a62410
   controllers:
-    - Logitech GT Force
+    - Type 2
     - UART
 SCPS_150.35: # Keihin Kyuukou, The - Train Simulator Real (Japan)
   modules:

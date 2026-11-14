@@ -1,10 +1,13 @@
 
 ## Steering wheels ############################################################
 
-USBDCON.IRX:
+Wheels - Battle Gear 2:
+  modules:
+    - USBDCON.IRX__5a23c6ba7042042d8786f0b89792b728 # Euro
+    - USBDCON.IRX__71433d2ad9ce7ddb7c6965d47ca5d69f # Jap
   type: "Steering wheels"
   support:
-    - Logitech GT Force
+    - Logitech GT Force # [046d:c293]
 Wheels - Logitech + SideWinder:
   modules: USB_DRV.IRX
   type: "Steering wheels"
@@ -107,7 +110,7 @@ FS2.IRX:
 ## Train sim ##################################################################
 
 Train sim - Type 2:
-  modules: USBDENCI.IRX, USBDENCO.IRX
+  modules: USBDENCI.IRX, USBDENCO.IRX, USBDCON.IRX__24c34e7c941c613754fc98fa8f74ef6c
   type: "Train sim"
   support: "Type 2"
 Train sim - Ryojouhen:
