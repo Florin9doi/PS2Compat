@@ -246,10 +246,10 @@ def process_image(path, a, names, games, unused):
             return
         found = set()
         for name, digest, lba, size in find_modules(iso):
-            if is_unused(f"{name}__{digest}", unused) or not contains_filter(iso, lba, size, a.extract_filter):
+            if not contains_filter(iso, lba, size, a.extract_filter):
                 continue
             found.add(f"{name}__{digest}")
-            if a.extract_modules:
+            if a.extract_modules and not is_unused(f"{name}__{digest}", unused):
                 try:
                     if extract_module(iso, lba, size, a.output_folder / f"{name}__{digest}"):
                         print(f"  Extracted: {name}__{digest}")
@@ -292,7 +292,7 @@ def main():
     names_f, acc_f, ctrl_f = (dst / n for n in ("gameid_to_name.yml", "accessories.yml", "game_controllers.yml"))
     names = {g: as_list(v)[0] for g, v in load_yml(names_f).items() if v}
     acc = {}
-    games = {g: {m for m in as_list(v.get("modules")) if not is_unused(m, unused)} for g, v in load_yml(ctrl_f).items() if isinstance(v, dict)}
+    games = {g: set(as_list(v.get("modules"))) for g, v in load_yml(ctrl_f).items() if isinstance(v, dict)}
 
     images = sorted((f for f in src.rglob("*") if f.is_file() and f.suffix.lower() in (".iso", ".cue")),
                     key=lambda f: f.name.lower()) if src else []
@@ -317,7 +317,7 @@ def main():
                 f.writelines(f"    - {y(c)}\n" for c in sorted(ctrl, key=str.casefold))
 
     unpaired = sorted({m for g in games.values() for m in g
-                       if not {m.casefold(), m.split("__")[0].casefold()} & modules.keys()}, key=str.casefold)
+                       if not is_unused(m, unused) and not {m.casefold(), m.split("__")[0].casefold()} & modules.keys()}, key=str.casefold)
     print(f"\nModules without metadata in {a.modules.name}: {len(unpaired)}")
     print(*unpaired, sep="\n")
     print(f"\nCompleted.\nGames: {len(names)}, in controller db: {len(games)}\nOutput: {dst}")

@@ -1,15 +1,33 @@
+# Base driver
 - USBD.IRX
 - 9.IRX__93966722b6a6ec1ec7569338b75b8559 # USBD.IRX
+# Loaders
 - USBMLOAD.IRX
+- USBMLCNT.IRX
 - USB_SRCH.IRX
 - USBSRCHM.IRX
 - USBSRCH.IRX
-# Network
+# Network AVE
 - AVE_WRAP.IRX
+- AVEPPP.IRX
 - AVETCP.IRX
 - AVEWRAPM.IRX
 - DEVGLUE.IRX
 - IOPINT.IRX
 - MDMGLUE.IRX
 - NDGLUE.IRX
-- AVEPPP.IRX
+- NTAVEIOP.IRX
+# Network SN
+- SNDBGET.IRX
+# All in one
+- ALL.IRX
+- IOP.IRX
+# Misc
+- USBDESC.IRX # USB_DESCRIPTOR_PRINTER
+- FSIOPCOM.IRX # network?
+- IPSET.IRX # Pegasus side driver?
+- IOPSETUP.IRX # WIBU-BOX - unused
+- USBNET.IRX # pegasus - looks unused
+- IMUSBMAN.IRX
+- ACC_COM.IRX # Capcom_Access_COM_Wrapper
+- HUSB.IRX

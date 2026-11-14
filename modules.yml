@@ -45,19 +45,18 @@ IMDFF.IRX:
     - ACT LABS Force RS
     - ACT LABS Force RS 2
     - Gravis Xterminator Force
-    - Guillemot Force Feedback Racing Wheel
+    - Guillemot Afterburner Force Feedback
     - Guillemot F1 Force Feedback Racing Wheel
-    - Guillemot Nascar 2002 FF Racing Wheel
-    - Guillemot Freestyler Bike Force Feedback
-    - Guillemot Force Feedback Joystick
     - Guillemot Force Feedback Fox 2 Pro
-    - Guillemot Afterburner Force Feedback
-    - Guillemot Afterburner Force Feedback
-    - Logitech Wingman Force Joystick
-    - Logitech Wingman Formula Force Wheel
+    - Guillemot Force Feedback Joystick
+    - Guillemot Force Feedback Racing Wheel
+    - Guillemot Freestyler Bike Force Feedback
+    - Guillemot Nascar 2002 FF Racing Wheel
+    - Logitech WingMan Force # Joystick
+    - Logitech WingMan Formula Force # Wheel
     - Saitek Cyborg 3D Force Stick
-    - Saitek RX550 Force Feedback Wheel
     - Saitek R440 Force Feedback Wheel
+    - Saitek RX550 Force Feedback Wheel
 WHEEL.IRX__1518484c60ed27f951181773b5bb91e9:
   type: "Steering wheels"
   version: "EA v1"
@@ -86,6 +85,14 @@ WHEEL.IRX__6e1a8be36f256a2e2c8c0519b6518dda:
     - Logitech Formula Force
     - Logitech Driving Force
     - ThrustMaster
+
+IMUSBPS2.IRX:
+  type: "Steering wheels"
+  support:
+    - Gravis Xterminator Force # 047d:4007
+    - Logitech WingMan Force # 046d:c281
+    - Logitech WingMan Formula Force # 046d:c291
+    - Guillemot Force Feedback Racing Wheel # ThrustMaster 06f8:0004
 
 Train Sim - Type 2:
   modules: USBDENCI.IRX, USBDENCO.IRX
@@ -155,7 +162,8 @@ USBMIC.IRX__8da6f2b5b40cc1f29d32a8441c70a070:
   type: "Audio"
   support: "Seamic"
 Microphones:
-  modules: LGAUD.IRX, USBMIC.IRX, USBMICRO.IRX, SINGSTAR.IRX, KARAOKE.IRX, 3.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
+  modules: LGAUD.IRX, USBMIC.IRX, USBMICRO.IRX, SINGSTAR.IRX, KARAOKE.IRX, 3.IRX__4cc8d10b0bdeaa43847fa852e0d8604f,
+    MAIN.IRX__109f454eb0f1cf0503a0f10185bd8faa # MTV Music Generator 2
   type: "Audio"
   support: "Microphone"
 USBVR.IRX:
@@ -206,19 +214,26 @@ Printers - Epson:
   type: "Printers"
   support: "Epson"
 
-Keyboards:
+Keyboard+Mouse:
+  modules: LECGLUSB.IRX, LECUSB.IRX, PINPUT_R.IRX, MAIN_PS2.IRX, MAIN.IRX__cf59f7201fed5c9c95937082072e5f17
+  type: "Keyboard/Mouse"
+  support:
+    - Keyboard
+    - Mouse
+Keyboard:
   modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX, PDUKEYBD.IRX,
-    KEYBD.IRX, KEYBOA~1.IRX, MODUSBKB.IRX, AUKWDRV.IRX, USBK_D_T.IRX, USBK_R_T.IRX
-  type: "Keyboards"
-  support: "Keyboard"
-Mice:
+    KEYBD.IRX, KEYBOA~1.IRX, MODUSBKB.IRX, AUKWDRV.IRX, USBK_D_T.IRX, USBK_R_T.IRX, PSX2USBC.IRX
+  type: "Keyboard/Mouse"
+  support: Keyboard
+Mouse:
   modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX,
-    PDUMOUSE.IRX, MODUSBMS.IRX, AUMWDRV.IRX, AUEWDRV.IRX, USBDEV.IRX
-  type: "Mice"
-  support: "Mouse"
+    PDUMOUSE.IRX, MODUSBMS.IRX, AUMWDRV.IRX, AUEWDRV.IRX, USBDEV.IRX,
+    FSIOPUSB.IRX # KB+M loader that receives USB_MOUSE as arg and works with FSIOPUMS.IRX
+  type: "Keyboard/Mouse"
+  support: Mouse
 Tablet:
   modules: AUTWDRV.IRX
-  type: "Mice"
+  type: "Keyboard/Mouse"
   support: "Agatha Tablet"
 
 GameTrak:
@@ -264,7 +279,8 @@ Modem - Suntac:
   type: "Network adapters"
   support: "Suntac OnlineStation"
 Modem - SmartSCM:
-  modules: CXTMDM.IRX, PWCXTMDM.IRX, SNDRV003.IRX, PWMODEM.IRX
+  modules: CXTMDM.IRX, PWCXTMDM.IRX, SNDRV003.IRX, PWMODEM.IRX,
+    PWUSBMDM.IRX # it says generic driver and looks unused
   type: "Network adapters"
   support: "Conexant SmartSCM"
 Modem - NTT-ME:
@@ -281,11 +297,13 @@ Modem - Lucent:
   support: "Lucent"
 
 UART:
-  modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX
+  modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX,
+    RSAQ.IRX # USB-RSAQ1 [04bb:0a03] - serial modem
   type: "UART"
   support: "UART"
 USB Bridge:
-  modules: FLSHLNK.IRX, USBFLK.IRX, USBLINK.IRX
+  modules: FLSHLNK.IRX, USBFLK.IRX, USBLINK.IRX, LNK_IOP.IRX,
+    USBFS.IRX # NEC/ACTIS/ELECOM Link Cable
   type: "Bridge"
   support: "Bridge"
 
