@@ -89,14 +89,14 @@ a.game-row { display: block; color: inherit; text-decoration: none; }
   font-size: 11px;
   margin: 3px 4px 3px 0;
 }
-.controller-groups { display: grid; gap: 12px; }
-.controller-group {
+.device-groups { display: grid; gap: 12px; }
+.device-group {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 14px 16px;
 }
-.controller-group h4 {
+.device-group h4 {
   margin: 0 0 9px;
   color: var(--text);
   font-size: 14px;
@@ -124,7 +124,7 @@ a.game-row { display: block; color: inherit; text-decoration: none; }
   margin: 12px 0;
 }
 
-.controller-layout { display:grid; grid-template-columns:260px minmax(0,1fr); gap:22px; align-items:start; }
+.device-layout { display:grid; grid-template-columns:260px minmax(0,1fr); gap:22px; align-items:start; }
 .filter-sidebar { position:sticky; top:12px; align-self:start; max-height:calc(100vh - 24px); overflow-y:auto; padding:16px; background:var(--panel); border:1px solid var(--border); border-radius:12px; }
 .filter-sidebar h3 { margin:0 0 12px; font-size:14px; }
 .filter-sidebar input { padding:11px 12px; font-size:13px; margin-bottom:12px; }
@@ -141,7 +141,7 @@ a.game-row { display: block; color: inherit; text-decoration: none; }
 .category-list { min-width:0; }
 .category-heading { margin:2px 0 8px; font-size:21px; }
 .category-description { color:var(--muted); font-size:13px; margin:0 0 18px; }
-@media(max-width:760px) { .controller-layout { grid-template-columns:1fr; } .filter-sidebar { position:static; max-height:none; overflow:visible; } .category-nav { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:760px) { .device-layout { grid-template-columns:1fr; } .filter-sidebar { position:static; max-height:none; overflow:visible; } .category-nav { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 
 .upload {
   margin-top: 25px;
@@ -175,31 +175,31 @@ button:focus-visible, a:focus-visible {
   <div class="status" id="status">Loading compatibility database...</div>
 
   <nav class="tabs">
-    <button class="tab active" data-tab="controller">🎮 Controllers</button>
+    <button class="tab active" data-tab="device">🎮 Devices</button>
     <button class="tab" data-tab="games">▤ Games</button>
     <button class="tab" data-tab="search">⌕ Search</button>
   </nav>
 
   <section class="panel" id="search">
     <input class="search" id="globalSearch"
-      placeholder="Search games, game IDs, controllers, modules...">
+      placeholder="Search games, game IDs, devices, modules...">
     <div id="searchResults"></div>
   </section>
 
-  <section class="panel active" id="controller">
+  <section class="panel active" id="device">
     <h2>Browse by accessory</h2>
     <p style="color:var(--muted);font-size:14px">
-      Choose an accessory category, then select a controller.
+      Choose an accessory category, then select a device.
     </p>
-    <div class="controller-layout">
+    <div class="device-layout">
       <aside class="filter-sidebar">
         <h3>Categories</h3>
-        <input id="controllerFilter" type="search" placeholder="Filter categories..." aria-label="Filter categories">
+        <input id="deviceFilter" type="search" placeholder="Filter categories..." aria-label="Filter categories">
         <nav id="groups" class="category-nav" aria-label="Accessory categories"></nav>
       </aside>
       <div class="category-list">
-        <input class="search" id="controllerGameFilter" type="search" placeholder="Filter games..." aria-label="Filter games" hidden>
-        <div id="controllerBrowser"><p class="empty">Select a category to browse compatible games.</p></div>
+        <input class="search" id="deviceGameFilter" type="search" placeholder="Filter games..." aria-label="Filter games" hidden>
+        <div id="deviceBrowser"><p class="empty">Select a category to browse compatible games.</p></div>
       </div>
     </div>
   </section>
@@ -225,13 +225,13 @@ button:focus-visible, a:focus-visible {
 
 <script>
 const FILES = ["game_controllers.yml", "accessories.yml", "gameid_to_name.yml"];
-const TABS = ["controller", "games", "search"];
+const TABS = ["device", "games", "search"];
 
 let games = [];
 let groups = {};
 let categoryOf = {};
 let navigated = false;
-const state = { tab: "controller", group: null, controller: null, gameId: null };
+const state = { tab: "device", group: null, device: null, gameId: null };
 
 const $ = id => document.getElementById(id);
 const enc = encodeURIComponent;
@@ -239,16 +239,16 @@ const byName = (a, b) => a.localeCompare(b);
 const escapeHtml = value => String(value).replace(/[&<>"']/g, c =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
-const ctrlHash = (group, controller) =>
-  "#" + ["controller", group, controller].filter(Boolean).map(enc).join("/");
+const ctrlHash = (group, device) =>
+  "#" + ["device", group, device].filter(Boolean).map(enc).join("/");
 
 const tabHash = tab =>
-  "#" + [tab, ...(tab === "controller" ? [state.group, state.controller]
+  "#" + [tab, ...(tab === "device" ? [state.group, state.device]
     : tab === "search" ? [$("globalSearch").value.trim()] : [])]
     .filter(Boolean).map(enc).join("/");
 
 function match(game, query, deep) {
-  const haystack = [game.name, game.id, ...(deep ? [...game.controllers, ...game.modules] : [])]
+  const haystack = [game.name, game.id, ...(deep ? [...game.devices, ...game.modules] : [])]
     .join(" ").toLowerCase();
   return query.toLowerCase().split(/\s+/).filter(Boolean).every(word => haystack.includes(word));
 }
@@ -261,26 +261,26 @@ const gameRow = (g, sub, extra = "") => `
 
 async function loadFiles() {
   try {
-    const [controllers, accessories, names] = await Promise.all(
+    const [devices, accessories, names] = await Promise.all(
       FILES.map(async file => {
         const response = await fetch("./" + file);
         if (!response.ok) throw new Error("Could not load " + file);
         return jsyaml.load(await response.text()) || {};
       })
     );
-    initialize(controllers, accessories, names);
+    initialize(devices, accessories, names);
   } catch (error) {
     $("status").textContent =
       "Automatic loading failed. Please select your three YAML files below.";
   }
 }
 
-function initialize(controllers, accessories, names) {
+function initialize(devices, accessories, names) {
   names = names || {};
-  games = Object.entries(controllers || {}).map(([id, data]) => ({
+  games = Object.entries(devices || {}).map(([id, data]) => ({
     id,
     name: names[id] || id,
-    controllers: Array.isArray(data?.controllers) ? data.controllers : [],
+    devices: Array.isArray(data?.devices) ? data.devices : [],
     modules: Array.isArray(data?.modules) ? data.modules : []
   })).sort((a, b) => byName(a.name, b.name));
 
@@ -289,7 +289,7 @@ function initialize(controllers, accessories, names) {
   Object.entries(accessories || {}).forEach(([category, list]) => {
     if (!Array.isArray(list)) return;
     groups[category] = [...new Set(list)].sort(byName);
-    list.forEach(controller => { categoryOf[controller] ??= category; });
+    list.forEach(device => { categoryOf[device] ??= category; });
   });
 
   $("status").hidden = true;
@@ -303,13 +303,13 @@ function readHash() {
   try {
     [tab, a, b] = location.hash.slice(1).split("/").map(decodeURIComponent);
   } catch (error) {}
-  state.tab = TABS.includes(tab) ? tab : "controller";
+  state.tab = TABS.includes(tab) ? tab : "device";
 
-  if (state.tab === "controller") {
-    const previous = state.group + "/" + state.controller;
+  if (state.tab === "device") {
+    const previous = state.group + "/" + state.device;
     state.group = groups[a] ? a : null;
-    state.controller = state.group && groups[a].includes(b) ? b : null;
-    if (previous !== state.group + "/" + state.controller) $("controllerGameFilter").value = "";
+    state.device = state.group && groups[a].includes(b) ? b : null;
+    if (previous !== state.group + "/" + state.device) $("deviceGameFilter").value = "";
   } else if (state.tab === "games") {
     state.gameId = games.some(g => g.id === a) ? a : null;
   } else {
@@ -322,9 +322,9 @@ function render() {
     button.classList.toggle("active", button.dataset.tab === state.tab));
   document.querySelectorAll(".panel").forEach(panel =>
     panel.classList.toggle("active", panel.id === state.tab));
-  if (state.tab === "controller") {
+  if (state.tab === "device") {
     renderGroups();
-    renderControllerBrowser();
+    renderDeviceBrowser();
   } else if (state.tab === "games") {
     renderGames();
   } else {
@@ -351,23 +351,23 @@ document.addEventListener("click", event => {
 });
 
 function renderGroups() {
-  const query = $("controllerFilter").value.trim().toLowerCase();
+  const query = $("deviceFilter").value.trim().toLowerCase();
   const entries = Object.entries(groups).sort(([a], [b]) => byName(a, b))
     .filter(([name, list]) => !query || name.toLowerCase().includes(query) ||
-      list.some(controller => controller.toLowerCase().includes(query)));
+      list.some(device => device.toLowerCase().includes(query)));
 
   $("groups").innerHTML = entries.map(([name, list]) => {
     const expandable = list.length > 1;
     const open = expandable && (query || state.group === name);
     const children = open ? list
-      .filter(controller => !query || controller.toLowerCase().includes(query) || name.toLowerCase().includes(query))
-      .map(controller => `
-        <button type="button" class="child ${state.group === name && state.controller === controller ? "active" : ""}"
-          data-hash="${escapeHtml(ctrlHash(name, controller))}">${escapeHtml(controller)}</button>`).join("") : "";
+      .filter(device => !query || device.toLowerCase().includes(query) || name.toLowerCase().includes(query))
+      .map(device => `
+        <button type="button" class="child ${state.group === name && state.device === device ? "active" : ""}"
+          data-hash="${escapeHtml(ctrlHash(name, device))}">${escapeHtml(device)}</button>`).join("") : "";
 
     return `
       <div class="category-tree">
-        <button type="button" class="${state.group === name && !state.controller ? "active" : ""}"
+        <button type="button" class="${state.group === name && !state.device ? "active" : ""}"
           data-hash="${escapeHtml(ctrlHash(name))}"${expandable ? ` aria-expanded="${!!open}"` : ""}>
           ${escapeHtml(name)}${expandable ? ` <span class="chev${open ? " open" : ""}" aria-hidden="true">›</span>` : ""}
         </button>
@@ -376,23 +376,23 @@ function renderGroups() {
   }).join("") || '<p class="filter-hint">No matching categories.</p>';
 }
 
-function renderControllerBrowser() {
-  const filter = $("controllerGameFilter");
+function renderDeviceBrowser() {
+  const filter = $("deviceGameFilter");
   filter.hidden = !state.group;
   if (!state.group) {
-    $("controllerBrowser").innerHTML = '<p class="empty">Select a category to browse compatible games.</p>';
+    $("deviceBrowser").innerHTML = '<p class="empty">Select a category to browse compatible games.</p>';
     return;
   }
 
-  const active = state.controller ? [state.controller] : groups[state.group];
+  const active = state.device ? [state.device] : groups[state.group];
   const matches = games.filter(game =>
-    game.controllers.some(controller => active.includes(controller)) && match(game, filter.value));
+    game.devices.some(device => active.includes(device)) && match(game, filter.value));
 
-  $("controllerBrowser").innerHTML = `
+  $("deviceBrowser").innerHTML = `
     <h2 class="category-heading">${escapeHtml(state.group)}</h2>
-    <p class="category-description">${matches.length} compatible game${matches.length === 1 ? "" : "s"}${state.controller ? ` for ${escapeHtml(state.controller)}` : ""}</p>
+    <p class="category-description">${matches.length} compatible game${matches.length === 1 ? "" : "s"}${state.device ? ` for ${escapeHtml(state.device)}` : ""}</p>
     ${matches.map(game => gameRow(game,
-      `${game.id} · ${game.controllers.filter(c => active.includes(c)).length} matching controller type(s)`)).join("")
+      `${game.id} · ${game.devices.filter(c => active.includes(c)).length} matching device type(s)`)).join("")
       || '<p class="empty">No compatible games found.</p>'}`;
 }
 
@@ -404,13 +404,13 @@ function renderGames() {
 
   const matches = games.filter(g => match(g, $("gameSearch").value));
   $("gameList").innerHTML = matches.length
-    ? matches.map(g => gameRow(g, `${g.id} · ${g.controllers.length} controllers`)).join("")
+    ? matches.map(g => gameRow(g, `${g.id} · ${g.devices.length} devices`)).join("")
     : '<p class="empty">No games found.</p>';
 }
 
 function renderGameDetail(game) {
   const grouped = {};
-  game.controllers.forEach(controller => (grouped[categoryOf[controller] || "Other"] ??= []).push(controller));
+  game.devices.forEach(device => (grouped[categoryOf[device] || "Other"] ??= []).push(device));
 
   $("gameDetail").innerHTML = `
     <button class="back" data-back>← Back</button>
@@ -418,12 +418,12 @@ function renderGameDetail(game) {
       <div class="id">${escapeHtml(game.id)}</div>
       <h2>${escapeHtml(game.name)}</h2>
     </div>
-    <h3 class="section-title">Supported controllers</h3>
-    <div class="controller-groups">${Object.entries(grouped).sort(([a], [b]) => byName(a, b)).map(([category, list]) => `
-      <section class="controller-group">
+    <h3 class="section-title">Supported devices</h3>
+    <div class="device-groups">${Object.entries(grouped).sort(([a], [b]) => byName(a, b)).map(([category, list]) => `
+      <section class="device-group">
         <h4>${escapeHtml(category)}</h4>
         <div>${list.sort(byName).map(c => `<span class="tag">${escapeHtml(c)}</span>`).join("")}</div>
-      </section>`).join("") || '<p class="empty">No controller information available.</p>'}</div>`;
+      </section>`).join("") || '<p class="empty">No device information available.</p>'}</div>`;
 }
 
 function renderSearch() {
@@ -432,7 +432,7 @@ function renderSearch() {
     $("searchResults").innerHTML = `
       <div class="detail">
         <h2>Welcome to the compatibility database</h2>
-        <p style="color:var(--muted)">Search for a game, game ID, controller or IRX module.</p>
+        <p style="color:var(--muted)">Search for a game, game ID, device or IRX module.</p>
         <p>${games.length} games indexed</p>
       </div>`;
     return;
@@ -441,13 +441,13 @@ function renderSearch() {
   $("searchResults").innerHTML = `
     <p style="color:var(--muted);font-size:13px">${matches.length} matching games</p>
     ${matches.map(g => gameRow(g, g.id,
-      `<div style="margin-top:8px">${g.controllers.map(c => `<span class="tag">${escapeHtml(c)}</span>`).join("")}</div>`)
+      `<div style="margin-top:8px">${g.devices.map(c => `<span class="tag">${escapeHtml(c)}</span>`).join("")}</div>`)
     ).join("") || '<p class="empty">No matching games.</p>'}`;
 }
 
 $("gameSearch").addEventListener("input", renderGames);
-$("controllerFilter").addEventListener("input", renderGroups);
-$("controllerGameFilter").addEventListener("input", renderControllerBrowser);
+$("deviceFilter").addEventListener("input", renderGroups);
+$("deviceGameFilter").addEventListener("input", renderDeviceBrowser);
 $("globalSearch").addEventListener("input", () => {
   history.replaceState(null, "", tabHash("search"));
   renderSearch();

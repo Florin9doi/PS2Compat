@@ -1,442 +1,423 @@
+# <type>:
+#   - name: optional label
+#     modules: NAME.IRX (all versions) or NAME.IRX__md5 (one version), as a list or a comma-separated string
+#     devices: list or single string
+#     comment: optional notes
 
-## Steering wheels ############################################################
+Steering wheels:
+  - name: Wheels - Battle Gear 2
+    modules:
+      - USBDCON.IRX__5a23c6ba7042042d8786f0b89792b728 # Euro
+      - USBDCON.IRX__71433d2ad9ce7ddb7c6965d47ca5d69f # Jap
+    devices:
+      - Logitech GT Force # [046d:c293]
 
-Wheels - Battle Gear 2:
-  modules:
-    - USBDCON.IRX__5a23c6ba7042042d8786f0b89792b728 # Euro
-    - USBDCON.IRX__71433d2ad9ce7ddb7c6965d47ca5d69f # Jap
-  type: "Steering wheels"
-  support:
-    - Logitech GT Force # [046d:c293]
-Wheels - Tokyo Xtreme Racer:
-  modules: USB_DRV.IRX__3edeb2c74e31f13be16ab1be6fdb59a4
-  type: "Steering wheels"
-  support:
-    - Logitech GT Force # [046d:c293]
-    - Microsoft SideWinder Force Feedback # [045e:0034]
-Wheels - GT3:
-  modules:
-    - PDIUSB.IRX__75a847581fa5fa97c37aa1b1c05ee34c # Concept - 2002 Tokyo-Geneva
-    - PDIUSB.IRX__7ab9cb4c3d807899a24efa1be5b6179d # Subaru Driving Simulator
-    - PDIUSB.IRX__83708ada14b1672fec1aa569cebc8e8d # A-Spec
-  type: "Steering wheels"
-  support:
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
-    - Logitech MOMO Force # [046d:c295]
-    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004] # TBD
-Wheels - GT4/TT:
-  modules: PDIUSB.IRX__340f9eabb93f09c3a2934c45a1182798
-  type: "Steering wheels"
-  support: # TBD if any
-Wheels - Pro Rally 2002 - Logi:
-  modules: IMDLGIS.IRX__4ce7ab0d7f843dcec7f619cd4956c7f5
-  type: "Steering wheels"
-  support:
-    - Logitech Force 3D # Joystick [046d:c283]
-    - Logitech Strike Force 3D # Joystick [046d:c285]
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
-    - Logitech MOMO Force # [046d:c295]
-Wheels - NASCAR Thunder 2002:
-  modules: IMUSBPS2.IRX__58e0d3c1bc791f898a39433a1c6716e3
-  type: "Steering wheels"
-  support:
-    - Gravis Xterminator Force # Gamepad [047d:4007]
-    - Logitech WingMan Force # Joystick [046d:c281]
-    - Logitech WingMan Formula Force # [046d:c291]
-    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
-Wheels - NASCAR - Dirt to Daytona:
-  modules: USBJOY.IRX__402417f9babfc2773f7001e45d8c5a49
-  type: "Steering wheels"
-  support:
-    - ACT LABS Force RS
-Wheels - Pro Rally 2002 - FF:
-  modules: IMDFF.IRX__ea167dbc73c6384ef2135542921492d9
-  type: "Steering wheels"
-  support:
-    - ACT LABS Force RS # 3 records: [061c:c084], [061c:c094], [061c:c0a4]
-    - ACT LABS Force RS 2 # [061c:a001]
-    - Gravis Xterminator Force # Gamepad [047d:4007]
-    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
-    - Guillemot F1 Force Feedback Racing Wheel # [044f:0602]
-    - Guillemot Nascar 2002 FF Racing Wheel # [044f:0601]
-    - Guillemot Freestyler Bike Force Feedback # [044f:0706]
-    - Guillemot Force Feedback Joystick # [06f8:0003]
-    - Guillemot Force Feedback Fox 2 Pro # [044f:0552]
-    - Guillemot Afterburner Force Feedback # 2 records: [044f:0550], [044f:0551]
-    - Logitech WingMan Force # Joystick [046d:c281]
-    - Logitech WingMan Formula Force # [046d:c291]
-    - Saitek Cyborg 3D Force Stick # [06a3:ff12]
-    - Saitek RX550 Force Feedback Wheel # [06a3:ff28]
-    - Saitek R440 Force Feedback Wheel # [06a3:ff04]
-WHEEL.IRX__1518484c60ed27f951181773b5bb91e9:
-  type: "Steering wheels"
-  version: "EA v1"
-  support:
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
-    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
-WHEEL.IRX__2a583d3394da149ebf68647ca87978b5:
-  type: "Steering wheels"
-  version: "EA v2"
-  support:
-    - ACT LABS Force RS # [061c:c084], [061c:c094], [061c:c0a4]
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
-    - Logitech MOMO Force # [046d:c295]
-    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
-WHEEL.IRX__6e1a8be36f256a2e2c8c0519b6518dda:
-  type: "Steering wheels"
-  version: "EA v3"
-  support:
-    - ThrustMaster 360 Modena (Pro) # [044f:b203]
-    - Saitek RX550 Force Feedback Wheel # [06a3:ff28]
-    - Saitek R440 Force Feedback Wheel # [06a3:ff04]
-    - ACT LABS Force RS # [061c:c084], [061c:c094], [061c:c0a4]
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
-    - Logitech MOMO Force # [046d:c295]
-    - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
+  - name: Wheels - Tokyo Xtreme Racer
+    modules: USB_DRV.IRX__3edeb2c74e31f13be16ab1be6fdb59a4
+    devices:
+      - Logitech GT Force # [046d:c293]
+      - Microsoft SideWinder Force Feedback # [045e:0034]
 
-Wheels - Logitech - GT/DF/Js:
-  modules:
-    - LGDEV.IRX__28746f26899b1a8fde83555ba01df0e4  # LgDev_tb_rb_Driver version 1.04
-    - LGDEV.IRX__50f916b4ff721e5603bdfac88cdde210  # LgDev_tb_rb_Driver version 1.04
-    - LGDEV.IRX__bf3ca8a0b92ffcfd59d504a6cdeecb48  # LgDev_tb_rb_Driver version 1.05
-    - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb  # LgDev_tb_rb_Driver version 1.06
-    - LGDEV.IRX__059a28a1ee57252ebc4af3d40edac9bf  # LgDev_tb_rb_Driver version 1.06 (Simon Special)
-    - LGDEV.IRX__c138655d4b19bfcc8f2e8491c69c2281  # LgDev_tb_rb_Driver (++) version 1.06
-    - LGDEV.IRX__c4116c1daa6d487bdd9ae2b9a5c0b5c0  # LgDev_tb_rb_Driver (with MOMO fixes) version 1.06
-    - LGDEV.IRX__c03802aa034c9148d0f489e6ce6d473c  # LgDev_DEBUGGING_ONLY_THREAD_PRIO_9_Driver version 1.06
-    - LGDEV.IRX__136959dd8c52145153b7ced1aff83771  # LgDev_tb_rb_Driver Version 1.07, built on Jan  7 2002 at 15:51:15
-    - LGDEV.IRX__87177d2349e901f17f93d5ae2151a8c9  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Aug  8 2002 at 16:55:49
-    - LGDEV.IRX__165fee91717246b9b4531b6dadafb6e9  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Aug 15 2002 at 18:13:15
-    - LGDEV.IRX__a4f23551f2e1da53e0ee4bdbf00e97ba  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Aug 20 2002 at 19:08:09
-    - LGDEV.IRX__17d11b16ce8fb081754f8c83752a9165  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Sep 13 2002 at 14:43:16
-    - LGDEV.IRX__42aec43e08ed57c5e03c35f80c303439  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Sep 24 2002 at 18:34:29
-  type: "Steering wheels"
-  support:
-    - Logitech Force 3D # Joystick [046d:c283]
-    - Logitech Strike Force 3D # Joystick [046d:c285]
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
+  - name: Wheels - GT3
+    modules:
+      - PDIUSB.IRX__75a847581fa5fa97c37aa1b1c05ee34c # Concept - 2002 Tokyo-Geneva
+      - PDIUSB.IRX__7ab9cb4c3d807899a24efa1be5b6179d # Subaru Driving Simulator
+      - PDIUSB.IRX__83708ada14b1672fec1aa569cebc8e8d # A-Spec
+    devices:
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
+      - Logitech MOMO Force # [046d:c295]
+      - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004] # TBD
 
-Wheels - Logitech - GT/DF:
-  modules:
-    - LGDEVW.IRX__a4b6be9330d5a40a55bdb2d26721dfdf # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug  6 2002 at 17:07:39
-    - LGDEVW.IRX__f6681b920bc605bc1a1a476cf9d2d4e9 # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug  8 2002 at 16:55:36
-    - LGDEV.IRX__af04b5b09880e1d149875a7a53c6487b  # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug 20 2002 at 19:07:56
-    - LGDEVW.IRX__af04b5b09880e1d149875a7a53c6487b # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug 20 2002 at 19:07:56
-    - LGDEV.IRX__c9342ab55d7884fcdf3debc5b0862397  # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Sep 13 2002 at 14:43:01
-    - LGDEVW.IRX__c9342ab55d7884fcdf3debc5b0862397 # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Sep 13 2002 at 14:43:01
-    - LGDEV.IRX__75eb524d9b47b0141dd458eacba563ab  # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Sep 24 2002 at 18:34:09
-    - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Sep 24 2002 at 18:34:09
-  type: "Steering wheels"
-  support:
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
+  - name: Wheels - GT4/TT
+    modules: PDIUSB.IRX__340f9eabb93f09c3a2934c45a1182798
+    devices: # TBD if any
 
-Wheels - Logitech - GT/DF/DFP/Js:
-  modules:
-    - LGDEV.IRX__fec70a01f7666d972d3b8afd267cbd82  # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel Joystick ), built on Jan 26 2004 at 23:57:44
-    - LGDEV.IRX__1ddb220b77948118f518940f51dae3c0  # LgDev_tb_rb_Driver Version 1.11.027 ( Wheel Joystick ), built on Apr 15 2004 at 13:37:39
-    - LGDEV.IRX__be6cd2b35e026cfa988b89423e26f953  # LgDev_tb_rb_Driver Version 1.11.027 ( Wheel Joystick ), built on May 10 2004 at 10:49:56
-    - LGDEV.IRX__ed43dbe7be63d37ff5f137db2680beef  # LgDev_tb_rb_Driver Version 1.11.030 ( Wheel Joystick ), built on Jul 26 2004 at 13:33:30
-    - LGDEV.IRX__177c2ca762245dafb2d0ba34253b67d3  # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel Joystick ), built on Sep 15 2004 at 16:27:05
-    - LGDEV.IRX__46d504fa620cf85ad920f0bb125d04de  # LgDev_tb_rb_Driver Version 1.11.037 ( Wheel Joystick ), built on Jun 16 2005 at 16:02:29
-    - LGDEV.IRX__119a64528936a42e253a68b67c18de1c  # LgDev_tb_rb_Driver Version 1.12.012 ( Wheel Joystick ), built on May 30 2007 at 15:09:56
-  type: "Steering wheels"
-  support:
-    - Logitech Force 3D # Joystick [046d:c283]
-    - Logitech Strike Force 3D # Joystick [046d:c285]
-    - Logitech MOMO Racing Force # [046d:ca03]
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
-    - Logitech MOMO Force # [046d:c295]
-    - Logitech Driving Force Pro # [046d:c298]
+  - name: Wheels - Pro Rally 2002 - Logi
+    modules: IMDLGIS.IRX__4ce7ab0d7f843dcec7f619cd4956c7f5
+    devices:
+      - Logitech Force 3D # Joystick [046d:c283]
+      - Logitech Strike Force 3D # Joystick [046d:c285]
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
+      - Logitech MOMO Force # [046d:c295]
 
-Wheels - Logitech - GT/DF/DFP:
-  modules:
-    - LGDEV.IRX__aa7d3b89f7a5ed94f369d0225d55ac90  # LgDev_tb_rb_Driver Version 1.11.023 (PDI branch), Rooz special, built on Apr 15 2004 at 16:39:32
-    - LGDEV.IRX__fa436ba12eac37c656b221f228f80394  # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel ), built on Jan 26 2004 at 23:57:17
-    - LGDEVW.IRX__fa436ba12eac37c656b221f228f80394 # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel ), built on Jan 26 2004 at 23:57:17
-    - LGDEVW.IRX__2fd184d56312a9f86d694beb636e3128 # LgDev_tb_rb_Driver Version 1.11.027 ( Wheel ), built on May 10 2004 at 10:49:28
-    - LGDEVW.IRX__c2c85d7bb1fa262ad699113529ade1a5 # LgDev_tb_rb_Driver Version 1.11.030 ( Wheel ), built on Jul 26 2004 at 13:33:03
-    - LGDEVW.IRX__82ed771aae0d8264f601ea8f314985cb # LgDev_tb_rb_Driver Version 1.11.033 ( Wheel ), built on Aug 23 2004 at 19:18:29
-    - LGDEVW.IRX__c37724c88cf66f333b17c8210b365691 # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel ), built on Sep  8 2004 at 15:50:26
-    - LGDEVW.IRX__d5c32e462ba43d253fbb55a02289caa1 # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel ), built on Sep 15 2004 at 16:26:37
-    - LGDEV.IRX__eb18d855bec28abf12d1162f562ddfe6  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Jan 27 2005 at 04:22:45
-    - LGDEV.IRX__f5efffbaefb42125e5766d9578ee5ff2  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Jan 27 2005 at 19:18:45
-    - LGDEV.IRX__fa74d9b0e8b2e90e6bde48ce2b16dc37  # LgDev_tb_rb_Driver Version 1.11.037 ( Wheel ), built on Jun 16 2005 at 16:02:04
-    - LGDEVW.IRX__fa74d9b0e8b2e90e6bde48ce2b16dc37 # LgDev_tb_rb_Driver Version 1.11.037 ( Wheel ), built on Jun 16 2005 at 16:02:04
-    - LGDEVW.IRX__592fa63459e12eda63cae3085d43d1ed # LgDev_tb_rb_Driver Version 1.12.002 ( Wheel ), built on Mar  7 2006 at 19:17:48
-    - LGDEVW.IRX__693804956935cba151375a7933c1159e # LgDev_tb_rb_Driver Version 1.12.012 ( Wheel ), built on May 30 2007 at 15:09:27
-  type: "Steering wheels"
-  support:
-    - Logitech MOMO Racing Force # [046d:ca03]
-    - Logitech GT Force # Formula Force GP Wheel [046d:c293]
-    - Logitech Driving Force # [046d:c294]
-    - Logitech MOMO Force # [046d:c295]
-    - Logitech Driving Force Pro # [046d:c298]
+  - name: Wheels - NASCAR Thunder 2002
+    modules: IMUSBPS2.IRX__58e0d3c1bc791f898a39433a1c6716e3
+    devices:
+      - Gravis Xterminator Force # Gamepad [047d:4007]
+      - Logitech WingMan Force # Joystick [046d:c281]
+      - Logitech WingMan Formula Force # [046d:c291]
+      - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
 
-Joysticks - Logitech:
-  modules:
-    - LGDEVJ.IRX__764bc4d4657b073b549f2589f2d5e380 # LgDev_tb_rb_Driver Version 1.08( Joystick ), built on Aug  6 2002 at 17:07:47
-    - LGDEVJ.IRX__8762d33b6ae5bec0d8f7165d008865fc # LgDev_tb_rb_Driver Version 1.11.027 ( Joystick ), built on May 10 2004 at 10:49:38
-    - LGDEVJ.IRX__daefa86abaf36d129eae46d7383e1cf2 # LgDev_tb_rb_Driver Version 1.11.036 ( Joystick ), built on Sep 15 2004 at 16:26:47
-  type: "Steering wheels" # These are already mixed with the wheels, lets keep them together
-  support:
-    - Logitech Force 3D # Joystick [046d:c283]
-    - Logitech Strike Force 3D # Joystick [046d:c285]
+  - name: Wheels - NASCAR - Dirt to Daytona
+    modules: USBJOY.IRX__402417f9babfc2773f7001e45d8c5a49
+    devices:
+      - ACT LABS Force RS
 
-## Flight sim #################################################################
+  - name: Wheels - Pro Rally 2002 - FF
+    modules: IMDFF.IRX__ea167dbc73c6384ef2135542921492d9
+    devices:
+      - ACT LABS Force RS # 3 records: [061c:c084], [061c:c094], [061c:c0a4]
+      - ACT LABS Force RS 2 # [061c:a001]
+      - Gravis Xterminator Force # Gamepad [047d:4007]
+      - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
+      - Guillemot F1 Force Feedback Racing Wheel # [044f:0602]
+      - Guillemot Nascar 2002 FF Racing Wheel # [044f:0601]
+      - Guillemot Freestyler Bike Force Feedback # [044f:0706]
+      - Guillemot Force Feedback Joystick # [06f8:0003]
+      - Guillemot Force Feedback Fox 2 Pro # [044f:0552]
+      - Guillemot Afterburner Force Feedback # 2 records: [044f:0550], [044f:0551]
+      - Logitech WingMan Force # Joystick [046d:c281]
+      - Logitech WingMan Formula Force # [046d:c291]
+      - Saitek Cyborg 3D Force Stick # [06a3:ff12]
+      - Saitek RX550 Force Feedback Wheel # [06a3:ff28]
+      - Saitek R440 Force Feedback Wheel # [06a3:ff04]
 
-USBCFC.IRX:
-  type: "Flight sim"
-  support: "Compact Flight Controller"
-Hori Flight Stick:
-  modules:
-    - USBJOY.IRX__1d5f305bce3e8d9f3d0a68c6afb04197
-    - USBJOY.IRX__537c2e7adb8bee911100df9f5a2abdeb
-    - USBJOY.IRX__cd920d97c496492a485f3a2214cc8daf
-  type: "Flight sim"
-  support: "Hori Flight Stick"
-FS2.IRX:
-  type: "Flight sim"
-  support: "Hori Flight Stick 2"
+  - modules: WHEEL.IRX__1518484c60ed27f951181773b5bb91e9 # EA v1
+    devices:
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
+      - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
 
-## Train sim ##################################################################
+  - modules: WHEEL.IRX__2a583d3394da149ebf68647ca87978b5 # EA v2
+    devices:
+      - ACT LABS Force RS # [061c:c084], [061c:c094], [061c:c0a4]
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
+      - Logitech MOMO Force # [046d:c295]
+      - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
 
-Train sim - Type 2:
-  modules: USBDENCI.IRX, USBDENCO.IRX, USBDCON.IRX__24c34e7c941c613754fc98fa8f74ef6c
-  type: "Train sim"
-  support: "Type 2"
-Train sim - Ryojouhen:
-  modules: USBRJCON.IRX
-  type: "Train sim"
-  support: "Ryojouhen"
-Train sim - Shinkansen:
-  modules: USBSHINC.IRX, USBSNCON.IRX
-  type: "Train sim"
-  support: "Shinkansen"
-Train sim - Train Mascon:
-  modules: USBKQCON.IRX
-  type: "Train sim"
-  support: "Train Mascon"
-Train sim - Multi Train Controller:
-  modules: USBMTCON.IRX
-  type: "Train sim"
-  support: "Multi Train Controller"
-Train sim - Master Controller:
-  modules: USBTSCON.IRX, USBMCKQ.IRX
-  type: "Train sim"
-  support: "Master Controller"
+  - modules: WHEEL.IRX__6e1a8be36f256a2e2c8c0519b6518dda # EA v3
+    devices:
+      - ThrustMaster 360 Modena (Pro) # [044f:b203]
+      - Saitek RX550 Force Feedback Wheel # [06a3:ff28]
+      - Saitek R440 Force Feedback Wheel # [06a3:ff04]
+      - ACT LABS Force RS # [061c:c084], [061c:c094], [061c:c0a4]
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
+      - Logitech MOMO Force # [046d:c295]
+      - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
 
-## Rhythm controllers #########################################################
+  - name: Wheels - Logitech - GT/DF/Js
+    modules:
+      - LGDEV.IRX__28746f26899b1a8fde83555ba01df0e4  # LgDev_tb_rb_Driver version 1.04
+      - LGDEV.IRX__50f916b4ff721e5603bdfac88cdde210  # LgDev_tb_rb_Driver version 1.04
+      - LGDEV.IRX__bf3ca8a0b92ffcfd59d504a6cdeecb48  # LgDev_tb_rb_Driver version 1.05
+      - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb  # LgDev_tb_rb_Driver version 1.06
+      - LGDEV.IRX__059a28a1ee57252ebc4af3d40edac9bf  # LgDev_tb_rb_Driver version 1.06 (Simon Special)
+      - LGDEV.IRX__c138655d4b19bfcc8f2e8491c69c2281  # LgDev_tb_rb_Driver (++) version 1.06
+      - LGDEV.IRX__c4116c1daa6d487bdd9ae2b9a5c0b5c0  # LgDev_tb_rb_Driver (with MOMO fixes) version 1.06
+      - LGDEV.IRX__c03802aa034c9148d0f489e6ce6d473c  # LgDev_DEBUGGING_ONLY_THREAD_PRIO_9_Driver version 1.06
+      - LGDEV.IRX__136959dd8c52145153b7ced1aff83771  # LgDev_tb_rb_Driver Version 1.07, built on Jan  7 2002 at 15:51:15
+      - LGDEV.IRX__87177d2349e901f17f93d5ae2151a8c9  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Aug  8 2002 at 16:55:49
+      - LGDEV.IRX__165fee91717246b9b4531b6dadafb6e9  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Aug 15 2002 at 18:13:15
+      - LGDEV.IRX__a4f23551f2e1da53e0ee4bdbf00e97ba  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Aug 20 2002 at 19:08:09
+      - LGDEV.IRX__17d11b16ce8fb081754f8c83752a9165  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Sep 13 2002 at 14:43:16
+      - LGDEV.IRX__42aec43e08ed57c5e03c35f80c303439  # LgDev_tb_rb_Driver Version 1.08( Wheel Joystick ), built on Sep 24 2002 at 18:34:29
+    devices:
+      - Logitech Force 3D # Joystick [046d:c283]
+      - Logitech Strike Force 3D # Joystick [046d:c285]
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
 
-Guitar - Drum:
-  modules: USBHMX_S.IRX, HIDMOD.IRX
-  type: "Rhythm controllers"
-  support: "Guitar/Drum"
-BCUI.IRX:
-  type: "Rhythm controllers"
-  support: "Guitar Hero"
-10.IRX__a357c2ec7b46250047820f52d65413b0:
-  type: "Rhythm controllers"
-  support: "DJ Hero"
-USBKB.IRX__b1a7c6a3b67c93d865517bcf303aea95:
-  type: "Rhythm controllers"
-  support: "Para Para Paradise"
-DWTS_MAT.IRX:
-  type: "Rhythm controllers"
-  support: "Dancing with the Stars Mat"
-PIUMAT.IRX:
-  type: "Rhythm controllers"
-  support: "Pump it up Mat"
-USBMAT.IRX:
-  type: "Rhythm controllers"
-  support: "Mat"
+  - name: Wheels - Logitech - GT/DF
+    modules:
+      - LGDEVW.IRX__a4b6be9330d5a40a55bdb2d26721dfdf # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug  6 2002 at 17:07:39
+      - LGDEVW.IRX__f6681b920bc605bc1a1a476cf9d2d4e9 # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug  8 2002 at 16:55:36
+      - LGDEV.IRX__af04b5b09880e1d149875a7a53c6487b  # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug 20 2002 at 19:07:56
+      - LGDEVW.IRX__af04b5b09880e1d149875a7a53c6487b # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug 20 2002 at 19:07:56
+      - LGDEV.IRX__c9342ab55d7884fcdf3debc5b0862397  # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Sep 13 2002 at 14:43:01
+      - LGDEVW.IRX__c9342ab55d7884fcdf3debc5b0862397 # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Sep 13 2002 at 14:43:01
+      - LGDEV.IRX__75eb524d9b47b0141dd458eacba563ab  # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Sep 24 2002 at 18:34:09
+      - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Sep 24 2002 at 18:34:09
+    devices:
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
 
-## Keyboard / Mouse ###########################################################
+  - name: Wheels - Logitech - GT/DF/DFP/Js
+    modules:
+      - LGDEV.IRX__fec70a01f7666d972d3b8afd267cbd82  # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel Joystick ), built on Jan 26 2004 at 23:57:44
+      - LGDEV.IRX__1ddb220b77948118f518940f51dae3c0  # LgDev_tb_rb_Driver Version 1.11.027 ( Wheel Joystick ), built on Apr 15 2004 at 13:37:39
+      - LGDEV.IRX__be6cd2b35e026cfa988b89423e26f953  # LgDev_tb_rb_Driver Version 1.11.027 ( Wheel Joystick ), built on May 10 2004 at 10:49:56
+      - LGDEV.IRX__ed43dbe7be63d37ff5f137db2680beef  # LgDev_tb_rb_Driver Version 1.11.030 ( Wheel Joystick ), built on Jul 26 2004 at 13:33:30
+      - LGDEV.IRX__177c2ca762245dafb2d0ba34253b67d3  # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel Joystick ), built on Sep 15 2004 at 16:27:05
+      - LGDEV.IRX__46d504fa620cf85ad920f0bb125d04de  # LgDev_tb_rb_Driver Version 1.11.037 ( Wheel Joystick ), built on Jun 16 2005 at 16:02:29
+      - LGDEV.IRX__119a64528936a42e253a68b67c18de1c  # LgDev_tb_rb_Driver Version 1.12.012 ( Wheel Joystick ), built on May 30 2007 at 15:09:56
+    devices:
+      - Logitech Force 3D # Joystick [046d:c283]
+      - Logitech Strike Force 3D # Joystick [046d:c285]
+      - Logitech MOMO Racing Force # [046d:ca03]
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
+      - Logitech MOMO Force # [046d:c295]
+      - Logitech Driving Force Pro # [046d:c298]
 
-Keyboard+Mouse:
-  modules: LECGLUSB.IRX, LECUSB.IRX, PINPUT_R.IRX, MAIN_PS2.IRX, MAIN.IRX__cf59f7201fed5c9c95937082072e5f17
-  type: "Keyboard/Mouse"
-  support:
-    - Keyboard
-    - Mouse
-Keyboard:
-  modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX, PDUKEYBD.IRX,
-    KEYBD.IRX, KEYBOA~1.IRX, MODUSBKB.IRX, AUKWDRV.IRX, USBK_D_T.IRX, USBK_R_T.IRX, PSX2USBC.IRX
-  type: "Keyboard/Mouse"
-  support: Keyboard
-Mouse:
-  modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX,
-    PDUMOUSE.IRX, MODUSBMS.IRX, AUMWDRV.IRX, AUEWDRV.IRX, USBDEV.IRX,
-    FSIOPUSB.IRX # KB+M loader that receives USB_MOUSE as arg and works with FSIOPUMS.IRX
-  type: "Keyboard/Mouse"
-  support: Mouse
-Tablet:
-  modules: AUTWDRV.IRX
-  type: "Keyboard/Mouse"
-  support: "Agatha Tablet"
+  - name: Wheels - Logitech - GT/DF/DFP
+    modules:
+      - LGDEV.IRX__aa7d3b89f7a5ed94f369d0225d55ac90  # LgDev_tb_rb_Driver Version 1.11.023 (PDI branch), Rooz special, built on Apr 15 2004 at 16:39:32
+      - LGDEV.IRX__fa436ba12eac37c656b221f228f80394  # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel ), built on Jan 26 2004 at 23:57:17
+      - LGDEVW.IRX__fa436ba12eac37c656b221f228f80394 # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel ), built on Jan 26 2004 at 23:57:17
+      - LGDEVW.IRX__2fd184d56312a9f86d694beb636e3128 # LgDev_tb_rb_Driver Version 1.11.027 ( Wheel ), built on May 10 2004 at 10:49:28
+      - LGDEVW.IRX__c2c85d7bb1fa262ad699113529ade1a5 # LgDev_tb_rb_Driver Version 1.11.030 ( Wheel ), built on Jul 26 2004 at 13:33:03
+      - LGDEVW.IRX__82ed771aae0d8264f601ea8f314985cb # LgDev_tb_rb_Driver Version 1.11.033 ( Wheel ), built on Aug 23 2004 at 19:18:29
+      - LGDEVW.IRX__c37724c88cf66f333b17c8210b365691 # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel ), built on Sep  8 2004 at 15:50:26
+      - LGDEVW.IRX__d5c32e462ba43d253fbb55a02289caa1 # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel ), built on Sep 15 2004 at 16:26:37
+      - LGDEV.IRX__eb18d855bec28abf12d1162f562ddfe6  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Jan 27 2005 at 04:22:45
+      - LGDEV.IRX__f5efffbaefb42125e5766d9578ee5ff2  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Jan 27 2005 at 19:18:45
+      - LGDEV.IRX__fa74d9b0e8b2e90e6bde48ce2b16dc37  # LgDev_tb_rb_Driver Version 1.11.037 ( Wheel ), built on Jun 16 2005 at 16:02:04
+      - LGDEVW.IRX__fa74d9b0e8b2e90e6bde48ce2b16dc37 # LgDev_tb_rb_Driver Version 1.11.037 ( Wheel ), built on Jun 16 2005 at 16:02:04
+      - LGDEVW.IRX__592fa63459e12eda63cae3085d43d1ed # LgDev_tb_rb_Driver Version 1.12.002 ( Wheel ), built on Mar  7 2006 at 19:17:48
+      - LGDEVW.IRX__693804956935cba151375a7933c1159e # LgDev_tb_rb_Driver Version 1.12.012 ( Wheel ), built on May 30 2007 at 15:09:27
+    devices:
+      - Logitech MOMO Racing Force # [046d:ca03]
+      - Logitech GT Force # Formula Force GP Wheel [046d:c293]
+      - Logitech Driving Force # [046d:c294]
+      - Logitech MOMO Force # [046d:c295]
+      - Logitech Driving Force Pro # [046d:c298]
 
-## HID (unique) ###############################################################
+  - name: Joysticks - Logitech # These are already mixed with the wheels, lets keep them together
+    modules:
+      - LGDEVJ.IRX__764bc4d4657b073b549f2589f2d5e380 # LgDev_tb_rb_Driver Version 1.08( Joystick ), built on Aug  6 2002 at 17:07:47
+      - LGDEVJ.IRX__8762d33b6ae5bec0d8f7165d008865fc # LgDev_tb_rb_Driver Version 1.11.027 ( Joystick ), built on May 10 2004 at 10:49:38
+      - LGDEVJ.IRX__daefa86abaf36d129eae46d7383e1cf2 # LgDev_tb_rb_Driver Version 1.11.036 ( Joystick ), built on Sep 15 2004 at 16:26:47
+    devices:
+      - Logitech Force 3D # Joystick [046d:c283]
+      - Logitech Strike Force 3D # Joystick [046d:c285]
 
-USBGUN.IRX:
-  type: "Light Guns"
-  support: "GunCon2"
-USBTVR.IRX:
-  type: "Trance Vibrator"
-  support: "Trance Vibrator"
-SLOTCNTR.IRX:
-  type: "Pachi-Slot"
-  support: "Pachi-Slot"
+Flight sim:
+  - modules: USBCFC.IRX
+    devices: "Compact Flight Controller"
+
+  - name: Hori Flight Stick
+    modules:
+      - USBJOY.IRX__1d5f305bce3e8d9f3d0a68c6afb04197
+      - USBJOY.IRX__537c2e7adb8bee911100df9f5a2abdeb
+      - USBJOY.IRX__cd920d97c496492a485f3a2214cc8daf
+    devices: "Hori Flight Stick"
+
+  - modules: FS2.IRX
+    devices: "Hori Flight Stick 2"
+
+Train sim:
+  - name: Train sim - Type 2
+    modules: USBDENCI.IRX, USBDENCO.IRX, USBDCON.IRX__24c34e7c941c613754fc98fa8f74ef6c
+    devices: "Type 2"
+
+  - name: Train sim - Ryojouhen
+    modules: USBRJCON.IRX
+    devices: "Ryojouhen"
+
+  - name: Train sim - Shinkansen
+    modules: USBSHINC.IRX, USBSNCON.IRX
+    devices: "Shinkansen"
+
+  - name: Train sim - Train Mascon
+    modules: USBKQCON.IRX
+    devices: "Train Mascon"
+
+  - name: Train sim - Multi Train Controller
+    modules: USBMTCON.IRX
+    devices: "Multi Train Controller"
+
+  - name: Train sim - Master Controller
+    modules: USBTSCON.IRX, USBMCKQ.IRX
+    devices: "Master Controller"
+
+Rhythm controllers:
+  - name: Guitar - Drum
+    modules: USBHMX_S.IRX, HIDMOD.IRX
+    devices: "Guitar/Drum"
+
+  - modules: BCUI.IRX
+    devices: "Guitar Hero"
+
+  - modules: 10.IRX__a357c2ec7b46250047820f52d65413b0
+    devices: "DJ Hero"
+
+  - modules: USBKB.IRX__b1a7c6a3b67c93d865517bcf303aea95
+    devices: "Para Para Paradise"
+
+  - modules: DWTS_MAT.IRX
+    devices: "Dancing with the Stars Mat"
+
+  - modules: PIUMAT.IRX
+    devices: "Pump it up Mat"
+
+  - modules: USBMAT.IRX
+    devices: "Mat"
+
+Keyboard/Mouse:
+  - name: Keyboard+Mouse
+    modules: LECGLUSB.IRX, LECUSB.IRX, PINPUT_R.IRX, MAIN_PS2.IRX, MAIN.IRX__cf59f7201fed5c9c95937082072e5f17
+    devices:
+      - Keyboard
+      - Mouse
+
+  - name: Keyboard
+    modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX, PDUKEYBD.IRX,
+      KEYBD.IRX, KEYBOA~1.IRX, MODUSBKB.IRX, AUKWDRV.IRX, USBK_D_T.IRX, USBK_R_T.IRX, PSX2USBC.IRX
+    devices: Keyboard
+
+  - name: Mouse
+    modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX,
+      PDUMOUSE.IRX, MODUSBMS.IRX, AUMWDRV.IRX, AUEWDRV.IRX, USBDEV.IRX,
+      FSIOPUSB.IRX # KB+M loader that receives USB_MOUSE as arg and works with FSIOPUMS.IRX
+    devices: Mouse
+
+  - name: Tablet
+    modules: AUTWDRV.IRX
+    devices: "Agatha Tablet"
+
+Light Guns:
+  - modules: USBGUN.IRX
+    devices: "GunCon2"
+
+Trance Vibrator:
+  - modules: USBTVR.IRX
+    devices: "Trance Vibrator"
+
+Pachi-Slot:
+  - modules: SLOTCNTR.IRX
+    devices: "Pachi-Slot"
+
 Buzz:
-  modules: USB_BUZR.IRX, BUZZER.IRX
-  type: "Buzz"
-  support: "Buzz"
-USBHT.IRX:
-  type: "Motion tracking"
-  support: "HMD"
-GameTrak:
-  modules: GTD.IRX, GAMETRAK.IRX, APEMOD.IRX
-  type: "Motion tracking"
-  support: "GameTrak"
-RealPlay:
-  modules:
-    - REALPLAY.IRX__e136cc84d127f05d99b19613ecce7e4b # Golf
-    - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Pool, Racing, Puzzlesphere
-  type: "Motion tracking"
-  support: "RealPlay"
+  - name: Buzz
+    modules: USB_BUZR.IRX, BUZZER.IRX
+    devices: "Buzz"
 
-## Audio ######################################################################
+Motion tracking:
+  - modules: USBHT.IRX
+    devices: "HMD"
 
-USBAD.IRX:
-  type: "Audio"
-  support: "Konami Mic"
-MUSIC.IRX:
-  type: "Audio"
-  support: "Jester Sampler"
-USBMIC.IRX__8da6f2b5b40cc1f29d32a8441c70a070:
-  type: "Audio"
-  support: "Seamic"
-Microphones:
-  modules:
-    - LGAUD.IRX
-    - 3.IRX__4cc8d10b0bdeaa43847fa852e0d8604f # LGAUD
-    - USBMIC.IRX
-    - USBMICRO.IRX
-    - SINGSTAR.IRX
-    - KARAOKE.IRX
-    - MAIN.IRX__109f454eb0f1cf0503a0f10185bd8faa # MTV Music Generator 2
-  type: "Audio"
-  support: "Microphone"
-USBVR.IRX:
-  type: "Audio"
-  support: "Taito Voice Recognition"
-YMIDUSB.IRX:
-  type: "MIDI"
-  support: "Yamaha"
-MIDI - KeyboardMania:
-  modules: UMIODATA.IRX, UMLIB.IRX, UMSERIAL.IRX, IUMLIB.IRX, NIS.IRX
-  type: "MIDI"
-  support: "IO-Data/Generic?"
-UMPC300.IRX:
-  type: "MIDI"
-  support: "Roland PC-300"
-UMSC8850.IRX:
-  type: "MIDI"
-  support: "Roland SC-8850"
+  - name: GameTrak
+    modules: GTD.IRX, GAMETRAK.IRX, APEMOD.IRX
+    devices: "GameTrak"
 
-## Video ######################################################################
+  - name: RealPlay
+    modules:
+      - REALPLAY.IRX__e136cc84d127f05d99b19613ecce7e4b # Golf
+      - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Pool, Racing, Puzzlesphere
+    devices: "RealPlay"
 
-Webcams - EyeToy:
-  modules: EYETOY.IRX, OV519.IRX, LGVID.IRX
-  type: "Webcams"
-  support: "EyeToy"
-Webcams - CaptureEye:
-  modules: WEBCAM_N.IRX, WEBCAM.IRX, USBCAM.IRX, USBARLSI.IRX # Artificial Retina Sensor Capture Eye
-  type: "Webcams"
-  support: "CaptureEye"
+  - modules: USBDRV.IRX
+    comment: "unreleased, not loaded"
+    devices: "Fishing"
 
-## Storage ####################################################################
+  - modules: USBHANDL.IRX
+    comment: "unreleased"
+    devices: "Konami Handle"
+
+Audio:
+  - modules: USBAD.IRX
+    devices: "Konami Mic"
+
+  - modules: MUSIC.IRX
+    devices: "Jester Sampler"
+
+  - modules: USBMIC.IRX__8da6f2b5b40cc1f29d32a8441c70a070
+    devices: "Seamic"
+
+  - name: Microphones
+    modules:
+      - LGAUD.IRX
+      - 3.IRX__4cc8d10b0bdeaa43847fa852e0d8604f # LGAUD
+      - USBMIC.IRX
+      - USBMICRO.IRX
+      - SINGSTAR.IRX
+      - KARAOKE.IRX
+      - MAIN.IRX__109f454eb0f1cf0503a0f10185bd8faa # MTV Music Generator 2
+    devices: "Microphone"
+
+  - modules: USBVR.IRX
+    devices: "Taito Voice Recognition"
+
+MIDI:
+  - modules: YMIDUSB.IRX
+    devices: "Yamaha"
+
+  - name: MIDI - KeyboardMania
+    modules: UMIODATA.IRX, UMLIB.IRX, UMSERIAL.IRX, IUMLIB.IRX, NIS.IRX
+    devices: "IO-Data/Generic?"
+
+  - modules: UMPC300.IRX
+    devices: "Roland PC-300"
+
+  - modules: UMSC8850.IRX
+    devices: "Roland SC-8850"
+
+Webcams:
+  - name: Webcams - EyeToy
+    modules: EYETOY.IRX, OV519.IRX, LGVID.IRX
+    devices: "EyeToy"
+
+  - name: Webcams - CaptureEye
+    modules: WEBCAM_N.IRX, WEBCAM.IRX, USBCAM.IRX, USBARLSI.IRX # Artificial Retina Sensor Capture Eye
+    devices: "CaptureEye"
 
 Storage:
-  modules: DSCDRV.IRX, USBSTOR.IRX, USBSTORE.IRX, USTORAGE.IRX, STORAGE.IRX
-  type: "Storage"
-  support: "Storage"
-Storage - DMC:
-  modules: DMCDRV.IRX
-  comment: "a kind of camera"
-  type: "Storage"
-  support: "DMC"
+  - name: Storage
+    modules: DSCDRV.IRX, USBSTOR.IRX, USBSTORE.IRX, USTORAGE.IRX, STORAGE.IRX
+    devices: "Storage"
 
-## Printers ###################################################################
+  - name: Storage - DMC
+    modules: DMCDRV.IRX
+    comment: "a kind of camera"
+    devices: "DMC"
 
-USBPRT.IRX:
-  type: "Printers"
-  support: "Sony PopEgg"
-HP.IRX:
-  type: "Printers"
-  support: "HP"
-Printers - Epson:
-  modules: EPUSBPRT.IRX, EPSPRINT.IRX
-  type: "Printers"
-  support: "Epson"
+Printers:
+  - modules: USBPRT.IRX
+    devices: "Sony PopEgg"
 
-## Connectivity ###############################################################
+  - modules: HP.IRX
+    devices: "HP"
 
-Ethernet:
-  modules: AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX, LANEGG.IRX, ENT_ETH.IRX, SNDRV001.IRX, SNDRV201.IRX
-  type: "Network adapters"
-  support: "Pegasus"
-Modem - Omron:
-  modules: OMMODEM.IRX
-  type: "Network adapters"
-  support: "Omron"
-Modem - Suntac:
-  modules: OSTMDM_A.IRX, OSTMDM_S.IRX
-  type: "Network adapters"
-  support: "Suntac OnlineStation"
-Modem - SmartSCM:
-  modules: CXTMDM.IRX, PWCXTMDM.IRX, SNDRV003.IRX, PWMODEM.IRX,
-    PWUSBMDM.IRX # it says generic driver and looks unused
-  type: "Network adapters"
-  support: "Conexant SmartSCM"
-Modem - NTT-ME:
-  modules: MINIJPS2.IRX
-  type: "Network adapters"
-  support: "NTT-ME MN128"
-Modem - Aterm:
-  modules: ATERM.IRX, ATERMAS.IRX, ATERMCS.IRX, ATCDC.IRX
-  type: "Network adapters"
-  support: "Aterm IT/ITX"
-Modem - Lucent:
-  modules: SNDRV002.IRX
-  type: "Network adapters"
-  support: "Lucent"
+  - name: Printers - Epson
+    modules: EPUSBPRT.IRX, EPSPRINT.IRX
+    devices: "Epson"
 
-USBPSPCM.IRX:
-  type: "PSPCM"
-  support: "PlayStation Portable"
+Network adapters:
+  - name: Ethernet
+    modules: AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX, LANEGG.IRX, ENT_ETH.IRX, SNDRV001.IRX, SNDRV201.IRX
+    devices: "Pegasus"
+
+  - name: Modem - Omron
+    modules: OMMODEM.IRX
+    devices: "Omron"
+
+  - name: Modem - Suntac
+    modules: OSTMDM_A.IRX, OSTMDM_S.IRX
+    devices: "Suntac OnlineStation"
+
+  - name: Modem - SmartSCM
+    modules: CXTMDM.IRX, PWCXTMDM.IRX, SNDRV003.IRX, PWMODEM.IRX,
+      PWUSBMDM.IRX # it says generic driver and looks unused
+    devices: "Conexant SmartSCM"
+
+  - name: Modem - NTT-ME
+    modules: MINIJPS2.IRX
+    devices: "NTT-ME MN128"
+
+  - name: Modem - Aterm
+    modules: ATERM.IRX, ATERMAS.IRX, ATERMCS.IRX, ATCDC.IRX
+    devices: "Aterm IT/ITX"
+
+  - name: Modem - Lucent
+    modules: SNDRV002.IRX
+    devices: "Lucent"
+
+PSPCM:
+  - modules: USBPSPCM.IRX
+    devices: "PlayStation Portable"
+
 UART:
-  modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX,
-    RSAQ.IRX # USB-RSAQ1 [04bb:0a03] - serial modem
-  type: "UART"
-  support: "UART"
-USB Bridge:
-  modules: FLSHLNK.IRX, USBFLK.IRX, USBLINK.IRX, LNK_IOP.IRX,
-    USBFS.IRX # NEC/ACTIS/ELECOM Link Cable
-  type: "Bridge"
-  support: "Bridge"
+  - name: UART
+    modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX,
+      RSAQ.IRX # USB-RSAQ1 [04bb:0a03] - serial modem
+    devices: "UART"
 
-USBDRV.IRX:
-  comment: "unreleased, not loaded"
-  type: "Motion tracking"
-  support: "Fishing"
-USBHANDL.IRX:
-  comment: "unreleased"
-  type: "Motion tracking"
-  support: "Konami Handle"
+Bridge:
+  - name: USB Bridge
+    modules: FLSHLNK.IRX, USBFLK.IRX, USBLINK.IRX, LNK_IOP.IRX,
+      USBFS.IRX # NEC/ACTIS/ELECOM Link Cable
+    devices: "Bridge"

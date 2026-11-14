@@ -19,13 +19,13 @@ python -m http.server 8000
 
 ## Files
 - Inputs, next to the script:
-  - `modules.yml` maps modules to a type and supported controllers.
+  - `modules.yml` maps modules to a type and supported devices.
   - `unused.yml` lists generic modules to ignore, those that pass `--extract-filter` but are not relevant.
 - Outputs, in `docs/`:
-  - `game_controllers.yml` lists the modules and controllers per game.
+  - `game_controllers.yml` lists the modules and devices per game.
   - `gameid_to_name.yml` maps game IDs to names. Existing names are never overwritten, so you can edit them by hand.
-  - `accessories.yml` lists controllers by type, and is rebuilt from `modules.yml` on every run.
-- Scans add new games and modules to the existing database. Controllers are recomputed from the current `modules.yml` on every run.
+  - `accessories.yml` lists devices by type, and is rebuilt from `modules.yml` on every run.
+- Scans add new games and modules to the existing database. Devices are recomputed from the current `modules.yml` on every run.
 
 ## Todo
 - [ ] Split SingStar/Logitech/universal mic drivers

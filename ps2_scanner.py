@@ -205,17 +205,20 @@ def dump_yml(path, data):
                                    default_flow_style=False), encoding="utf-8")
 
 
+def entries(raw):
+    for typ, items in raw.items():
+        if not isinstance(items, list) or not all(isinstance(e, dict) and "modules" in e for e in items):
+            sys.exit(f"modules.yml: '{typ}' must be a list of entries, each with 'modules'")
+        for e in items:
+            yield typ, e, [m.strip() for x in as_list(e["modules"]) for m in str(x).split(",") if m.strip()]
+
+
 def expand(raw):
     out = {}
-    for k, v in raw.items():
-        v = v or {}
-        keys = [m.strip() for x in as_list(v["modules"]) for m in str(x).split(",")] if "modules" in v else [k]
-        info = {i: j for i, j in v.items() if i != "modules"}
-        for m in filter(None, keys):
-            cur = out.setdefault(m.casefold(), {})
-            sup = as_list(cur.get("support"))
-            cur.update(info)
-            cur["support"] = sup + [x for x in as_list(info.get("support")) if x not in sup]
+    for _, e, mods in entries(raw):
+        for m in mods:
+            cur = out.setdefault(m.casefold(), {"devices": []})["devices"]
+            cur += [c for c in as_list(e.get("devices")) if c not in cur]
     return out
 
 
@@ -232,7 +235,7 @@ def derive(mods, modules):
     out = set()
     for m in mods:
         name = m.split("__")[0]
-        out.update(as_list(module_info(modules, name, m[len(name) + 2:]).get("support")))
+        out.update(as_list(module_info(modules, name, m[len(name) + 2:]).get("devices")))
     return out
 
 
@@ -300,9 +303,9 @@ def main():
     for path in images:
         process_image(path, a, names, games, unused)
 
-    for info in raw.values():
-        if info and info.get("support"):
-            acc.setdefault(info.get("type") or "Other", set()).update(as_list(info["support"]))
+    for typ, e, _ in entries(raw):
+        if e.get("devices"):
+            acc.setdefault(typ, set()).update(as_list(e["devices"]))
 
     y = lambda s: yaml.safe_dump(s, allow_unicode=True, width=10**6).splitlines()[0]
     dump_yml(names_f, names)
@@ -313,14 +316,14 @@ def main():
             f.write(f"{gid}:" + (f" # {names[gid]}" if gid in names else "") + "\n  modules:\n")
             f.writelines(f"    - {y(m)}\n" for m in sorted(games[gid], key=str.casefold))
             if ctrl:
-                f.write("  controllers:\n")
+                f.write("  devices:\n")
                 f.writelines(f"    - {y(c)}\n" for c in sorted(ctrl, key=str.casefold))
 
     unpaired = sorted({m for g in games.values() for m in g
                        if not is_unused(m, unused) and not {m.casefold(), m.split("__")[0].casefold()} & modules.keys()}, key=str.casefold)
     print(f"\nModules without metadata in {a.modules.name}: {len(unpaired)}")
     print(*unpaired, sep="\n")
-    print(f"\nCompleted.\nGames: {len(names)}, in controller db: {len(games)}\nOutput: {dst}")
+    print(f"\nCompleted.\nGames: {len(names)}, in game db: {len(games)}\nOutput: {dst}")
 
 
 if __name__ == "__main__":
