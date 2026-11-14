@@ -2,23 +2,22 @@
 #   - name: optional label
 #     modules: NAME.IRX (all versions) or NAME.IRX__md5 (one version), as a list or a comma-separated string
 #     devices: list or single string
-#     comment: optional notes
 
 Steering wheels:
-  - name: Wheels - Battle Gear 2
+  - name: Battle Gear 2
     modules:
       - USBDCON.IRX__5a23c6ba7042042d8786f0b89792b728 # Euro
       - USBDCON.IRX__71433d2ad9ce7ddb7c6965d47ca5d69f # Jap
     devices:
       - Logitech GT Force # [046d:c293]
 
-  - name: Wheels - Tokyo Xtreme Racer
+  - name: Tokyo Xtreme Racer
     modules: USB_DRV.IRX__3edeb2c74e31f13be16ab1be6fdb59a4
     devices:
       - Logitech GT Force # [046d:c293]
       - Microsoft SideWinder Force Feedback # [045e:0034]
 
-  - name: Wheels - GT3
+  - name: GT3
     modules:
       - PDIUSB.IRX__75a847581fa5fa97c37aa1b1c05ee34c # Concept - 2002 Tokyo-Geneva
       - PDIUSB.IRX__7ab9cb4c3d807899a24efa1be5b6179d # Subaru Driving Simulator
@@ -29,11 +28,24 @@ Steering wheels:
       - Logitech MOMO Force # [046d:c295]
       - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004] # TBD
 
-  - name: Wheels - GT4/TT
+  - name: GT4/TT
     modules: PDIUSB.IRX__340f9eabb93f09c3a2934c45a1182798
     devices: # TBD if any
 
-  - name: Wheels - Pro Rally 2002 - Logi
+  - name: NASCAR Thunder 2002
+    modules: IMUSBPS2.IRX__58e0d3c1bc791f898a39433a1c6716e3
+    devices:
+      - Gravis Xterminator Force # Gamepad [047d:4007]
+      - Logitech WingMan Force # Joystick [046d:c281]
+      - Logitech WingMan Formula Force # [046d:c291]
+      - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
+
+  - name: NASCAR - Dirt to Daytona
+    modules: USBJOY.IRX__402417f9babfc2773f7001e45d8c5a49
+    devices:
+      - ACT LABS Force RS
+
+  - name: Pro Rally 2002 - Logi
     modules: IMDLGIS.IRX__4ce7ab0d7f843dcec7f619cd4956c7f5
     devices:
       - Logitech Force 3D # Joystick [046d:c283]
@@ -42,20 +54,7 @@ Steering wheels:
       - Logitech Driving Force # [046d:c294]
       - Logitech MOMO Force # [046d:c295]
 
-  - name: Wheels - NASCAR Thunder 2002
-    modules: IMUSBPS2.IRX__58e0d3c1bc791f898a39433a1c6716e3
-    devices:
-      - Gravis Xterminator Force # Gamepad [047d:4007]
-      - Logitech WingMan Force # Joystick [046d:c281]
-      - Logitech WingMan Formula Force # [046d:c291]
-      - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
-
-  - name: Wheels - NASCAR - Dirt to Daytona
-    modules: USBJOY.IRX__402417f9babfc2773f7001e45d8c5a49
-    devices:
-      - ACT LABS Force RS
-
-  - name: Wheels - Pro Rally 2002 - FF
+  - name: Pro Rally 2002 - FF
     modules: IMDFF.IRX__ea167dbc73c6384ef2135542921492d9
     devices:
       - ACT LABS Force RS # 3 records: [061c:c084], [061c:c094], [061c:c0a4]
@@ -99,7 +98,7 @@ Steering wheels:
       - Logitech MOMO Force # [046d:c295]
       - Guillemot Force Feedback Racing Wheel # ThrustMaster [06f8:0004]
 
-  - name: Wheels - Logitech - GT/DF/Js
+  - name: Logitech - GT/DF/Js
     modules:
       - LGDEV.IRX__28746f26899b1a8fde83555ba01df0e4  # LgDev_tb_rb_Driver version 1.04
       - LGDEV.IRX__50f916b4ff721e5603bdfac88cdde210  # LgDev_tb_rb_Driver version 1.04
@@ -121,7 +120,7 @@ Steering wheels:
       - Logitech GT Force # Formula Force GP Wheel [046d:c293]
       - Logitech Driving Force # [046d:c294]
 
-  - name: Wheels - Logitech - GT/DF
+  - name: Logitech - GT/DF
     modules:
       - LGDEVW.IRX__a4b6be9330d5a40a55bdb2d26721dfdf # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug  6 2002 at 17:07:39
       - LGDEVW.IRX__f6681b920bc605bc1a1a476cf9d2d4e9 # LgDev_tb_rb_Driver Version 1.08( Wheel ), built on Aug  8 2002 at 16:55:36
@@ -135,7 +134,7 @@ Steering wheels:
       - Logitech GT Force # Formula Force GP Wheel [046d:c293]
       - Logitech Driving Force # [046d:c294]
 
-  - name: Wheels - Logitech - GT/DF/DFP/Js
+  - name: Logitech - GT/DF/DFP/Js
     modules:
       - LGDEV.IRX__fec70a01f7666d972d3b8afd267cbd82  # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel Joystick ), built on Jan 26 2004 at 23:57:44
       - LGDEV.IRX__1ddb220b77948118f518940f51dae3c0  # LgDev_tb_rb_Driver Version 1.11.027 ( Wheel Joystick ), built on Apr 15 2004 at 13:37:39
@@ -153,7 +152,7 @@ Steering wheels:
       - Logitech MOMO Force # [046d:c295]
       - Logitech Driving Force Pro # [046d:c298]
 
-  - name: Wheels - Logitech - GT/DF/DFP
+  - name: Logitech - GT/DF/DFP
     modules:
       - LGDEV.IRX__aa7d3b89f7a5ed94f369d0225d55ac90  # LgDev_tb_rb_Driver Version 1.11.023 (PDI branch), Rooz special, built on Apr 15 2004 at 16:39:32
       - LGDEV.IRX__fa436ba12eac37c656b221f228f80394  # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel ), built on Jan 26 2004 at 23:57:17
@@ -176,7 +175,7 @@ Steering wheels:
       - Logitech MOMO Force # [046d:c295]
       - Logitech Driving Force Pro # [046d:c298]
 
-  - name: Joysticks - Logitech # These are already mixed with the wheels, lets keep them together
+  - name: Logitech - Js # These are already mixed with the wheels, lets keep them together
     modules:
       - LGDEVJ.IRX__764bc4d4657b073b549f2589f2d5e380 # LgDev_tb_rb_Driver Version 1.08( Joystick ), built on Aug  6 2002 at 17:07:47
       - LGDEVJ.IRX__8762d33b6ae5bec0d8f7165d008865fc # LgDev_tb_rb_Driver Version 1.11.027 ( Joystick ), built on May 10 2004 at 10:49:38
@@ -189,8 +188,7 @@ Flight sim:
   - modules: USBCFC.IRX
     devices: "Compact Flight Controller"
 
-  - name: Hori Flight Stick
-    modules:
+  - modules:
       - USBJOY.IRX__1d5f305bce3e8d9f3d0a68c6afb04197
       - USBJOY.IRX__537c2e7adb8bee911100df9f5a2abdeb
       - USBJOY.IRX__cd920d97c496492a485f3a2214cc8daf
@@ -200,33 +198,26 @@ Flight sim:
     devices: "Hori Flight Stick 2"
 
 Train sim:
-  - name: Train sim - Type 2
-    modules: USBDENCI.IRX, USBDENCO.IRX, USBDCON.IRX__24c34e7c941c613754fc98fa8f74ef6c
+  - modules: USBDENCI.IRX, USBDENCO.IRX, USBDCON.IRX__24c34e7c941c613754fc98fa8f74ef6c
     devices: "Type 2"
 
-  - name: Train sim - Ryojouhen
-    modules: USBRJCON.IRX
+  - modules: USBRJCON.IRX
     devices: "Ryojouhen"
 
-  - name: Train sim - Shinkansen
-    modules: USBSHINC.IRX, USBSNCON.IRX
+  - modules: USBSHINC.IRX, USBSNCON.IRX
     devices: "Shinkansen"
 
-  - name: Train sim - Train Mascon
-    modules: USBKQCON.IRX
+  - modules: USBKQCON.IRX
     devices: "Train Mascon"
 
-  - name: Train sim - Multi Train Controller
-    modules: USBMTCON.IRX
+  - modules: USBMTCON.IRX
     devices: "Multi Train Controller"
 
-  - name: Train sim - Master Controller
-    modules: USBTSCON.IRX, USBMCKQ.IRX
+  - modules: USBTSCON.IRX, USBMCKQ.IRX
     devices: "Master Controller"
 
 Rhythm controllers:
-  - name: Guitar - Drum
-    modules: USBHMX_S.IRX, HIDMOD.IRX
+  - modules: USBHMX_S.IRX, HIDMOD.IRX
     devices: "Guitar/Drum"
 
   - modules: BCUI.IRX
@@ -254,19 +245,16 @@ Keyboard/Mouse:
       - Keyboard
       - Mouse
 
-  - name: Keyboard
-    modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX, PDUKEYBD.IRX,
+  - modules: USBKB.IRX, USBKBD.IRX, USBKEYBD.IRX, LGKBM.IRX, USBKEY.IRX, USBKEYB.IRX, PDUKEYBD.IRX,
       KEYBD.IRX, KEYBOA~1.IRX, MODUSBKB.IRX, AUKWDRV.IRX, USBK_D_T.IRX, USBK_R_T.IRX, PSX2USBC.IRX
     devices: Keyboard
 
-  - name: Mouse
-    modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX,
+  - modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX,
       PDUMOUSE.IRX, MODUSBMS.IRX, AUMWDRV.IRX, AUEWDRV.IRX, USBDEV.IRX,
       FSIOPUSB.IRX # KB+M loader that receives USB_MOUSE as arg and works with FSIOPUMS.IRX
     devices: Mouse
 
-  - name: Tablet
-    modules: AUTWDRV.IRX
+  - modules: AUTWDRV.IRX
     devices: "Agatha Tablet"
 
 Light Guns:
@@ -282,30 +270,25 @@ Pachi-Slot:
     devices: "Pachi-Slot"
 
 Buzz:
-  - name: Buzz
-    modules: USB_BUZR.IRX, BUZZER.IRX
+  - modules: USB_BUZR.IRX, BUZZER.IRX
     devices: "Buzz"
 
 Motion tracking:
   - modules: USBHT.IRX
     devices: "HMD"
 
-  - name: GameTrak
-    modules: GTD.IRX, GAMETRAK.IRX, APEMOD.IRX
+  - modules: GTD.IRX, GAMETRAK.IRX, APEMOD.IRX
     devices: "GameTrak"
 
-  - name: RealPlay
-    modules:
+  - modules:
       - REALPLAY.IRX__e136cc84d127f05d99b19613ecce7e4b # Golf
       - REALPLAY.IRX__447bc4d60b8f698cf33b2bc46699d681 # Pool, Racing, Puzzlesphere
     devices: "RealPlay"
 
-  - modules: USBDRV.IRX
-    comment: "unreleased, not loaded"
+  - modules: USBDRV.IRX # unreleased, not loaded
     devices: "Fishing"
 
-  - modules: USBHANDL.IRX
-    comment: "unreleased"
+  - modules: USBHANDL.IRX # unreleased
     devices: "Konami Handle"
 
 Audio:
@@ -318,8 +301,7 @@ Audio:
   - modules: USBMIC.IRX__8da6f2b5b40cc1f29d32a8441c70a070
     devices: "Seamic"
 
-  - name: Microphones
-    modules:
+  - modules:
       - LGAUD.IRX
       - 3.IRX__4cc8d10b0bdeaa43847fa852e0d8604f # LGAUD
       - USBMIC.IRX
@@ -347,22 +329,17 @@ MIDI:
     devices: "Roland SC-8850"
 
 Webcams:
-  - name: Webcams - EyeToy
-    modules: EYETOY.IRX, OV519.IRX, LGVID.IRX
+  - modules: EYETOY.IRX, OV519.IRX, LGVID.IRX
     devices: "EyeToy"
 
-  - name: Webcams - CaptureEye
-    modules: WEBCAM_N.IRX, WEBCAM.IRX, USBCAM.IRX, USBARLSI.IRX # Artificial Retina Sensor Capture Eye
+  - modules: WEBCAM_N.IRX, WEBCAM.IRX, USBCAM.IRX, USBARLSI.IRX # Artificial Retina Sensor Capture Eye
     devices: "CaptureEye"
 
 Storage:
-  - name: Storage
-    modules: DSCDRV.IRX, USBSTOR.IRX, USBSTORE.IRX, USTORAGE.IRX, STORAGE.IRX
+  - modules: DSCDRV.IRX, USBSTOR.IRX, USBSTORE.IRX, USTORAGE.IRX, STORAGE.IRX
     devices: "Storage"
 
-  - name: Storage - DMC
-    modules: DMCDRV.IRX
-    comment: "a kind of camera"
+  - modules: DMCDRV.IRX # a kind of camera
     devices: "DMC"
 
 Printers:
@@ -372,8 +349,7 @@ Printers:
   - modules: HP.IRX
     devices: "HP"
 
-  - name: Printers - Epson
-    modules: EPUSBPRT.IRX, EPSPRINT.IRX
+  - modules: EPUSBPRT.IRX, EPSPRINT.IRX
     devices: "Epson"
 
 Network adapters:
@@ -411,13 +387,11 @@ PSPCM:
     devices: "PlayStation Portable"
 
 UART:
-  - name: UART
-    modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX,
+  - modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX,
       RSAQ.IRX # USB-RSAQ1 [04bb:0a03] - serial modem
     devices: "UART"
 
 Bridge:
-  - name: USB Bridge
-    modules: FLSHLNK.IRX, USBFLK.IRX, USBLINK.IRX, LNK_IOP.IRX,
+  - modules: FLSHLNK.IRX, USBFLK.IRX, USBLINK.IRX, LNK_IOP.IRX,
       USBFS.IRX # NEC/ACTIS/ELECOM Link Cable
     devices: "Bridge"
