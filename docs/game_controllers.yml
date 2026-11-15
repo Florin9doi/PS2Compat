@@ -7,10 +7,20 @@ PAPX_905.04: # Gran Turismo Concept - Airtrek Turbo Special Edition (Japan) (Tai
   modules:
     - PDIUSB.IRX__9f9e863b23eaf1ffe2b1339d637a2d04
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 PAPX_905.08: # Gran Turismo Concept - Lupo Cup Training Version (Japan)
   modules:
     - PDIUSB.IRX__40caf8bc73272bb5e1d0767b251af659
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 PBPX_952.39: # Online Start-Up Disc v3.0 (USA)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -111,10 +121,20 @@ SCED_510.97: # Gran Turismo Concept - Nissan Z (Europe)
   modules:
     - PDIUSB.IRX__02dc4501ede58fad1c8e768ddf418bba
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SCED_513.52: # Gran Turismo - Nissan Micra Edition (Europe)
   modules:
     - PDIUSB.IRX__e729fb1565f79377290f696f9eece813
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SCES_501.39: # WRC - World Rally Championship (Europe, Australia) (En,Fr,De,Es,It,Pt,Fi)
   modules:
     - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb
@@ -1176,6 +1196,11 @@ SCPM_853.01: # Gran Turismo Concept - Copen Special Edition (Japan) (Taikenban)
   modules:
     - PDIUSB.IRX__e31040cecd5f3fe39e0dff3096cd88e0
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SCPS_110.32: # Vib-Ripple (Japan)
   modules:
     - DSCDRV.IRX__c74a282ea195449bb6c8c760b1f41780
@@ -1189,6 +1214,11 @@ SCPS_150.10: # Gran Turismo Concept - 2001 Tokyo (Japan, Asia)
   modules:
     - PDIUSB.IRX__e792e412b77ca824ce86264384e4b292
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SCPS_150.18: # Yamanote-sen, The - Train Simulator Real (Japan)
   modules:
     - USBD.IRX__cf77ef393a9f99e16d5e5d6dd12e5c6c
@@ -1224,6 +1254,11 @@ SCPS_560.05: # Gran Turismo Concept - 2002 Tokyo-Seoul (Korea) (v1.02)
   modules:
     - PDIUSB.IRX__e31040cecd5f3fe39e0dff3096cd88e0
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SCUS_970.95: # Network Adaptor Start-Up Disc v2.0 (USA) (Rev)
   modules:
     - AN986.IRX__6ce56ce2964f4ad010819549c0b94d53
@@ -1330,6 +1365,11 @@ SCUS_972.19: # Gran Turismo 3 - Nissan 350Z Edition (USA)
   modules:
     - PDIUSB.IRX__9f9e863b23eaf1ffe2b1339d637a2d04
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SCUS_972.58: # Amplitude (USA)
   modules:
     - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
@@ -1471,6 +1511,12 @@ SCUS_973.84: # Gran Turismo Special Edition 2004 Toyota Demo (USA)
   modules:
     - LGDEV.IRX__107f48e6789f42b1d2e3586e8367078e
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
+  devices:
+    - Logitech Driving Force
+    - Logitech Driving Force Pro
+    - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SCUS_974.05: # ATV Offroad Fury 3 (USA)
   modules:
     - LGAUD.IRX__0b960c7e399e90de01f401ef2329cea3
@@ -1532,6 +1578,11 @@ SCUS_974.83: # Gran Turismo 4 - Mazda MX-5 Edition (USA) (Demo)
   devices:
     - Epson
     - EyeToy
+    - Logitech Driving Force
+    - Logitech Driving Force Pro
+    - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
     - Storage
 SCUS_975.00: # MLB 06 - The Show (USA)
   modules:

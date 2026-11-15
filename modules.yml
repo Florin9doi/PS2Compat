@@ -19,6 +19,12 @@ Steering wheels:
 
   - name: GT3
     modules:
+      - PDIUSB.IRX__02dc4501ede58fad1c8e768ddf418bba # Gran Turismo Concept - Nissan Z (Europe)
+      - PDIUSB.IRX__40caf8bc73272bb5e1d0767b251af659 # Gran Turismo Concept - Lupo Cup Training Version (Japan)
+      - PDIUSB.IRX__9f9e863b23eaf1ffe2b1339d637a2d04 # Gran Turismo Concept - Airtrek Turbo Special Edition / Nissan 350Z Edition
+      - PDIUSB.IRX__e31040cecd5f3fe39e0dff3096cd88e0 # Gran Turismo Concept - Copen Special Edition / 2002 Tokyo-Seoul
+      - PDIUSB.IRX__e729fb1565f79377290f696f9eece813 # Gran Turismo - Nissan Micra Edition (Europe)
+      - PDIUSB.IRX__e792e412b77ca824ce86264384e4b292 # Gran Turismo Concept - 2001 Tokyo (Japan, Asia)
       - PDIUSB.IRX__75a847581fa5fa97c37aa1b1c05ee34c # Concept - 2002 Tokyo-Geneva
       - PDIUSB.IRX__7ab9cb4c3d807899a24efa1be5b6179d # Subaru Driving Simulator
       - PDIUSB.IRX__83708ada14b1672fec1aa569cebc8e8d # A-Spec
@@ -154,6 +160,7 @@ Steering wheels:
 
   - name: Logitech - GT/DF/DFP
     modules:
+      - LGDEV.IRX__107f48e6789f42b1d2e3586e8367078e  # LgDev_tb_rb_Driver Version 1.11.023 (PDI branch), Rooz special, built on Mar 13 2004 at 02:56:59
       - LGDEV.IRX__aa7d3b89f7a5ed94f369d0225d55ac90  # LgDev_tb_rb_Driver Version 1.11.023 (PDI branch), Rooz special, built on Apr 15 2004 at 16:39:32
       - LGDEV.IRX__fa436ba12eac37c656b221f228f80394  # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel ), built on Jan 26 2004 at 23:57:17
       - LGDEVW.IRX__fa436ba12eac37c656b221f228f80394 # LgDev_tb_rb_Driver Version 1.11.025 ( Wheel ), built on Jan 26 2004 at 23:57:17
@@ -162,6 +169,7 @@ Steering wheels:
       - LGDEVW.IRX__82ed771aae0d8264f601ea8f314985cb # LgDev_tb_rb_Driver Version 1.11.033 ( Wheel ), built on Aug 23 2004 at 19:18:29
       - LGDEVW.IRX__c37724c88cf66f333b17c8210b365691 # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel ), built on Sep  8 2004 at 15:50:26
       - LGDEVW.IRX__d5c32e462ba43d253fbb55a02289caa1 # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel ), built on Sep 15 2004 at 16:26:37
+      - LGDEV.IRX__18cf732b24a902b13ae47547d5d1feff  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Feb 22 2005 at 14:34:25
       - LGDEV.IRX__eb18d855bec28abf12d1162f562ddfe6  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Jan 27 2005 at 04:22:45
       - LGDEV.IRX__f5efffbaefb42125e5766d9578ee5ff2  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Jan 27 2005 at 19:18:45
       - LGDEV.IRX__fa74d9b0e8b2e90e6bde48ce2b16dc37  # LgDev_tb_rb_Driver Version 1.11.037 ( Wheel ), built on Jun 16 2005 at 16:02:04
