@@ -7,6 +7,10 @@ Requires Python 3 and PyYAML (`pip install pyyaml`).
 ```bash
 python ps2_scanner.py --in "D:\path\to\ps2\games" --out "docs" --extract-filter "usbd"
 ```
+- Optionally, extract the modules:
+```bash
+python ps2_scanner.py --in "D:\path\to\ps2\games" --out "modules" --extract-modules --extract-filter "usbd"
+```
 - Add details to `modules.yml`, then rebuild the database without scanning:
 ```bash
 python ps2_scanner.py --out "docs"
@@ -29,4 +33,3 @@ python -m http.server 8000
 
 ## Todo
 - [ ] Split SingStar/Logitech/universal mic drivers
-- [ ] Check DMC storage support

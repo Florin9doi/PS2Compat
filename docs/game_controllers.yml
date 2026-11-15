@@ -3,6 +3,14 @@ FLEE_000.00: # Fleet - Shiva's Gate (USA) (Proto)
     - IGUMOUSE.IRX__a6c92e1faf9af8619bfa39bb0be85cd8
   devices:
     - Mouse
+PAPX_905.04: # Gran Turismo Concept - Airtrek Turbo Special Edition (Japan) (Taikenban)
+  modules:
+    - PDIUSB.IRX__9f9e863b23eaf1ffe2b1339d637a2d04
+    - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
+PAPX_905.08: # Gran Turismo Concept - Lupo Cup Training Version (Japan)
+  modules:
+    - PDIUSB.IRX__40caf8bc73272bb5e1d0767b251af659
+    - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
 PBPX_952.39: # Online Start-Up Disc v3.0 (USA)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -99,6 +107,14 @@ SCCS_400.22: # World Soccer Winning Eleven 8 - Asia Championship (China)
   devices:
     - Keyboard
     - Mouse
+SCED_510.97: # Gran Turismo Concept - Nissan Z (Europe)
+  modules:
+    - PDIUSB.IRX__02dc4501ede58fad1c8e768ddf418bba
+    - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
+SCED_513.52: # Gran Turismo - Nissan Micra Edition (Europe)
+  modules:
+    - PDIUSB.IRX__e729fb1565f79377290f696f9eece813
+    - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
 SCES_501.39: # WRC - World Rally Championship (Europe, Australia) (En,Fr,De,Es,It,Pt,Fi)
   modules:
     - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb
@@ -1156,6 +1172,10 @@ SCKA_100.07: # EyeToy - Tales (Korea) (SCKA-10007)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - EyeToy
+SCPM_853.01: # Gran Turismo Concept - Copen Special Edition (Japan) (Taikenban)
+  modules:
+    - PDIUSB.IRX__e31040cecd5f3fe39e0dff3096cd88e0
+    - USBD.IRX__0173a1a24450a724aeb0338dea44438f
 SCPS_110.32: # Vib-Ripple (Japan)
   modules:
     - DSCDRV.IRX__c74a282ea195449bb6c8c760b1f41780
@@ -1165,6 +1185,10 @@ SCPS_110.32: # Vib-Ripple (Japan)
   devices:
     - Keyboard
     - Storage
+SCPS_150.10: # Gran Turismo Concept - 2001 Tokyo (Japan, Asia)
+  modules:
+    - PDIUSB.IRX__e792e412b77ca824ce86264384e4b292
+    - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
 SCPS_150.18: # Yamanote-sen, The - Train Simulator Real (Japan)
   modules:
     - USBD.IRX__cf77ef393a9f99e16d5e5d6dd12e5c6c
@@ -1196,6 +1220,10 @@ SCPS_150.86: # Bakufuu Slash! Kizna Arashi
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
   devices:
     - EyeToy
+SCPS_560.05: # Gran Turismo Concept - 2002 Tokyo-Seoul (Korea) (v1.02)
+  modules:
+    - PDIUSB.IRX__e31040cecd5f3fe39e0dff3096cd88e0
+    - USBD.IRX__0173a1a24450a724aeb0338dea44438f
 SCUS_970.95: # Network Adaptor Start-Up Disc v2.0 (USA) (Rev)
   modules:
     - AN986.IRX__6ce56ce2964f4ad010819549c0b94d53
@@ -1298,6 +1326,10 @@ SCUS_972.14: # NCAA GameBreaker 2003 (USA)
   modules:
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
     - USBMLOAD.IRX__dbf6219d17d24bf00fe246640f0345fb
+SCUS_972.19: # Gran Turismo 3 - Nissan 350Z Edition (USA)
+  modules:
+    - PDIUSB.IRX__9f9e863b23eaf1ffe2b1339d637a2d04
+    - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
 SCUS_972.58: # Amplitude (USA)
   modules:
     - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
@@ -1435,6 +1467,10 @@ SCUS_973.67: # Neopets - The Darkest Faerie (USA)
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
     - Keyboard
+SCUS_973.84: # Gran Turismo Special Edition 2004 Toyota Demo (USA)
+  modules:
+    - LGDEV.IRX__107f48e6789f42b1d2e3586e8367078e
+    - USBD.IRX__7f39607736ffd40b910361604e7464e6
 SCUS_974.05: # ATV Offroad Fury 3 (USA)
   modules:
     - LGAUD.IRX__0b960c7e399e90de01f401ef2329cea3
@@ -1485,6 +1521,18 @@ SCUS_974.66: # Gretzky NHL 06 (USA)
     - EyeToy
     - Keyboard
     - Microphone
+SCUS_974.83: # Gran Turismo 4 - Mazda MX-5 Edition (USA) (Demo)
+  modules:
+    - EPSPRINT.IRX__0291069bc9b1056801e06360a6f1dc47
+    - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
+    - LGDEV.IRX__18cf732b24a902b13ae47547d5d1feff
+    - PDIUSB.IRX__340f9eabb93f09c3a2934c45a1182798
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USTORAGE.IRX__e2993d271d07bf7a96477d44231b0fba
+  devices:
+    - Epson
+    - EyeToy
+    - Storage
 SCUS_975.00: # MLB 06 - The Show (USA)
   modules:
     - LGAUD.IRX__57140338edddd842250fdae6e3078d8f
