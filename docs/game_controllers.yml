@@ -2192,7 +2192,7 @@ SLES_505.57: # Polaroid Pete (Europe) (Beta)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - USBPRT.IRX__7e42abbc7eee6cc6de3c2d7560bf6e20
   devices:
-    - DMC
+    - HM-PP1
     - Sony PopEgg
     - Storage
 SLES_505.89: # Worms Blast (Europe) (En,Fr,De,Es,It)
@@ -6335,7 +6335,7 @@ SLPM_690.01: # PictureParadise Club (Japan)
     - DSCDRV.IRX__0c51520d8782be8c2536b2dd67612359
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
   devices:
-    - DMC
+    - HM-PP1
     - Storage
 SLPM_690.02: # NetFront (Japan)
   modules:
@@ -6381,8 +6381,8 @@ SLPM_690.06: # PictureParadise Club Vol. 2 (Japan)
     - USBMLOAD.IRX__4e562896bcf553cc4ab70401c2859e2b
     - USBPRT.IRX__3947b6bacf21a7d7405abc1b218fae17
   devices:
-    - DMC
     - Epson
+    - HM-PP1
     - Keyboard
     - Pegasus
     - Sony PopEgg
@@ -6444,7 +6444,7 @@ SLPS_200.91: # Gekibo 2x
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - USBPRT.IRX__7e42abbc7eee6cc6de3c2d7560bf6e20
   devices:
-    - DMC
+    - HM-PP1
     - Sony PopEgg
     - Storage
 SLPS_200.93: # Super Mic-chan (Japan)
@@ -6810,7 +6810,7 @@ SLPS_251.06: # America Oudan Ultra Quiz (Japan)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
     - USBPRT.IRX__fac8d725a335e404797a7161bee5df7d
   devices:
-    - DMC
+    - HM-PP1
     - Sony PopEgg
     - Storage
 SLPS_251.12: # Armored Core 3 (Japan)
@@ -6847,7 +6847,7 @@ SLPS_251.48: # Panel Quiz Attack 25 (Japan)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
     - USBPRT.IRX__fac8d725a335e404797a7161bee5df7d
   devices:
-    - DMC
+    - HM-PP1
     - Sony PopEgg
     - Storage
 SLPS_251.65: # Gunvari Collection + Time Crisis (Japan) (With GunCon2)
