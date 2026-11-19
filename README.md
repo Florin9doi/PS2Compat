@@ -15,7 +15,7 @@ python ps2_scanner.py --in "D:\path\to\ps2\games" --out "modules" --extract-modu
 ```bash
 python ps2_scanner.py --out "docs"
 ```
-- Test the website locally:
+- Test the website locally (http://localhost:8000):
 ```bash
 cd docs
 python -m http.server 8000
