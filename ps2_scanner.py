@@ -202,7 +202,7 @@ def load_yml(path):
 
 def dump_yml(path, data):
     path.write_text(yaml.safe_dump(data, sort_keys=True, allow_unicode=True,
-                                   default_flow_style=False), encoding="utf-8")
+                                   default_flow_style=False, width=10**6), encoding="utf-8")
 
 
 def entries(raw):
