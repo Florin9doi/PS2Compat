@@ -19,6 +19,7 @@ Steering wheels:
 
   - name: GT3
     modules:
+      - PDIUSB.IRX__4436adbd797a6770fa3a2e16c9289139 # Gran Turismo 3 - A-Spec (Japan, Asia)
       - PDIUSB.IRX__02dc4501ede58fad1c8e768ddf418bba # Gran Turismo Concept - Nissan Z (Europe)
       - PDIUSB.IRX__40caf8bc73272bb5e1d0767b251af659 # Gran Turismo Concept - Lupo Cup Training Version (Japan)
       - PDIUSB.IRX__9f9e863b23eaf1ffe2b1339d637a2d04 # Gran Turismo Concept - Airtrek Turbo Special Edition / Nissan 350Z Edition
@@ -169,6 +170,7 @@ Steering wheels:
       - LGDEVW.IRX__82ed771aae0d8264f601ea8f314985cb # LgDev_tb_rb_Driver Version 1.11.033 ( Wheel ), built on Aug 23 2004 at 19:18:29
       - LGDEVW.IRX__c37724c88cf66f333b17c8210b365691 # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel ), built on Sep  8 2004 at 15:50:26
       - LGDEVW.IRX__d5c32e462ba43d253fbb55a02289caa1 # LgDev_tb_rb_Driver Version 1.11.036 ( Wheel ), built on Sep 15 2004 at 16:26:37
+      - LGDEV.IRX__c783da194251de4a8cf136b12217cba2  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Dec 17 2004 at 19:35:27
       - LGDEV.IRX__18cf732b24a902b13ae47547d5d1feff  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Feb 22 2005 at 14:34:25
       - LGDEV.IRX__eb18d855bec28abf12d1162f562ddfe6  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Jan 27 2005 at 04:22:45
       - LGDEV.IRX__f5efffbaefb42125e5766d9578ee5ff2  # LgDev_tb_rb_Driver Version 1.11.036 (PDI branch), Rooz special, built on Jan 27 2005 at 19:18:45
@@ -258,7 +260,7 @@ Keyboard/Mouse:
     devices: Keyboard
 
   - modules: USBMOUSE.IRX, FSIOPUMS.IRX, IGUMOUSE.IRX, MOUSE.IRX, PWMOUSE.IRX, MOUSED.IRX, MOUSEIRX.IRX,
-      PDUMOUSE.IRX, MODUSBMS.IRX, AUMWDRV.IRX, AUEWDRV.IRX, USBDEV.IRX,
+      PDUMOUSE.IRX, MODUSBMS.IRX, AUMWDRV.IRX, AUEWDRV.IRX, USBDEV.IRX, USBMICE.IRX,
       FSIOPUSB.IRX # KB+M loader that receives USB_MOUSE as arg and works with FSIOPUMS.IRX
     devices: Mouse
 
@@ -368,7 +370,7 @@ Printers:
 
 Network adapters:
   - name: Ethernet
-    modules: AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX, LANEGG.IRX, ENT_ETH.IRX, SNDRV001.IRX, SNDRV201.IRX
+    modules: AN986.IRX, __AN986.IRX, PEGASUS.IRX, PWPEGSUS.IRX, LANEGG.IRX, ENT_ETH.IRX, SNDRV001.IRX, SNDRV201.IRX
     devices: "Pegasus"
 
   - name: Modem - Omron
@@ -401,7 +403,7 @@ PSPCM:
     devices: "PlayStation Portable"
 
 UART:
-  - modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX,
+  - modules: USBTRANS.IRX, USRPL.IRX, USRFTDI.IRX, FSIOPCOM.IRX, PL2303.IRX,
       RSAQ.IRX # USB-RSAQ1 [04bb:0a03] - serial modem
     devices: "UART"
 

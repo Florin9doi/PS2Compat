@@ -51,7 +51,7 @@ PBPX_952.47: # Online Start-Up Disc v3.5 - Broadband Only (USA) (Rev 1)
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
     - Keyboard
-PBPX_952.48: # Online Start-Up Disc 4.0 - Broadband Only (USA)
+PBPX_952.48: # Online Start-Up Disc 4.0 - Broadband Only (USA) (v1.01)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
@@ -148,7 +148,7 @@ SCES_502.41: # Bouncer, The (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - USBMLOAD.IRX__4e562896bcf553cc4ab70401c2859e2b
-SCES_502.94: # Gran Turismo 3 - A-Spec (Europe, Australia) (En,Fr,De,Es,It) (v2.00)
+SCES_502.94: # Gran Turismo 3 - A-Spec (Europe, Australia) (En,Fr,De,Es,It) (v1.00)
   modules:
     - PDIUSB.IRX__83708ada14b1672fec1aa569cebc8e8d
     - USBD.IRX__ade652ce63530751d2c654fc55c88201
@@ -216,7 +216,7 @@ SCES_505.01: # Rez (Europe) (En,Fr,De,Es,It)
     - USBTVR.IRX__458496232dbc775e63848dbaa772bcac
   devices:
     - Trance Vibrator
-SCES_505.95: # Disney-Pixar Monsters, Inc. - Scare Island (Europe)
+SCES_505.95: # Disney-Pixar Monsters, Inc. - Scare Island (Europe, Australia)
   modules:
     - AN986.IRX__2da9fc6c471a0f57d4b1b74262b71de4
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
@@ -372,7 +372,7 @@ SCES_515.13: # EyeToy - Play (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   devices:
     - EyeToy
-SCES_515.78: # Network Access Disc (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi) (v6.00)
+SCES_515.78: # Network Access Disc (Europe) (En,Fr,De,Es,It) (v1.03)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
@@ -387,7 +387,7 @@ SCES_515.78: # Network Access Disc (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi) (
   devices:
     - Keyboard
     - Mouse
-SCES_515.92: # Formula One 2003 (Europe) (En,Fr,De,Es,It,Fi)
+SCES_515.92: # Formula One 2003 (Europe, Australia) (En,Fr,De,Es,It,Fi)
   modules:
     - LGDEV.IRX__bf3ca8a0b92ffcfd59d504a6cdeecb48
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -426,7 +426,7 @@ SCES_516.77: # My Street (Europe) (En,Fr,De,Es,It)
     - USBKB.IRX__1d597b55517582696deb93b19f47d405
   devices:
     - Keyboard
-SCES_516.84: # WRC 3 - The Official Game of the FIA World Rally Championship (Europe, Australia) (En,Fr,De,Es,It,Pt,No,Fi)
+SCES_516.84: # WRC 3 - The Official Game of the FIA World Rally Championship (Europe) (En,Fr,De,Es,It,Pt,No,Fi) (v2.00)
   modules:
     - LGDEV.IRX__a4f23551f2e1da53e0ee4bdbf00e97ba
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -521,7 +521,7 @@ SCES_520.33: # Syphon Filter - The Omega Strain (Europe, Australia) (En,Fr,De,Es
   devices:
     - Keyboard
     - Microphone
-SCES_520.42: # Formula One 04 (Europe) (En,Fr,De,Es,It,Fi) (v2.02)
+SCES_520.42: # Formula One 04 (Europe) (En,Fr,De,Es,It,Fi) (v1.01)
   modules:
     - LGDEVW.IRX__c2c85d7bb1fa262ad699113529ade1a5
     - LGKBM.IRX__33c6904391cbc6a48973a8a3fa169a1a
@@ -554,7 +554,7 @@ SCES_522.68: # SingStar (Europe, Australia)
   devices:
     - EyeToy
     - Microphone
-SCES_523.89: # WRC 4 - The Official Game of the FIA World Rally Championship (Europe, Australia) (En,Fr,De,Es,It,Pt,No,Fi) (v2.00)
+SCES_523.89: # WRC 4 - The Official Game of the FIA World Rally Championship (Europe) (En,Fr,De,Es,It,Pt,No,Fi) (v1.01)
   modules:
     - LGDEV.IRX__fec70a01f7666d972d3b8afd267cbd82
     - LGKBM.IRX__33c6904391cbc6a48973a8a3fa169a1a
@@ -649,7 +649,7 @@ SCES_526.77: # Network Access Disc (Europe) (En,Fr,De,Es,It,Nl,Pt) (v1.02)
     - Keyboard
     - Microphone
     - Mouse
-SCES_527.48: # EyeToy - Play 2 (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,El) (v3.03)
+SCES_527.48: # EyeToy - Play 2 (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,El) (v2.00)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
     - EYETOY.IRX__36b52c1fb4e43653081a300cce46f6e5
@@ -710,7 +710,7 @@ SCES_531.78: # SingStar Pop (Europe)
   devices:
     - EyeToy
     - Microphone
-SCES_532.47: # WRC - Rally Evolved (Europe) (En,Fr,De,Es,It,Pt,No,Fi) (v2.00)
+SCES_532.47: # WRC - Rally Evolved (Europe) (En,Fr,De,Es,It,Pt,No,Fi) (v1.01)
   modules:
     - LGDEV.IRX__177c2ca762245dafb2d0ba34253b67d3
     - LGKBM.IRX__33c6904391cbc6a48973a8a3fa169a1a
@@ -756,7 +756,7 @@ SCES_533.00: # SOCOM 3 - U.S. Navy SEALs (Europe) (En,Fr,De,Es,It)
     - Microphone
     - PlayStation Portable
     - Storage
-SCES_533.04: # Buzz! The Music Quiz (UK)
+SCES_533.04: # Buzz! The Music Quiz (Europe)
   modules:
     - BUZZER.IRX__2061192ddbd33df48785679b33e2f87c
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
@@ -772,12 +772,12 @@ SCES_533.15: # EyeToy - Play 3 (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,D
   devices:
     - EyeToy
     - Storage
-SCES_533.47: # SpyToy (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi)
+SCES_533.47: # SpyToy (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi)
   modules:
     - EPSPRINT.IRX__19c92598012c1d73404b8b5273ffc608
   devices:
     - Epson
-SCES_533.72: # Tourist Trophy - The Real Riding Simulator (Europe) (En,Fr,De,Es,It)
+SCES_533.72: # Tourist Trophy - The Real Riding Simulator (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - EPSPRINT.IRX__5cf44c0891897cd0f41370b097930bcc
     - PDIUSB.IRX__340f9eabb93f09c3a2934c45a1182798
@@ -786,7 +786,7 @@ SCES_533.72: # Tourist Trophy - The Real Riding Simulator (Europe) (En,Fr,De,Es,
   devices:
     - Epson
     - Storage
-SCES_534.22: # Stuart Little 3 - Big Photo Adventure (Europe) (En,Fr,De,Es,It,Nl,Pt,Fi,Pl)
+SCES_534.22: # Stuart Little 3 - Big Photo Adventure (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Fi,Pl)
   modules:
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -801,13 +801,13 @@ SCES_534.49: # AFL Premiership 2005 (Australia)
   devices:
     - EyeToy
     - Keyboard
-SCES_534.50: # Gaelic Games - Football (Europe) (En,Gd)
+SCES_534.50: # Gaelic Games - Football (Europe) (En,Ga)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - EyeToy
-SCES_536.02: # SingStar '80s (Europe, Australia) (v2.00)
+SCES_536.02: # SingStar '80s (Europe, Australia) (v1.00)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
@@ -815,7 +815,7 @@ SCES_536.02: # SingStar '80s (Europe, Australia) (v2.00)
   devices:
     - EyeToy
     - Microphone
-SCES_538.79: # Buzz! The Big Quiz (Europe) (v2.00)
+SCES_538.79: # Buzz! The Big Quiz (Europe) (v1.01)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
@@ -918,7 +918,7 @@ SCES_542.58: # Buzz! The Sports Quiz (Europe)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
     - Buzz
-SCES_542.65: # Buzz! The Sports Quiz (Europe) (En,Fr,Nl)
+SCES_542.65: # Buzz! The Sports Quiz (Belgium, Netherlands) (En,Fr,Nl)
   modules:
     - BUZZER.IRX__2061192ddbd33df48785679b33e2f87c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -934,7 +934,7 @@ SCES_544.77: # SOCOM - U.S. Navy SEALs - Combined Assault (Europe) (En,Fr,De,Es,
     - Keyboard
     - Microphone
     - PlayStation Portable
-SCES_545.05: # Buzz! The Mega Quiz (Europe) (En,Fr,Nl)
+SCES_545.05: # Buzz! The Mega Quiz (Belgium, Netherlands) (En,Fr,Nl)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
@@ -978,13 +978,13 @@ SCES_546.25: # Buzz! Junior - Monster Rumble (Europe, Australia) (En,Fr,De,Es,It
     - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4
   devices:
     - Buzz
-SCES_546.37: # Gaelic Games - Hurling (Europe) (En,Gd)
+SCES_546.37: # Gaelic Games - Hurling (Europe) (En,Ga)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - EyeToy
-SCES_546.38: # Gaelic Games - Football 2 (Europe) (En,Gd)
+SCES_546.38: # Gaelic Games - Football 2 (Europe) (En,Ga)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -1050,7 +1050,7 @@ SCES_549.24: # NBA 08 (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
     - EyeToy
-SCES_549.41: # Buzz! The Schools Quiz (Europe)
+SCES_549.41: # Buzz! The Schools Quiz (UK) (v1.00)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
@@ -1078,7 +1078,7 @@ SCES_550.83: # EyeToy Play - PomPom Party (Europe, Australia) (En,Fr,De,Es,It,Nl
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
     - EyeToy
-SCES_550.98: # Buzz! The Pop Quiz (Europe) (En,Fr,Nl)
+SCES_550.98: # Buzz! The Pop Quiz (Belgium, Netherlands) (En,Fr,Nl)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
@@ -1180,13 +1180,13 @@ SCES_556.11: # SingStar Chart Hits (Australia)
   devices:
     - EyeToy
     - Microphone
-SCKA_100.05: # EyeToy - Edukids (Korea) (SCKA-10005)
+SCKA_100.05: # EyeToy - EduKids (Korea)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - EyeToy
-SCKA_100.07: # EyeToy - Tales (Korea) (SCKA-10007)
+SCKA_100.07: # EyeToy - Tales (Korea)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -1210,6 +1210,15 @@ SCPS_110.32: # Vib-Ripple (Japan)
   devices:
     - Keyboard
     - Storage
+SCPS_150.09: # Gran Turismo 3 - A-Spec (Japan, Asia)
+  modules:
+    - PDIUSB.IRX__4436adbd797a6770fa3a2e16c9289139
+    - USBD.IRX__cf77ef393a9f99e16d5e5d6dd12e5c6c
+  devices:
+    - Guillemot Force Feedback Racing Wheel
+    - Logitech Driving Force
+    - Logitech GT Force
+    - Logitech MOMO Force
 SCPS_150.10: # Gran Turismo Concept - 2001 Tokyo (Japan, Asia)
   modules:
     - PDIUSB.IRX__e792e412b77ca824ce86264384e4b292
@@ -1219,6 +1228,12 @@ SCPS_150.10: # Gran Turismo Concept - 2001 Tokyo (Japan, Asia)
     - Logitech Driving Force
     - Logitech GT Force
     - Logitech MOMO Force
+SCPS_150.15: # Toro to Kyuujitsu (Japan)
+  modules:
+    - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
+    - USBPRT.IRX__3947b6bacf21a7d7405abc1b218fae17
+  devices:
+    - Sony PopEgg
 SCPS_150.18: # Yamanote-sen, The - Train Simulator Real (Japan)
   modules:
     - USBD.IRX__cf77ef393a9f99e16d5e5d6dd12e5c6c
@@ -1243,13 +1258,42 @@ SCPS_150.45: # Ka 2 - Let's Go Hawaii (Japan)
     - USBHT.IRX__ee49589454c52696d397c2958f016844
   devices:
     - HMD
-SCPS_150.86: # Bakufuu Slash! Kizna Arashi
+SCPS_150.59: # Minna no Golf 4 (Japan, Asia) (v1.04)
+  modules:
+    - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
+    - USBKB.IRX__1d597b55517582696deb93b19f47d405
+  devices:
+    - Keyboard
+SCPS_150.77: # EyeToy - Saru EyeToy - Oosawagi! Ukkiuki Game Tenkomori!! (Japan) (EyeToy Camera Doukonban)
+  modules:
+    - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
+    - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
+  devices:
+    - EyeToy
+SCPS_150.86: # Bakufuu Slash! Kizuna Arashi (Japan)
   modules:
     - EYETOY.IRX__904cad683db9922cb9169ec55f95c52c
     - LGVID.IRX__969a99543486e6a241cba3233bd5f8e4
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
   devices:
     - EyeToy
+SCPS_170.01: # Gran Turismo 4 (Japan, Asia)
+  modules:
+    - EPSPRINT.IRX__0291069bc9b1056801e06360a6f1dc47
+    - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
+    - LGDEV.IRX__c783da194251de4a8cf136b12217cba2
+    - PDIUSB.IRX__340f9eabb93f09c3a2934c45a1182798
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USTORAGE.IRX__e2993d271d07bf7a96477d44231b0fba
+  devices:
+    - Epson
+    - EyeToy
+    - Logitech Driving Force
+    - Logitech Driving Force Pro
+    - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
+    - Storage
 SCPS_560.05: # Gran Turismo Concept - 2002 Tokyo-Seoul (Korea) (v1.02)
   modules:
     - PDIUSB.IRX__e31040cecd5f3fe39e0dff3096cd88e0
@@ -1259,7 +1303,7 @@ SCPS_560.05: # Gran Turismo Concept - 2002 Tokyo-Seoul (Korea) (v1.02)
     - Logitech Driving Force
     - Logitech GT Force
     - Logitech MOMO Force
-SCUS_970.95: # Network Adaptor Start-Up Disc v2.0 (USA) (Rev)
+SCUS_970.95: # Network Adaptor Start-Up Disc v2.0 (USA) (Rev 1)
   modules:
     - AN986.IRX__6ce56ce2964f4ad010819549c0b94d53
     - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
@@ -1347,7 +1391,7 @@ SCUS_971.96: # Twisted Metal - Black Online (USA)
     - Logitech GT Force
     - Logitech Strike Force 3D
     - Pegasus
-SCUS_972.11: # ATV Offroad Fury 2 (USA) (v2.00)
+SCUS_972.11: # ATV Offroad Fury 2 (USA) (v1.00)
   modules:
     - AN986.IRX__6ce56ce2964f4ad010819549c0b94d53
     - KEYBD.IRX__6171efeb2b5ffd5d18ea6cbc29847c4b
@@ -1479,7 +1523,7 @@ SCUS_973.48: # NBA 06 (USA)
     - EyeToy
     - Keyboard
     - Microphone
-SCUS_973.56: # Network Adaptor Start-Up Disc Version 2.50 (USA)
+SCUS_973.56: # Network Adaptor Start-Up Disc v2.5 (USA)
   modules:
     - AN986.IRX__6ce56ce2964f4ad010819549c0b94d53
     - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
@@ -1567,6 +1611,12 @@ SCUS_974.66: # Gretzky NHL 06 (USA)
     - EyeToy
     - Keyboard
     - Microphone
+SCUS_974.72: # Shadow of the Colossus (USA)
+  modules:
+    - PL2303.IRX__6c76a938d43f493a9df81475f7dd70cd
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+  devices:
+    - UART
 SCUS_974.83: # Gran Turismo 4 - Mazda MX-5 Edition (USA) (Demo)
   modules:
     - EPSPRINT.IRX__0291069bc9b1056801e06360a6f1dc47
@@ -1594,7 +1644,7 @@ SCUS_975.00: # MLB 06 - The Show (USA)
     - EyeToy
     - Keyboard
     - Microphone
-SCUS_975.02: # Tourist Trophy (USA)
+SCUS_975.02: # Tourist Trophy (USA, Canada)
   modules:
     - EPSPRINT.IRX__5cf44c0891897cd0f41370b097930bcc
     - PDIUSB.IRX__340f9eabb93f09c3a2934c45a1182798
@@ -1613,7 +1663,7 @@ SCUS_975.44: # NBA 07 featuring the Life Vol. 2 (USA)
     - EyeToy
     - Keyboard
     - Microphone
-SCUS_975.56: # MLB 07 - The Show (USA) (v2.00)
+SCUS_975.56: # MLB 07 - The Show (USA) (v1.00)
   modules:
     - LGAUD.IRX__57140338edddd842250fdae6e3078d8f
     - LGVID.IRX__27e139dea37a01bea196d4a1795c957c
@@ -1836,7 +1886,7 @@ SLES_501.94: # 4x4 Evo (Europe) (En,Fr,De)
 SLES_501.96: # Legacy of Kain - Soul Reaver 2 (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
-SLES_502.10: # XGIII - Extreme G Racing (Europe) (En,Fr,De,Es) (v2.00)
+SLES_502.10: # XGIII - Extreme G Racing (Europe) (En,Fr,De,Es) (v1.02)
   modules:
     - KEYBOA~1.IRX__1f4eff001633cf4adacd396c4665b9ff
     - MOUSEIRX.IRX__b3342ba625191dc14b54e5ee28a27ab6
@@ -1875,7 +1925,7 @@ SLES_502.18: # All-Star Baseball 2002 (Europe)
   modules:
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - USBMLOAD.IRX__4e562896bcf553cc4ab70401c2859e2b
-SLES_502.20: # Rugby (Europe)
+SLES_502.20: # Rugby (Europe, Australia)
   modules:
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - USBMLOAD.IRX__4e562896bcf553cc4ab70401c2859e2b
@@ -1952,7 +2002,7 @@ SLES_502.73: # Legion - The Legend of Excalibur (Europe) (En,Fr,De,Es,It)
     - USBKB.IRX__27907fe6c26eeec3a2449e2ad40a97cd
   devices:
     - Keyboard
-SLES_502.82: # Age of Empires II - The Age of Kings (Europe) (En,Fr,De,Es,It) (v2.00)
+SLES_502.82: # Age of Empires II - The Age of Kings (Europe) (En,Fr,De,Es,It) (v1.20)
   modules:
     - AVEPPP.IRX__3c88350e43c3e330b18f1d25648bb565
     - CXTMDM.IRX__a09a2ca63ccd24eda7b1fa2286a621b4
@@ -2128,7 +2178,7 @@ SLES_504.45: # Burnout (Europe) (En,Fr,De,Es,It)
 SLES_504.47: # All-Star Baseball 2003 featuring Derek Jeter (Europe)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
-SLES_504.86: # Splashdown (Europe) (En,Fr,De,Es,It) (v2.00)
+SLES_504.86: # Splashdown (Europe) (En,Fr,De,Es,It) (v1.00)
   modules:
     - KEYBD.IRX__6171efeb2b5ffd5d18ea6cbc29847c4b
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
@@ -2146,7 +2196,7 @@ SLES_505.04: # Half-Life (Europe, Australia)
   devices:
     - Keyboard
     - Mouse
-SLES_505.33: # Sunny Garcia Surfing (Europe) (En,Fr,De)
+SLES_505.33: # Sunny Garcia Surfing (Europe, Australia) (En,Fr,De)
   modules:
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
     - USBKB.IRX__27907fe6c26eeec3a2449e2ad40a97cd
@@ -2159,7 +2209,7 @@ SLES_505.39: # 007 - Agent Under Fire (Europe) (En,Fr,De,Es,Nl,Sv)
     - USBKEYBD.IRX__db95ddc050c04f691b97576aa658a002
   devices:
     - Keyboard
-SLES_505.40: # Simpsons, The - Road Rage (Europe)
+SLES_505.40: # Simpsons, The - Road Rage (Europe, Australia)
   modules:
     - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
@@ -2185,7 +2235,7 @@ SLES_505.41: # Capcom vs. SNK 2 - Mark of the Millennium 2001 (Europe)
     - Keyboard
     - Omron
     - Suntac OnlineStation
-SLES_505.57: # Polaroid Pete (Europe) (Beta)
+SLES_505.57: # Polaroid Pete (Europe) (Proto) (2002-01-09)
   modules:
     - DMCDRV.IRX__dfcd30d4edd74ffbf5ea85c007f73b4f
     - DSCDRV.IRX__24f1b50c346f44a49de72eea0a7b52ac
@@ -2247,7 +2297,7 @@ SLES_506.37: # Pro Rally 2002 (Europe) (En,Fr,De,Es,It)
     - Saitek Cyborg 3D Force Stick
     - Saitek R440 Force Feedback Wheel
     - Saitek RX550 Force Feedback Wheel
-SLES_506.38: # High Heat Major League Baseball 2003 (Europe)
+SLES_506.38: # High Heat Major League Baseball 2003 (Europe, Australia)
   modules:
     - SNDRV001.IRX__06a3803a8c4a0f03de744131aae967dc
     - SNDRV002.IRX__f3b95606bed8974049136f733b1219ce
@@ -2303,7 +2353,7 @@ SLES_507.22: # Premier Manager 2002-2003 Season (Europe)
   devices:
     - Keyboard
     - Mouse
-SLES_507.23: # TOCA Race Driver (Europe) (En,Fr,Es) (v2.00)
+SLES_507.23: # TOCA Race Driver (Europe) (En,Fr,Es) (v1.01)
   modules:
     - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -2318,7 +2368,7 @@ SLES_507.26: # Myst III - Exile (Europe) (En,Fr,De,Es,It,Nl)
     - USBMOUSE.IRX__3f0a1ec93252caee96000ae5ca02a4c1
   devices:
     - Mouse
-SLES_507.31: # Need for Speed - Hot Pursuit 2 (Europe, Australia) (En,Fr,De,Es,It,Sv) (v2.00)
+SLES_507.31: # Need for Speed - Hot Pursuit 2 (Europe, Australia) (En,Fr,De,Es,It,Sv) (v1.00)
   modules:
     - LGDEV.IRX__c138655d4b19bfcc8f2e8491c69c2281
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
@@ -2336,7 +2386,7 @@ SLES_507.38: # Star Trek - Voyager - Elite Force (Europe) (En,Fr,De,Es,It)
   devices:
     - Keyboard
     - Mouse
-SLES_507.39: # Soldier of Fortune - Gold Edition (Europe) (En,Fr,De,Es,It) (v2.00)
+SLES_507.39: # Soldier of Fortune - Gold Edition (Europe) (En,Fr,De,Es,It) (v1.01)
   modules:
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
     - USBKB.IRX__27907fe6c26eeec3a2449e2ad40a97cd
@@ -2388,7 +2438,7 @@ SLES_508.04: # Deus Ex (Europe)
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
   devices:
     - Keyboard
-SLES_508.16: # DTM Race Driver (Europe) (En,Fr,De) (v2.00)
+SLES_508.16: # DTM Race Driver (Europe) (En,Fr,De) (v1.01)
   modules:
     - LGDEV.IRX__158e216b254b6ed51ec4f3d6d3dc02fb
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
@@ -2533,7 +2583,7 @@ SLES_509.78: # Onimusha 2 - Samurai's Destiny (Europe) (En,Fr,De,Es,It)
     - USBMOUSE.IRX__279c10ced8b8fd889074e306f896abe9
   devices:
     - Mouse
-SLES_509.92: # Hitman 2 - Silent Assassin (Europe) (v2.00)
+SLES_509.92: # Hitman 2 - Silent Assassin (Europe) (v1.01)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
     - USBKEYBD.IRX__6811f04da3fa6a86cf937d7bdd627579
@@ -2567,14 +2617,14 @@ SLES_510.23: # LMA Manager 2003 (Europe)
     - AN986.IRX__7507a5133920bbcb4baf03244b881e66
   devices:
     - Pegasus
-SLES_510.42: # Disney Golf (Europe)
+SLES_510.42: # Disney Golf (Europe, Australia)
   modules:
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
     - USBKB.IRX__23d4cf22084530f5ce7331f3b666252b
     - USBMLOAD.IRX__dbf6219d17d24bf00fe246640f0345fb
   devices:
     - Keyboard
-SLES_510.43: # Spyro - Enter the Dragonfly (Europe) (En,Fr,De,Es,It,Nl)
+SLES_510.43: # Spyro - Enter the Dragonfly (Europe, Australia) (En,Fr,De,Es,It,Nl)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
     - USBKB.IRX__e74f290a4ffd3b62ac2d2d55b8385dae
@@ -2699,7 +2749,7 @@ SLES_511.44: # Shox - Rally Reinvented (Europe) (En,Fr,De,Es,It,Sv,Fi)
     - Saitek R440 Force Feedback Wheel
     - Saitek RX550 Force Feedback Wheel
     - ThrustMaster 360 Modena (Pro)
-SLES_511.54: # Madden NFL 2003 (Europe)
+SLES_511.54: # Madden NFL 2003 (Europe, Australia)
   modules:
     - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -2780,7 +2830,7 @@ SLES_512.33: # Dragon Ball Z - Budokai (Europe, Australia) (En,Fr,De,Es,It)
     - USBKB.IRX__23d4cf22084530f5ce7331f3b666252b
   devices:
     - Keyboard
-SLES_512.44: # XIII (Europe) (En,Fr,De,Es,It)
+SLES_512.44: # XIII (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - PSX2USBC.IRX__9278148f93eb753f561be5ff3f50f943
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
@@ -2795,7 +2845,7 @@ SLES_512.52: # Lord of the Rings, The - The Two Towers (Europe, Australia) (En,N
 SLES_512.58: # 007 - Nightfire (Europe) (En,Fr,It,Nl,Sv)
   modules:
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
-SLES_512.82: # Tiger Woods PGA Tour 2003 (Europe)
+SLES_512.82: # Tiger Woods PGA Tour 2003 (Europe, Australia)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
     - USBKEYBD.IRX__e0a42eb1d1f00678802cc2218015841e
@@ -2889,7 +2939,7 @@ SLES_513.99: # Armored Core 3 (Europe)
     - Omron
     - Suntac OnlineStation
     - UART
-SLES_514.25: # Fatman & Slim (Europe) (Proto)
+SLES_514.25: # Fatman & Slim (Europe) (Proto) (2002-12-06)
   modules:
     - LGDEV.IRX__c138655d4b19bfcc8f2e8491c69c2281
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -2987,7 +3037,7 @@ SLES_515.80: # World Challenge (Europe) (En,Fr,De,Nl)
   devices:
     - Logitech Driving Force
     - Logitech GT Force
-SLES_515.84: # F1 Career Challenge (Europe) (En,Fr,De,It)
+SLES_515.84: # F1 Career Challenge (Europe, Australia) (En,Fr,De,It)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
     - WHEEL.IRX__2a583d3394da149ebf68647ca87978b5
@@ -3072,7 +3122,7 @@ SLES_516.80: # Splashdown 2 - Rides Gone Wild (Europe) (En,Es,It)
 SLES_516.81: # Splashdown 2 - Rides Gone Wild (Europe) (En,Fr,De)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
-SLES_516.97: # SSX 3 (Europe) (En,Fr,De,Es) (v2.00)
+SLES_516.97: # SSX 3 (Europe) (En,Fr,De,Es) (v1.00)
   modules:
     - LGAUD.IRX__dbaee103500b9fc7ee81c186ba18629a
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -3180,7 +3230,7 @@ SLES_518.21: # Alias (Europe) (En,Fr,De,Es)
     - Logitech GT Force
     - Logitech Strike Force 3D
     - Mouse
-SLES_518.24: # Colin McRae Rally 04 (Europe) (En,Fr,De,Es,It)
+SLES_518.24: # Colin McRae Rally 04 (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__3cf21dd5c6beae5baff8e99859a30148
     - LGDEV.IRX__42aec43e08ed57c5e03c35f80c303439
@@ -3273,7 +3323,7 @@ SLES_518.85: # Mega Man X7 (Europe) (En,Fr,De,Es,It)
     - USBMOUSE.IRX__b4e4e0c5ae0f8a1b3a08731e673190f4
   devices:
     - Mouse
-SLES_518.87: # Tiger Woods PGA Tour 2004 (Europe) (v2.00)
+SLES_518.87: # Tiger Woods PGA Tour 2004 (Europe) (v1.00)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
     - USBKB.IRX__1d597b55517582696deb93b19f47d405
@@ -3310,7 +3360,7 @@ SLES_519.49: # ESPN NBA Basketball (Europe)
   modules:
     - IOP.IRX__64dec9f6815d816429147f730ce3ed2c
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
-SLES_519.53: # FIFA Football 2004 (Europe) (En,It,Nl,Sv) (v2.00)
+SLES_519.53: # FIFA Football 2004 (Europe) (En,It,Nl,Sv) (v1.00)
   modules:
     - LGAUD.IRX__2eacaa0e198082897958eacae3890039
     - LGKBM.IRX__b9773b7fed1e3da8cfd01bfdd9b4575a
@@ -3319,7 +3369,7 @@ SLES_519.53: # FIFA Football 2004 (Europe) (En,It,Nl,Sv) (v2.00)
   devices:
     - Keyboard
     - Microphone
-SLES_519.67: # Need for Speed - Underground (Europe) (En,Fr,De,Es,It,Nl,Sv)
+SLES_519.67: # Need for Speed - Underground (Europe, Australia) (En,Fr,De,Es,It,Nl,Sv)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
     - USBKB.IRX__1d597b55517582696deb93b19f47d405
@@ -3421,7 +3471,7 @@ SLES_521.52: # Terminator 3 - Rise of the Machines (Europe)
     - USBKB.IRX__1d597b55517582696deb93b19f47d405
   devices:
     - Keyboard
-SLES_521.59: # Myth Makers - Super Kart GP (Europe)
+SLES_521.59: # Myth Makers - Super Kart GP (Europe, Australia)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
     - USBKB.IRX__fae9db3b2b773c3eaddba8c0afe37a93
@@ -3591,7 +3641,7 @@ SLES_524.48: # Knights of the Temple - Infernal Crusade (Europe) (En,Fr,De,Es)
     - USBMLOAD.IRX__1f80adcd17801a6af344618056e29717
   devices:
     - Keyboard
-SLES_524.49: # Kidz Sports Basketball (Europe)
+SLES_524.49: # Kidz Sports Basketball (Europe, Australia)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
     - USBKB.IRX__fae9db3b2b773c3eaddba8c0afe37a93
@@ -3629,7 +3679,7 @@ SLES_524.86: # Astro Boy (Europe) (En,Fr,De,Es,It)
   devices:
     - Keyboard
     - Mouse
-SLES_525.09: # Tiger Woods PGA Tour 2005 (Europe) (En,Fr,De,Sv) (v2.00)
+SLES_525.09: # Tiger Woods PGA Tour 2005 (Europe) (En,Fr,De,Sv) (v1.01)
   modules:
     - LGAUD.IRX__22e950624c6e1062423152a915602448
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -3665,7 +3715,7 @@ SLES_525.63: # FIFA Football 2005 (Europe) (En,Nl,Sv,No,Da,El)
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
     - Keyboard
-SLES_525.70: # Area 51 (Europe) (En,Fr,De,Es,It)
+SLES_525.70: # Area 51 (Europe) (En,Fr,De,Es,It) (v1.02)
   modules:
     - LGAUD.IRX__22e950624c6e1062423152a915602448
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -3865,7 +3915,7 @@ SLES_527.22: # Kidz Sports Ice Hockey (Europe)
     - USBMLOAD.IRX__dbf6219d17d24bf00fe246640f0345fb
   devices:
     - Keyboard
-SLES_527.25: # Need for Speed - Underground 2 (Europe) (En,Fr,De,Es,It,Nl,Sv,Da) (v2.00)
+SLES_527.25: # Need for Speed - Underground 2 (Europe) (En,Fr,De,Es,It,Nl,Sv,Da) (v1.01)
   modules:
     - LGDEVW.IRX__82ed771aae0d8264f601ea8f314985cb
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
@@ -3919,7 +3969,7 @@ SLES_527.74: # Sprint Car Challenge (Europe) (En,Fr,De,Es,It,Nl)
   devices:
     - Logitech Driving Force
     - Logitech GT Force
-SLES_527.76: # Junior Board Games (Europe) (En,Fr,De,Es,It) (v2.00)
+SLES_527.76: # Junior Board Games (Europe) (En,Fr,De,Es,It) (v1.01)
   modules:
     - USBMOUSE.IRX__ab356b0c7621ec7f11b0ad0f81da75c5
   devices:
@@ -3950,7 +4000,7 @@ SLES_528.11: # Get on da Mic (Europe) (En,Fr,It)
 SLES_528.32: # Mega Man X - Command Mission (Europe) (En,Fr,De)
   modules:
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
-SLES_528.34: # Sega Superstars (Europe) (En,Fr,Es,It)
+SLES_528.34: # Sega Superstars (Europe, Australia) (En,Fr,Es,It)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -4057,7 +4107,7 @@ SLES_529.42: # Midnight Club 3 - DUB Edition (Europe, Australia) (En,Fr,De,Es,It
     - Logitech MOMO Force
     - Logitech MOMO Racing Force
     - Microphone
-SLES_529.43: # ESPN NFL 2K5 (Europe)
+SLES_529.43: # ESPN NFL 2K5 (Europe, Australia)
   modules:
     - IOP.IRX__66ad816d6f8d4e61b6ce504f01951ca2
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -4168,7 +4218,7 @@ SLES_530.45: # SRS - Street Racing Syndicate (Europe) (En,Fr,De,Es,It)
     - Logitech MOMO Force
     - Logitech MOMO Racing Force
     - Microphone
-SLES_530.78: # Spy vs. Spy (Europe) (En,Fr,De,Es)
+SLES_530.78: # Spy vs. Spy (Europe, Australia) (En,Fr,De,Es)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
@@ -4321,7 +4371,7 @@ SLES_532.99: # Delta Force - Black Hawk Down (Europe) (En,Fr,De,Es,It)
   devices:
     - Keyboard
     - Microphone
-SLES_533.19: # Resident Evil - Outbreak - File 2 (Europe) (En,Fr,De,Es,It)
+SLES_533.19: # Resident Evil - Outbreak - File #2 (Europe) (En,Fr,De,Es,It)
   modules:
     - LANEGG.IRX__700c71aab915243bec0a2d84786a3b4d
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -4343,7 +4393,7 @@ SLES_533.70: # Real World Golf (Europe) (Fr,De,Es,It)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - GameTrak
-SLES_533.71: # Real World Golf (Europe) (v2.01)
+SLES_533.71: # Real World Golf (Europe) (v1.01)
   modules:
     - GTD.IRX__7248da276332e0b44be2ee0c5f30b61a
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -4434,7 +4484,7 @@ SLES_535.01: # Star Wars - Battlefront II (Europe) (En,Es,It)
   devices:
     - Keyboard
     - Microphone
-SLES_535.07: # Burnout Revenge (Europe) (En,Fr,De)
+SLES_535.07: # Burnout Revenge (Europe, Australia) (En,Fr,De)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
     - LGDEVW.IRX__fa74d9b0e8b2e90e6bde48ce2b16dc37
@@ -4481,7 +4531,7 @@ SLES_535.41: # Tiger Woods PGA Tour 06 (Europe) (En,Fr,De,Sv)
   devices:
     - Keyboard
     - Microphone
-SLES_535.44: # Pro Evolution Soccer 5 (Europe) (En,Fr,De,Es)
+SLES_535.44: # Pro Evolution Soccer 5 (Europe, Australia) (En,Fr,De,Es)
   modules:
     - USBD.IRX__d1d6fc6fa4618e8db7c33da6a24e9e49
     - USBKEYBD.IRX__ee8417751596d0e0bba2f91a4d7fe1d2
@@ -4509,7 +4559,7 @@ SLES_536.32: # Dance-UK XL Party (UK)
     - USBMAT.IRX__5c5da03819d4be75a9a80eaf36dfa03b
   devices:
     - Mat
-SLES_536.35: # NASCAR 06 - Total Team Control (Europe)
+SLES_536.35: # NASCAR 06 - Total Team Control (Europe, Australia)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
     - LGDEV.IRX__fa74d9b0e8b2e90e6bde48ce2b16dc37
@@ -4657,7 +4707,7 @@ SLES_537.24: # World Series of Poker (Europe)
   devices:
     - EyeToy
     - Microphone
-SLES_537.29: # Battlefield 2 - Modern Combat (Europe) (En,Es,Nl,Sv) (v2.01)
+SLES_537.29: # Battlefield 2 - Modern Combat (Europe) (En,Es,Nl,Sv) (v1.00)
   modules:
     - LGAUD.IRX__0b960c7e399e90de01f401ef2329cea3
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -4825,7 +4875,7 @@ SLES_541.56: # Mortal Kombat - Armageddon (Europe) (En,Fr,De,Es,It)
   devices:
     - Keyboard
     - Microphone
-SLES_541.58: # Hummer Badlands (Europe)
+SLES_541.58: # Hummer Badlands (Europe, Australia)
   modules:
     - LGDEVW.IRX__fa436ba12eac37c656b221f228f80394
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -4855,7 +4905,7 @@ SLES_541.99: # Who Wants to Be a Millionaire - Party Edition (Europe)
   devices:
     - Buzz
     - EyeToy
-SLES_542.03: # Pro Evolution Soccer 6 (Europe)
+SLES_542.03: # PES 6 - Pro Evolution Soccer (Europe, Australia)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKEYBD.IRX__43d1672e1ebdece43cee8d213233de47
@@ -4874,7 +4924,7 @@ SLES_542.10: # NBA 2K7 (Europe, Australia) (En,Fr,De,Es,It)
   devices:
     - Keyboard
     - Microphone
-SLES_542.11: # NHL 2K7 (Europe) (En,Fr,De,Es,It)
+SLES_542.11: # NHL 2K7 (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - IOP.IRX__7cfcc48335273f2bfc50346c02a28707
     - LGAUD.IRX__2eacaa0e198082897958eacae3890039
@@ -5152,7 +5202,7 @@ SLES_548.59: # Guitar Hero - Rocks the 80s (Europe, Australia)
     - LGAUD.IRX__455f1295190ff8bf09579ed904ce83d1
   devices:
     - Microphone
-SLES_548.61: # Thomas & Friends - A Day at the Races (Europe) (En,Sv,No,Da,Fi)
+SLES_548.61: # Thomas & Friends - A Day at the Races (Europe) (Sv,No,Da,Fi)
   modules:
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -5183,7 +5233,7 @@ SLES_548.80: # NBA 2K8 (Europe, Australia) (En,Fr,De,Es,It)
   devices:
     - Keyboard
     - Microphone
-SLES_548.81: # NHL 2K8 (Europe) (En,Fr,De,Es,It)
+SLES_548.81: # NHL 2K8 (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - IOP.IRX__7cfcc48335273f2bfc50346c02a28707
     - LGAUD.IRX__2eacaa0e198082897958eacae3890039
@@ -5347,7 +5397,7 @@ SLES_552.53: # NBA 2K9 (Europe) (En,Fr,De,Es,It)
   devices:
     - Keyboard
     - Microphone
-SLES_552.94: # Ferrari Challenge - Trofeo Pirelli (Europe) (En,Fr,De,Es,It)
+SLES_552.94: # Ferrari Challenge - Trofeo Pirelli (Europe) (En,Fr,De,Es,It) (v1.00)
   modules:
     - LGAUD.IRX__62afd0e1eddae8220778312846bfc687
     - LGDEVW.IRX__592fa63459e12eda63cae3085d43d1ed
@@ -5621,6 +5671,12 @@ SLES_820.36: # Armored Core - Nexus (Europe) (Disc 1) (Evolution)
 SLES_820.37: # Armored Core - Nexus (Europe) (Disc 2) (Revolution)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
+SLPM_550.24: # Jikkyou Powerful Pro Yakyuu 15 (Japan)
+  modules:
+    - USBD.IRX__d1d6fc6fa4618e8db7c33da6a24e9e49
+    - USBPSPCM.IRX__974a14ac35ea36e6df59abcc8f0b0e2f
+  devices:
+    - PlayStation Portable
 SLPM_552.58: # World Soccer Winning Eleven 2010 - Aoki Samurai no Chousen (Japan) (En,Ja)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -5629,6 +5685,9 @@ SLPM_552.58: # World Soccer Winning Eleven 2010 - Aoki Samurai no Chousen (Japan
   devices:
     - Keyboard
     - PlayStation Portable
+SLPM_620.05: # Shin Sangoku Musou (Japan)
+  modules:
+    - USBD.IRX__6fa02e6c4ca68484ad9f081157eed044
 SLPM_620.12: # KeyboardMania (Japan)
   modules:
     - UMIODATA.IRX__44baabfe548af6150b0cf05bbd52490f
@@ -5643,7 +5702,7 @@ SLPM_620.12: # KeyboardMania (Japan)
     - Keyboard
     - Roland PC-300
     - Roland SC-8850
-SLPM_620.25: # PrintFan (Japan)
+SLPM_620.25: # PrintFan (Japan) (v1.00)
   modules:
     - DSCDRV.IRX__09e526d2eaf54cb3f2e31eae1d26d5af
     - USBD.IRX__3574da7f3617eacf340d3fe7af833d49
@@ -5693,6 +5752,10 @@ SLPM_620.52: # Beatmania Da Da Da!! (Japan)
     - USBKBD.IRX__8e088d0a457388a5f84c42c6778fb1b3
   devices:
     - Keyboard
+SLPM_620.65: # Simple 2000 Series Vol. 1 - The Table Game (Japan)
+  modules:
+    - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
+    - USBMLOAD.IRX__4e562896bcf553cc4ab70401c2859e2b
 SLPM_620.68: # EGBrowser (Japan) (v1.06)
   modules:
     - OMMODEM.IRX__9c646c974fd73a06c1e35091689491fe
@@ -5931,13 +5994,13 @@ SLPM_623.02: # Eisei Meijin 7 - Tsuushin Shougi Club (Japan)
     - Keyboard
     - Omron
     - Suntac OnlineStation
-SLPM_623.15: # PetitCopter (Japan) (Controller Set)
+SLPM_623.15: # Petit Copter (Japan) (Controller Set)
   modules:
     - USBCFC.IRX__4c22bd1455091da2364ae05b693d5577
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
   devices:
     - Compact Flight Controller
-SLPM_623.53: # Simple 2000 Series Vol. 33 - The Jet Coaster - Yuuenchi Otsukurou! (Japan)
+SLPM_623.53: # Simple 2000 Series Vol. 33 - The Jet Coaster - Yuuenchi o Tsukurou! (Japan)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
     - USBHT.IRX__ee49589454c52696d397c2958f016844
@@ -6033,7 +6096,7 @@ SLPM_624.79: # Karaoke Revolution - J-Pop Best Vol. 9 (Japan)
   devices:
     - Keyboard
     - Konami Mic
-SLPM_625.28: # Karaoke Revolution - Family Pack (Japan)
+SLPM_625.28: # Karaoke Revolution - Kazoku Idol-ka Sengen (Japan) (USB Mic Doukonban)
   modules:
     - USBAD.IRX__4d148fc83ec3a1bd3bf70d500c41e33a
     - USBD.IRX__4f108769fc14372adf76ad4c8f1e1ece
@@ -6043,6 +6106,12 @@ SLPM_625.28: # Karaoke Revolution - Family Pack (Japan)
   devices:
     - Keyboard
     - Konami Mic
+SLPM_625.77: # Jissen Pachi-Slot Hisshouhou! Hokuto no Ken Plus (Japan)
+  modules:
+    - SLOTCNTR.IRX__f7299cf677e37cd6bb4b9c253c631333
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+  devices:
+    - Pachi-Slot
 SLPM_626.24: # Petit Copter 2 (Japan)
   modules:
     - USBCFC.IRX__70e76c6720b74f19f129fe4a23dc136e
@@ -6052,7 +6121,16 @@ SLPM_626.24: # Petit Copter 2 (Japan)
   devices:
     - Compact Flight Controller
     - Keyboard
-SLPM_650.14: # Mystical Ninja Goemon Zero (USA) (Beta)
+SLPM_650.05: # Ore ga Kantoku da! Gekitou Pennant Race (Japan)
+  modules:
+    - USBD.IRX__490bd72468d75bbaf248288107c61297
+SLPM_650.10: # Onimusha (Japan)
+  modules:
+    - AN986.IRX__e7438533163e65519b1684fc241ec515
+    - USBD.IRX__2ba864227a1f58540dfa4855b82efcf5
+  devices:
+    - Pegasus
+SLPM_650.14: # Bouken Jidai Katsugeki - Goemon (Japan)
   modules:
     - USBD.IRX__2ba864227a1f58540dfa4855b82efcf5
 SLPM_650.20: # Para Para Paradise (Japan)
@@ -6061,7 +6139,7 @@ SLPM_650.20: # Para Para Paradise (Japan)
     - USBKB.IRX__b1a7c6a3b67c93d865517bcf303aea95
   devices:
     - Para Para Paradise
-SLPM_650.39: # Densha de Go! Shinkansen - San'you Shinkansen-hen (Japan) (v2.01)
+SLPM_650.39: # Densha de Go! Shinkansen - San'you Shinkansen-hen (Japan) (v1.06)
   modules:
     - USBD.IRX__cf77ef393a9f99e16d5e5d6dd12e5c6c
     - USBDENCO.IRX__ac2c6f9406c7f657f5ddb0d0f8ff36e1
@@ -6098,7 +6176,7 @@ SLPM_650.54: # Abarenbou Princess (Japan)
     - Keyboard
     - Pegasus
     - UART
-SLPM_650.76: # Kidou Senshi Gundam - Renpou vs. Zeon DX (Japan)
+SLPM_650.76: # Kidou Senshi Gundam - Renpou vs. Zeon DX (Japan) (v1.02)
   modules:
     - AVE_WRAP.IRX__1021df3feae43ac77e971e9290d71c17
     - AVEPPP.IRX__317c75a35c17fd0e3168b26ba0b8a22e
@@ -6113,14 +6191,14 @@ SLPM_650.76: # Kidou Senshi Gundam - Renpou vs. Zeon DX (Japan)
     - Conexant SmartSCM
     - Keyboard
     - Suntac OnlineStation
-SLPM_650.86: # A Visual Mix - Ayumi Hamasaki Dome Tour 2001 A (Japan) (Disc 1)
+SLPM_650.86: # A Visual Mix - Ayumi Hamasaki Dome Tour 2001 A (Japan) (Disc 1) (SLPM-65086)
   modules:
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
     - USBKB.IRX__27907fe6c26eeec3a2449e2ad40a97cd
     - USBMLOAD.IRX__49f47e017d2d199651c70f59cc3aa2fa
   devices:
     - Keyboard
-SLPM_650.87: # A Visual Mix - Ayumi Hamasaki Dome Tour 2001 A (Japan) (Disc 2)
+SLPM_650.87: # A Visual Mix - Ayumi Hamasaki Dome Tour 2001 A (Japan) (Disc 2) (SLPM-65087)
   modules:
     - AVEPPP.IRX__81c61278dc89b16ffac4bfd3e12357fc
     - CXTMDM.IRX__a09a2ca63ccd24eda7b1fa2286a621b4
@@ -6148,6 +6226,12 @@ SLPM_650.94: # KeyboardMania II - 2nd Mix & 3rd Mix (Japan)
   devices:
     - IO-Data/Generic?
     - Keyboard
+SLPM_651.01: # Onimusha 2 (Japan)
+  modules:
+    - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
+    - USBMOUSE.IRX__279c10ced8b8fd889074e306f896abe9
+  devices:
+    - Mouse
 SLPM_651.16: # Lilie no Atelier Plus - Salburg no Renkinjutsushi 3 (Japan)
   modules:
     - EPSPRINT.IRX__d22c21bae7a42be771f52773ad691732
@@ -6184,7 +6268,7 @@ SLPM_651.48: # Densha de Go! Ryojou-hen (Japan)
     - Ryojouhen
     - Shinkansen
     - Type 2
-SLPM_651.79: # Culdcept II Expansion (Japan) (v3.00)
+SLPM_651.79: # Culdcept II Expansion (Japan) (v1.01)
   modules:
     - AVEPPP.IRX__c6819f55dcd689df907e0b8c14622ff6
     - CXTMDM.IRX__ebb2d2a704ad25e0c63146eda9600502
@@ -6199,7 +6283,30 @@ SLPM_651.79: # Culdcept II Expansion (Japan) (v3.00)
     - Conexant SmartSCM
     - Keyboard
     - Mouse
-SLPM_652.43: # Densha de Go! Professional 2 (Japan) (v2.03)
+SLPM_652.27: # J.League Pro Soccer Club o Tsukurou! 3 (Japan)
+  modules:
+    - AVEPPP.IRX__84014bb7ea55111b28f9bbe49a057aab
+    - AVEPPP.IRX__c6819f55dcd689df907e0b8c14622ff6
+    - CXTMDM.IRX__ebb2d2a704ad25e0c63146eda9600502
+    - DEVGLUE.IRX__a30d924bd441199604f815db9b576a08
+    - DEVGLUE.IRX__b26f6887804357041b9ff393e5a3bd39
+    - IOPINT.IRX__7ed874f11dccfd87bd6e7ed5c30a35a3
+    - IOPINT.IRX__ac7d2d0455c9f62d5b4da75db2477224
+    - MDMGLUE.IRX__0566fe994e76130328137bd0ef574ead
+    - NTAVEIOP.IRX__62541afdfd75eed861d0555f97cad0f1
+    - OSTMDM_S.IRX__ef84b4a7b0ef855ff847747c5064afbe
+    - USBD.IRX__0173a1a24450a724aeb0338dea44438f
+    - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
+    - USBKB.IRX__348053d363ac6e0bd5127d5393f157a2
+    - USBKEYBD.IRX__eedc4642fe257dd634839b94b5699c41
+    - USBMLOAD.IRX__dbf6219d17d24bf00fe246640f0345fb
+    - USBMOUSE.IRX__b56b5bd39637f57ccafe9bc23d521d33
+  devices:
+    - Conexant SmartSCM
+    - Keyboard
+    - Mouse
+    - Suntac OnlineStation
+SLPM_652.43: # Densha de Go! Professional 2 (Japan) (v1.02)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
     - USBDENCO.IRX__7d7a0e90d0de10b3436f3fe5b888fd5e
@@ -6209,6 +6316,11 @@ SLPM_652.43: # Densha de Go! Professional 2 (Japan) (v2.03)
     - Ryojouhen
     - Shinkansen
     - Type 2
+SLPM_653.17: # Jikkyou Powerful Pro Yakyuu 10 (Japan)
+  modules:
+    - MINIJPS2.IRX__a5fb065b54762b5a535777eb432fa1cb
+  devices:
+    - NTT-ME MN128
 SLPM_653.26: # Choro Q HG 4 (Japan)
   modules:
     - LGDEV.IRX__75eb524d9b47b0141dd458eacba563ab
@@ -6226,7 +6338,7 @@ SLPM_653.74: # Energy Airforce AimStrike! (Japan)
   devices:
     - HMD
     - Hori Flight Stick 2
-SLPM_653.86: # Train Simulator - The midosuji Line
+SLPM_653.86: # Train Simulator - Midousuji-Sen (Japan)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
     - USBKQCON.IRX__c7819e3e331a66b1753419bc3c064bec
@@ -6236,6 +6348,26 @@ SLPM_653.86: # Train Simulator - The midosuji Line
     - Master Controller
     - Multi Train Controller
     - Train Mascon
+SLPM_654.28: # Biohazard - Outbreak (Japan)
+  modules:
+    - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
+    - ATERMAS.IRX__9e3bebbb128b6c8241fc8a8fb313dd2d
+    - ATERMCS.IRX__a3cc3174086c8cecd9080a0664c1fa32
+    - CXTMDM.IRX__4d5c6c27f636d8bfb3f9e84f1f2b0f63
+    - LANEGG.IRX__700c71aab915243bec0a2d84786a3b4d
+    - MINIJPS2.IRX__a5fb065b54762b5a535777eb432fa1cb
+    - OSTMDM_A.IRX__94967c6cfae44a63665c2775ec08f25e
+    - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
+    - USBKB.IRX__6f9456b1894ed35bf7e68c553d354603
+    - USBMLOAD.IRX__03c0bb0bf3232c7ec96ef069dbc48786
+    - USBSRCH.IRX__5ad0335288c862d4d1932c9add5f7123
+  devices:
+    - Aterm IT/ITX
+    - Conexant SmartSCM
+    - Keyboard
+    - NTT-ME MN128
+    - Pegasus
+    - Suntac OnlineStation
 SLPM_654.72: # Train Simulator + Densha de Go! Tokyo Kyuukou-hen (Japan)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -6246,6 +6378,25 @@ SLPM_654.72: # Train Simulator + Densha de Go! Tokyo Kyuukou-hen (Japan)
     - Master Controller
     - Multi Train Controller
     - Train Mascon
+SLPM_654.95: # Monster Hunter (Japan)
+  modules:
+    - __AN986.IRX__b05c12f0ccf6bae0687b0ec45e38740a
+    - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
+    - APPPOE.IRX__1c57b3c95084e59d7e767c94dc4f94fa
+    - AVE_WRAP.IRX__7767da4d4dd956851acb0f1a590f319f
+    - AVEPPP.IRX__3b12261bd761802a8ce6799d0497d0ff
+    - CXTMDM.IRX__ebb2d2a704ad25e0c63146eda9600502
+    - IOPINT.IRX__e2fc98120a075768138376d1a57af0ee
+    - LANEGG.IRX__700c71aab915243bec0a2d84786a3b4d
+    - USB_SRCH.IRX__cbfa0ba898caf9ee58cdc5bbcca93583
+    - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
+    - USBKB.IRX__6f9456b1894ed35bf7e68c553d354603
+    - USBMLOAD.IRX__03c0bb0bf3232c7ec96ef069dbc48786
+    - USBSRCH.IRX__2fde80de08b20cfd98ad85cf60627d37
+  devices:
+    - Conexant SmartSCM
+    - Keyboard
+    - Pegasus
 SLPM_655.42: # Reishiki Kanjou Sentouki (Japan)
   modules:
     - FS2.IRX__10749b56758b67fa738945ba8a4ef653
@@ -6264,7 +6415,92 @@ SLPM_655.90: # Densha de Go! Final (Japan)
     - Ryojouhen
     - Shinkansen
     - Type 2
-SLPM_662.99: # Zero Shikikan Josentoki Ni
+SLPM_656.57: # World Soccer Winning Eleven 8 (Japan)
+  modules:
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+    - USBMOUSE.IRX__232dba33a8136523ea1f3c37e9431593
+  devices:
+    - Keyboard
+    - Mouse
+SLPM_657.40: # J.League Winning Eleven 8 - Asia Championship (Japan)
+  modules:
+    - AVEPPP.IRX__2e87237dd571e58d383f1e36c8ce03c1
+    - DEVGLUE.IRX__0c73eb4257574ff522517cfed5670107
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+    - USBKEYBD.IRX__0e046386e272e7e1d66a32c16ce7d5bb
+    - USBMOUSE.IRX__232dba33a8136523ea1f3c37e9431593
+  devices:
+    - Keyboard
+    - Mouse
+SLPM_657.88: # World Soccer Winning Eleven 8 - Liveware Evolution (Japan)
+  modules:
+    - AVEPPP.IRX__2e87237dd571e58d383f1e36c8ce03c1
+    - DEVGLUE.IRX__35518f8e0786ca96cdeea4dfffd37499
+    - IOPINT.IRX__47e814b4aba126841822fb5b1baa645c
+    - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__1d597b55517582696deb93b19f47d405
+    - USBKEYBD.IRX__46827453a15f0fea2f79c4cb2f772ab3
+    - USBKEYBD.IRX__87b8303183f7e084877d691df70dac76
+    - USBMLOAD.IRX__b0e78c3e20f63500e7a24f78d87d565b
+  devices:
+    - Keyboard
+SLPM_658.13: # Fuuun Bakumatsuden (Japan)
+  modules:
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+SLPM_658.69: # Monster Hunter G (Japan)
+  modules:
+    - LANEGG.IRX__700c71aab915243bec0a2d84786a3b4d
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__6f9456b1894ed35bf7e68c553d354603
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+    - USBSRCH.IRX__2fde80de08b20cfd98ad85cf60627d37
+  devices:
+    - Keyboard
+    - Pegasus
+SLPM_659.51: # Tom Clancy's Ghost Recon 2 (Japan)
+  modules:
+    - LGAUD.IRX__22e950624c6e1062423152a915602448
+    - LGAUD.IRX__dbaee103500b9fc7ee81c186ba18629a
+    - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
+    - USBD.IRX__7f39607736ffd40b910361604e7464e6
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+  devices:
+    - Keyboard
+    - Microphone
+SLPM_661.90: # Star Wars - Battlefront II (Japan)
+  modules:
+    - ENT_ETH.IRX__e2608ac112bd6f508f398362236f4a39
+    - LGAUD.IRX__57140338edddd842250fdae6e3078d8f
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+  devices:
+    - Keyboard
+    - Microphone
+    - Pegasus
+SLPM_662.17: # Jikkyou Powerful Pro Yakyuu 12 - Ketteiban (Japan)
+  modules:
+    - USBD.IRX__d1d6fc6fa4618e8db7c33da6a24e9e49
+    - USBPSPCM.IRX__60f172b710f19a3d2b80171a92c07494
+  devices:
+    - PlayStation Portable
+SLPM_662.80: # Monster Hunter 2 (Japan)
+  modules:
+    - LANEGG.IRX__700c71aab915243bec0a2d84786a3b4d
+    - USBD.IRX__7f39607736ffd40b910361604e7464e6
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+    - USBMLOAD.IRX__0a5bc7d4162aa9f1a8d93cba74d1b61e
+    - USBPSPCM.IRX__60f172b710f19a3d2b80171a92c07494
+    - USBSRCH.IRX__2fde80de08b20cfd98ad85cf60627d37
+  devices:
+    - Keyboard
+    - Pegasus
+    - PlayStation Portable
+SLPM_662.99: # Reishiki Kanjou Sentouki Ni (Japan)
   modules:
     - FS2.IRX__10749b56758b67fa738945ba8a4ef653
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -6278,12 +6514,50 @@ SLPM_663.02: # Clannad (Japan)
   devices:
     - Mouse
     - Sony PopEgg
+SLPM_663.24: # World Football Climax (Japan)
+  modules:
+    - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4
+    - USBKB.IRX__0472efeccf78967d62b3a81a35513f46
+  devices:
+    - Keyboard
+SLPM_663.74: # World Soccer Winning Eleven 10 (Japan)
+  modules:
+    - USBD.IRX__d1d6fc6fa4618e8db7c33da6a24e9e49
+    - USBKEYBD.IRX__43d1672e1ebdece43cee8d213233de47
+    - USBPSPCM.IRX__60f172b710f19a3d2b80171a92c07494
+  devices:
+    - Keyboard
+    - PlayStation Portable
+SLPM_664.50: # Jikkyou Powerful Pro Yakyuu 13 (Japan)
+  modules:
+    - USBD.IRX__d1d6fc6fa4618e8db7c33da6a24e9e49
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+    - USBMLOAD.IRX__0a5bc7d4162aa9f1a8d93cba74d1b61e
+    - USBPSPCM.IRX__60f172b710f19a3d2b80171a92c07494
+  devices:
+    - Keyboard
+    - PlayStation Portable
+SLPM_665.95: # J.League Winning Eleven 10 + Europe League '06-'07 (Japan) (v1.03)
+  modules:
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKEYBD.IRX__43d1672e1ebdece43cee8d213233de47
+  devices:
+    - Keyboard
 SLPM_666.85: # Seaman 2 - Pekin Genjin Ikusei Kit (Japan)
   modules:
     - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4
     - USBMIC.IRX__8da6f2b5b40cc1f29d32a8441c70a070
   devices:
     - Seamic
+SLPM_667.77: # Jikkyou Powerful Pro Yakyuu 14 (Japan)
+  modules:
+    - USBD.IRX__d1d6fc6fa4618e8db7c33da6a24e9e49
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+    - USBMLOAD.IRX__0a5bc7d4162aa9f1a8d93cba74d1b61e
+    - USBPSPCM.IRX__974a14ac35ea36e6df59abcc8f0b0e2f
+  devices:
+    - Keyboard
+    - PlayStation Portable
 SLPM_668.22: # GuitarFreaks & DrumMania V3 (Japan)
   modules:
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
@@ -6298,7 +6572,7 @@ SLPM_670.01: # Wonder Zone (Japan)
   devices:
     - HMD
     - Sony PopEgg
-SLPM_670.06: # Train Simulator - Kyuushuu Shinkansen (Japan)
+SLPM_670.06: # Train Simulator - Kyushu Shinkansen (Japan)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
     - USBKQCON.IRX__c7819e3e331a66b1753419bc3c064bec
@@ -6310,7 +6584,7 @@ SLPM_670.06: # Train Simulator - Kyuushuu Shinkansen (Japan)
     - Multi Train Controller
     - Shinkansen
     - Train Mascon
-SLPM_670.07: # Train Simulator - Keisei Toei Keikyu (Japan)
+SLPM_670.07: # Train Simulator - Keisei, Toei Asakusa, Keikyuusen (Japan)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
     - USBKQCON.IRX__c7819e3e331a66b1753419bc3c064bec
@@ -6393,6 +6667,9 @@ SLPS_200.16: # Dream Audition (Japan)
     - USBMIC.IRX__6cd66b4ad7c047c6b5aa5ca0cc618c26
   devices:
     - Microphone
+SLPS_200.37: # Magical Sports GoGoGolf (Japan)
+  modules:
+    - USBD.IRX__c60305ba24162fa737e081d63693bd0e
 SLPS_200.56: # Colorio Hagaki Print (Japan)
   modules:
     - DSCDRV.IRX__e29ad60235b7a42e00d7cbc803eb21cf
@@ -6401,6 +6678,9 @@ SLPS_200.56: # Colorio Hagaki Print (Japan)
   devices:
     - Epson
     - Storage
+SLPS_200.58: # Kengou (Japan)
+  modules:
+    - USBD.IRX__490bd72468d75bbaf248288107c61297
 SLPS_200.60: # Dream Audition 2 (Japan)
   modules:
     - USBD.IRX__490bd72468d75bbaf248288107c61297
@@ -6437,7 +6717,7 @@ SLPS_200.85: # Basic Studio - Powerful Game Koubou (Japan) (Disc 2) (Play Disc)
     - Keyboard
     - Mouse
     - Sony PopEgg
-SLPS_200.91: # Gekibo 2x
+SLPS_200.91: # Gekisha Boy 2 - Tokudane Taikoku Nippon (Japan)
   modules:
     - DMCDRV.IRX__dfcd30d4edd74ffbf5ea85c007f73b4f
     - DSCDRV.IRX__24f1b50c346f44a49de72eea0a7b52ac
@@ -6607,7 +6887,7 @@ SLPS_201.47: # TVware Jouhou Kakumei Series - Pro Atlas for TV - Toukai (Japan)
     - Epson
     - Keyboard
     - Mouse
-SLPS_201.49: # Chou! Tanoshii Internet - Tomodachi no Wa (Japan) (Broadband) (v3.00)
+SLPS_201.49: # Chou! Tanoshii Internet - Tomodachi no Wa (Japan) (Broadband) (v1.05)
   modules:
     - ATERMAS.IRX__9e3bebbb128b6c8241fc8a8fb313dd2d
     - ATERMCS.IRX__a3cc3174086c8cecd9080a0664c1fa32
@@ -6694,6 +6974,12 @@ SLPS_203.12: # Primopuel - Oshaberi Heartner (Japan)
   devices:
     - Microphone
 SLPS_203.40: # Jissen Pachi-Slot Hisshouhou! Sammy's Collection 2 (Japan)
+  modules:
+    - SLOTCNTR.IRX__167de001df61affb0b4eb2e74f2cf89a
+    - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
+  devices:
+    - Pachi-Slot
+SLPS_203.73: # Jissen Pachi-Slot Hisshouhou! Hokuto no Ken (Japan)
   modules:
     - SLOTCNTR.IRX__167de001df61affb0b4eb2e74f2cf89a
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
@@ -6828,7 +7114,7 @@ SLPS_251.12: # Armored Core 3 (Japan)
     - Omron
     - Suntac OnlineStation
     - UART
-SLPS_251.13: # Zettai Zetsumei Toshi (Japan) (v2.00)
+SLPS_251.13: # Zettai Zetsumei Toshi (Japan) (v1.05)
   modules:
     - USBD.IRX__27498254fe5ca3df2e7f4d4077378442
     - USBTVR.IRX__458496232dbc775e63848dbaa772bcac
@@ -6858,6 +7144,12 @@ SLPS_251.65: # Gunvari Collection + Time Crisis (Japan) (With GunCon2)
   devices:
     - GunCon2
     - Mouse
+SLPS_251.74: # Dragon Ball Z (Japan)
+  modules:
+    - USBD.IRX__0173a1a24450a724aeb0338dea44438f
+    - USBKB.IRX__23d4cf22084530f5ce7331f3b666252b
+  devices:
+    - Keyboard
 SLPS_252.40: # Motion Gravure Series - Megumi (Japan)
   modules:
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
@@ -6901,6 +7193,21 @@ SLPS_252.71: # Sidewinder V (Japan) (En,Ja)
     - Logitech Force 3D
     - Logitech GT Force
     - Logitech Strike Force 3D
+SLPS_253.82: # One Piece - Round the Land! (Japan)
+  modules:
+    - AMMDRV.IRX__a5bbffaf45c4c72c58338ee6a0134562
+    - ASMDRV.IRX__bdcc4d2d6c4aea9871a7e3be3a3ffbe1
+SLPS_254.18: # Ace Combat 5 - The Unsung War (Japan)
+  modules:
+    - FS2.IRX__10749b56758b67fa738945ba8a4ef653
+    - LGDEV.IRX__a4f23551f2e1da53e0ee4bdbf00e97ba
+    - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
+  devices:
+    - Hori Flight Stick 2
+    - Logitech Driving Force
+    - Logitech Force 3D
+    - Logitech GT Force
+    - Logitech Strike Force 3D
 SLPS_255.03: # NeoGeo Online Collection Vol. 2 - Bakumatsu Roman - Gekka no Kenshi 1, 2 (Japan) (En,Ja,Es,Pt)
   modules:
     - AVEPPP.IRX__84014bb7ea55111b28f9bbe49a057aab
@@ -6927,6 +7234,9 @@ SLPS_255.35: # NeoGeo Online Collection Vol. 3 - The King of Fighters - Orochi (
   devices:
     - Keyboard
     - Mouse
+SLPS_255.69: # Kidou Senshi Gundam Seed - Rengou vs. Z.A.F.T. (Japan)
+  modules:
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
 SLPS_256.05: # NeoGeo Online Collection Vol. 3 - The King of Fighters - Orochi (Japan) (En,Ja,Es,Pt)
   modules:
     - AVEPPP.IRX__84014bb7ea55111b28f9bbe49a057aab
@@ -6940,6 +7250,17 @@ SLPS_256.05: # NeoGeo Online Collection Vol. 3 - The King of Fighters - Orochi (
   devices:
     - Keyboard
     - Mouse
+SLPS_256.29: # Ace Combat Zero - The Belkan War (Japan)
+  modules:
+    - FS2.IRX__256b4d5fe8bd2661aa4867d0be231adb
+    - LGDEV.IRX__a4f23551f2e1da53e0ee4bdbf00e97ba
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+  devices:
+    - Hori Flight Stick 2
+    - Logitech Driving Force
+    - Logitech Force 3D
+    - Logitech GT Force
+    - Logitech Strike Force 3D
 SLPS_256.61: # NeoGeo Online Collection Vol. 7 - The King of Fighters - Nests (Japan) (En,Ja,Es,Pt)
   modules:
     - AVEPPP.IRX__84014bb7ea55111b28f9bbe49a057aab
@@ -7056,12 +7377,18 @@ SLUS_201.76: # NASCAR Heat 2002 (USA)
     - Logitech Force 3D
     - Logitech GT Force
     - Logitech Strike Force 3D
-SLUS_201.90: # Monster Rancher 3 (USA) (v2.01)
+SLUS_201.90: # Monster Rancher 3 (USA) (v1.00)
   modules:
     - DSCDRV.IRX__697541933f03bd2257fcf7aa8efe6c40
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
   devices:
     - Storage
+SLUS_202.65: # 007 - Agent Under Fire (USA)
+  modules:
+    - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
+    - USBKEYBD.IRX__db95ddc050c04f691b97576aa658a002
+  devices:
+    - Keyboard
 SLUS_202.66: # NASCAR Thunder 2002 (USA)
   modules:
     - FLSHLNK.IRX__0da4a7066efa0dd40d907057ba1b9211
@@ -7164,7 +7491,7 @@ SLUS_204.76: # NBA 2K3 (USA)
     - Conexant SmartSCM
     - Keyboard
     - Pegasus
-SLUS_205.04: # Tony Hawk's Pro Skater 4 (USA)
+SLUS_205.04: # Tony Hawk's Pro Skater 4 (USA) (v1.02)
   modules:
     - SNDRV001.IRX__7bfdb408370bf9766803293cc5adc725
     - SNDRV002.IRX__3962fa5725f0746294d0caac0066f727
@@ -7309,7 +7636,7 @@ SLUS_207.19: # NCAA Football 2004 (USA)
     - Keyboard
     - Microphone
     - Pegasus
-SLUS_207.29: # ESPN College Hoops (USA) (v1.03)
+SLUS_207.29: # ESPN College Hoops (USA) (v1.02)
   modules:
     - AN986.IRX__acd838d12d9a5b4811b365a327ebda13
     - CXTMDM.IRX__ebb2d2a704ad25e0c63146eda9600502
@@ -7403,6 +7730,12 @@ SLUS_208.07: # Space Channel 5 - Special Edition (USA) (Disc 2)
   devices:
     - Keyboard
     - Trance Vibrator
+SLUS_208.11: # Need for Speed - Underground (USA, Canada)
+  modules:
+    - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
+    - USBKB.IRX__1d597b55517582696deb93b19f47d405
+  devices:
+    - Keyboard
 SLUS_208.24: # NASCAR Thunder 2004 (USA)
   modules:
     - AN986.IRX__6ce56ce2964f4ad010819549c0b94d53
@@ -7424,7 +7757,7 @@ SLUS_208.24: # NASCAR Thunder 2004 (USA)
     - Logitech Strike Force 3D
     - Microphone
     - Pegasus
-SLUS_208.31: # Tokyo Xtreme Racer 3 (USA)
+SLUS_208.31: # Tokyo Xtreme Racer 3 (USA, Canada)
   modules:
     - USBMOUSE.IRX__c8e9926bebe4d89d451078e3754744a2
   devices:
@@ -7550,12 +7883,31 @@ SLUS_210.25: # Madden NFL 2005 (USA) (Collector's Edition)
   devices:
     - Keyboard
     - Microphone
+SLUS_210.65: # Need for Speed - Underground 2 (USA, Canada)
+  modules:
+    - LGDEVW.IRX__82ed771aae0d8264f601ea8f314985cb
+    - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+  devices:
+    - Keyboard
+    - Logitech Driving Force
+    - Logitech Driving Force Pro
+    - Logitech GT Force
+    - Logitech MOMO Force
+    - Logitech MOMO Racing Force
 SLUS_210.74: # Guy Game, The (USA)
   modules:
     - APEMOD.IRX__4c15fa7214387c794ac1e737929f378b
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
   devices:
     - GameTrak
+SLUS_210.76: # Atari Anthology (USA)
+  modules:
+    - USBD.IRX__7f39607736ffd40b910361604e7464e6
+    - USBMICE.IRX__e712c1b8bc9b61d397c3b20d8c6a23ae
+  devices:
+    - Mouse
 SLUS_210.79: # Armored Core - Nexus (USA) (Disc 2) (Revolution)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -7639,6 +7991,12 @@ SLUS_211.86: # NBA Ballers - Phenom (USA)
   devices:
     - Keyboard
     - Microphone
+SLUS_211.94: # Phantasy Star Universe (USA)
+  modules:
+    - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
+    - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
+  devices:
+    - Keyboard
 SLUS_212.00: # Armored Core - Nine Breaker (USA)
   modules:
     - FSIOPUMS.IRX__9703bc7df8959795a8231a1c1e5a517a
@@ -7693,7 +8051,7 @@ SLUS_212.35: # Major League Baseball 2K6 (USA)
   devices:
     - Keyboard
     - Microphone
-SLUS_212.36: # Tokyo Xtreme Racer - Drift (USA)
+SLUS_212.36: # Tokyo Xtreme Racer - Drift (USA, Canada)
   modules:
     - LGDEV.IRX__42aec43e08ed57c5e03c35f80c303439
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
@@ -7867,7 +8225,7 @@ SLUS_214.81: # NCAA March Madness 07 (USA)
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
     - Keyboard
-SLUS_215.00: # Suzuki Super-Bikes II - Riding Challenge (USA) (En,Fr,Es)
+SLUS_215.00: # Suzuki Super-Bikes II - Riding Challenge (USA, Canada) (En,Fr,Es)
   modules:
     - LGDEV.IRX__177c2ca762245dafb2d0ba34253b67d3
   devices:
@@ -8083,7 +8441,7 @@ SLUS_218.88: # Rock Band - Country Track Pack (USA)
     - Guitar/Drum
     - Keyboard
     - Microphone
-SLUS_218.89: # Rock Band - Metal Track Pack (USA)
+SLUS_218.89: # Rock Band - Metal Track Pack (USA, Canada)
   modules:
     - LGAUD.IRX__cf9f8a4845e282a93a51069fdd9706a1
     - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4

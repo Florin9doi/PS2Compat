@@ -8,6 +8,7 @@
 - USBSRCHM.IRX
 - USBSRCH.IRX
 # Network AVE
+- APPPOE.IRX
 - AVE_WRAP.IRX
 - AVEPPP.IRX
 - AVETCP.IRX
@@ -31,3 +32,5 @@
 - IMUSBMAN.IRX
 - ACC_COM.IRX # Capcom_Access_COM_Wrapper
 - HUSB.IRX
+- AMMDRV.IRX__a5bbffaf45c4c72c58338ee6a0134562 # Agatha_Midi_Music_Library
+- ASMDRV.IRX__bdcc4d2d6c4aea9871a7e3be3a3ffbe1 # Agatha_Sound_Music_Library
