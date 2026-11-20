@@ -227,15 +227,19 @@ def module_info(modules, name, digest):
             **modules.get(f"{name}__{digest}".casefold(), {})}
 
 
+def split_mod(m):
+    r = re.fullmatch(r"(.+)__([0-9a-f]{32})", m, re.I)
+    return r.groups() if r else (m, "")
+
+
 def is_unused(m, skip):
-    return bool({m.casefold(), m.split("__")[0].casefold()} & skip)
+    return bool({m.casefold(), split_mod(m)[0].casefold()} & skip)
 
 
 def derive(mods, modules):
     out = set()
     for m in mods:
-        name = m.split("__")[0]
-        out.update(as_list(module_info(modules, name, m[len(name) + 2:]).get("devices")))
+        out.update(as_list(module_info(modules, *split_mod(m)).get("devices")))
     return out
 
 
@@ -320,7 +324,7 @@ def main():
                 f.writelines(f"    - {y(c)}\n" for c in sorted(ctrl, key=str.casefold))
 
     unpaired = sorted({m for g in games.values() for m in g
-                       if not is_unused(m, unused) and not {m.casefold(), m.split("__")[0].casefold()} & modules.keys()}, key=str.casefold)
+                       if not is_unused(m, unused) and not {m.casefold(), split_mod(m)[0].casefold()} & modules.keys()}, key=str.casefold)
     print(f"\nModules without metadata in {a.modules.name}: {len(unpaired)}")
     print(*unpaired, sep="\n")
     print(f"\nCompleted.\nGames: {len(names)}, in game db: {len(games)}\nOutput: {dst}")
