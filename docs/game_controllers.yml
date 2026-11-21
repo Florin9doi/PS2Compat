@@ -93,9 +93,9 @@ PBPX_955.19: # Network Adaptor Start-Up Disc v2.0 (USA)
     - USBKB.IRX__e74f290a4ffd3b62ac2d2d55b8385dae
     - USBMLOAD.IRX__1f80adcd17801a6af344618056e29717
   devices:
-    - CaptureEye
     - Conexant SmartSCM
     - Keyboard
+    - OV511
     - Pegasus
 PCPX_966.34: # Gran Turismo - Subaru Driving Simulator Version (Japan)
   modules:
@@ -1320,10 +1320,10 @@ SCUS_970.95: # Network Adaptor Start-Up Disc v2.0 (USA) (Rev 1)
     - USBMLOAD.IRX__1f80adcd17801a6af344618056e29717
     - USBMOUSE.IRX__d400ec9f6ccd7a42df3a3dc0f308a68d
   devices:
-    - CaptureEye
     - Conexant SmartSCM
     - Keyboard
     - Mouse
+    - OV511
     - Pegasus
 SCUS_970.97: # Network Adaptor Start-Up Disc (USA) (v1.00)
   modules:
@@ -1535,9 +1535,9 @@ SCUS_973.56: # Network Adaptor Start-Up Disc v2.5 (USA)
     - USBKB.IRX__79a682865378ad6925b87c56ae1cf570
     - USBMLOAD.IRX__1f80adcd17801a6af344618056e29717
   devices:
-    - CaptureEye
     - Keyboard
     - Microphone
+    - OV511
     - Pegasus
 SCUS_973.57: # Online Start-Up Disc 4.0 (USA)
   modules:
@@ -2033,8 +2033,8 @@ SLES_502.85: # Police 24-7 (Europe) (En,Fr,De,Es,It)
     - WEBCAM.IRX__2551fc56fd8263f9173e0a6cad67d0f1
     - WEBCAM_N.IRX__d8800571524320ea13a291a6a95c49b0
   devices:
-    - CaptureEye
     - Mouse
+    - OV511
 SLES_503.26: # Max Payne (Europe) (En,Fr,Es,It)
   modules:
     - USBD.IRX__ade652ce63530751d2c654fc55c88201
@@ -5807,7 +5807,7 @@ SLPM_620.97: # Keisatsukan, The - Shinjuku 24-ji (Japan)
     - USBD.IRX__b31b7c0495b0a0a477ac621709eef8b4
     - USBMOUSE.IRX__f7eb26153c2c088cae6440b4ef0d3461
   devices:
-    - CaptureEye
+    - Konami CaptureEye
     - Mouse
 SLPM_621.01: # Rez (Japan) (En,Ja)
   modules:
