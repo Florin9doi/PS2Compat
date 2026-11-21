@@ -340,7 +340,7 @@ MIDI:
 
 Webcams:
   - modules: EYETOY.IRX, OV519.IRX, LGVID.IRX
-    devices: "EyeToy" # 2003
+    devices: "Sony EyeToy" # 2003
 
   - modules: WEBCAM_N.IRX, WEBCAM.IRX, USBCAM.IRX
     devices: "OV511" # 2002
@@ -352,7 +352,7 @@ Webcams:
       - DMCDRV.IRX__10102925d63aa7f4de80adb3547bc3ed # DMC Device Driver for HM- Series  Version 1.15
       - DMCDRV.IRX__dfcd30d4edd74ffbf5ea85c007f73b4f # DMC Device Driver for HM- Series  Version 1.15
       - DMCDRV.IRX__3aaa7cb9d80dee97568d19016d66f439 # DMC Device Driver for HM- Series  Version 1.20
-    devices: "HM-PP1" # 2000
+    devices: "Sony HM-PP1" # 2000
 
 Storage:
   - modules: USBSTOR.IRX, USBSTORE.IRX, USTORAGE.IRX, STORAGE.IRX

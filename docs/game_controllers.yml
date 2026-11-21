@@ -371,7 +371,7 @@ SCES_515.13: # EyeToy - Play (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,
     - OV519.IRX__bb38700c944a331dd00b7f9bfb17cfd6
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_515.78: # Network Access Disc (Europe) (En,Fr,De,Es,It) (v1.03)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -454,12 +454,12 @@ SCES_517.19: # Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It)
     - USTORAGE.IRX__e2993d271d07bf7a96477d44231b0fba
   devices:
     - Epson
-    - EyeToy
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
     - Logitech MOMO Force
     - Logitech MOMO Racing Force
+    - Sony EyeToy
     - Storage
 SCES_517.25: # EverQuest - Online Adventures (Europe) (En,Fr,De)
   modules:
@@ -484,7 +484,7 @@ SCES_518.95: # EyeToy - Groove (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,D
     - OV519.IRX__904cad683db9922cb9169ec55f95c52c
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_519.04: # SOCOM II - U.S. Navy SEALs (Europe) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__6841a5a00208f1412ad6c662ed75979f
@@ -543,17 +543,17 @@ SCES_521.54: # EyeToy - Chat (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi)
     - USBKB.IRX__1d597b55517582696deb93b19f47d405
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCES_522.68: # SingStar (Europe, Australia)
   modules:
     - EYETOY.IRX__d94a33f2c758ed7f42f74fbe52dfc2e0
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__ea607b4c05bfe0055e8bda6375c0bb56
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_523.89: # WRC 4 - The Official Game of the FIA World Rally Championship (Europe) (En,Fr,De,Es,It,Pt,No,Fi) (v1.01)
   modules:
     - LGDEV.IRX__fec70a01f7666d972d3b8afd267cbd82
@@ -574,16 +574,16 @@ SCES_524.05: # DJ - Decks & FX - House Edition (Europe, Australia) (En,Fr,De,Es,
     - LGAUD.IRX__cc8a358851612bf00d0aecccf60bfc71
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_524.12: # Jackie Chan Adventures (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt)
   modules:
     - APEMOD.IRX__fbad32e5c16e8d96299cde40c65a2c95
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
   devices:
-    - EyeToy
     - GameTrak
+    - Sony EyeToy
 SCES_524.24: # Ace Combat - Squadron Leader (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - FS2.IRX__256b4d5fe8bd2661aa4867d0be231adb
@@ -604,9 +604,9 @@ SCES_524.26: # This Is Football 2005 (Europe) (En,Es,Pt,Ar)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
     - USBKB.IRX__6f9456b1894ed35bf7e68c553d354603
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCES_524.38: # Gran Turismo 4 - Prologue (Europe) (En,Fr,De,Es,It)
   modules:
     - LGDEV.IRX__aa7d3b89f7a5ed94f369d0225d55ac90
@@ -655,15 +655,15 @@ SCES_527.48: # EyeToy - Play 2 (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,El) (v
     - EYETOY.IRX__36b52c1fb4e43653081a300cce46f6e5
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_528.26: # SingStar Party (Europe, Australia)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__930f818556a4ab7164e56afde599d707
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_528.92: # MotoGP 4 (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -675,7 +675,7 @@ SCES_529.30: # EyeToy - Monkey Mania (Europe) (En,Fr,De,Es,It)
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_530.33: # Formula One 05 (Europe, Australia) (En,Fr,De,Es,It,Pt,Fi)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
@@ -686,7 +686,6 @@ SCES_530.33: # Formula One 05 (Europe, Australia) (En,Fr,De,Es,It,Pt,Fi)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Logitech Driving Force
     - Logitech Driving Force Pro
@@ -694,22 +693,23 @@ SCES_530.33: # Formula One 05 (Europe, Australia) (En,Fr,De,Es,It,Pt,Fi)
     - Logitech MOMO Force
     - Logitech MOMO Racing Force
     - Microphone
+    - Sony EyeToy
 SCES_530.55: # EyeToy - Antigrav (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - EYETOY.IRX__88f502de1da7ce6f1e54b56d18198593
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
     - USBKB.IRX__1d597b55517582696deb93b19f47d405
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SCES_531.78: # SingStar Pop (Europe)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__930f818556a4ab7164e56afde599d707
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_532.47: # WRC - Rally Evolved (Europe) (En,Fr,De,Es,It,Pt,No,Fi) (v1.01)
   modules:
     - LGDEV.IRX__177c2ca762245dafb2d0ba34253b67d3
@@ -763,14 +763,14 @@ SCES_533.04: # Buzz! The Music Quiz (Europe)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - Buzz
-    - EyeToy
+    - Sony EyeToy
 SCES_533.15: # EyeToy - Play 3 (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,El)
   modules:
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBSTORE.IRX__56bd67ec624a91b9b2fb628e0a516ff5
   devices:
-    - EyeToy
+    - Sony EyeToy
     - Storage
 SCES_533.47: # SpyToy (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi)
   modules:
@@ -791,7 +791,7 @@ SCES_534.22: # Stuart Little 3 - Big Photo Adventure (Europe, Australia) (En,Fr,
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_534.49: # AFL Premiership 2005 (Australia)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
@@ -799,22 +799,22 @@ SCES_534.49: # AFL Premiership 2005 (Australia)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SCES_534.50: # Gaelic Games - Football (Europe) (En,Ga)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_536.02: # SingStar '80s (Europe, Australia) (v1.00)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__930f818556a4ab7164e56afde599d707
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_538.79: # Buzz! The Big Quiz (Europe) (v1.01)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
@@ -822,15 +822,15 @@ SCES_538.79: # Buzz! The Big Quiz (Europe) (v1.01)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - Buzz
-    - EyeToy
+    - Sony EyeToy
 SCES_538.89: # SingStar Rocks! (Europe)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__930f818556a4ab7164e56afde599d707
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_539.31: # Shinobido - Way of the Ninja (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -874,36 +874,36 @@ SCES_540.68: # AFL Premiership 2006 (Australia)
     - LGAUD.IRX__62afd0e1eddae8220778312846bfc687
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_540.94: # EyeToy - Play Sports (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,Pl,El,Cs,Tr)
   modules:
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_541.31: # SingStar Anthems (Europe, Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__930f818556a4ab7164e56afde599d707
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_541.45: # Lemmings (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da,Fi)
   modules:
     - EYETOY.IRX__1c61e94f6b574cc0635603b4954b0683
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_541.91: # SingStar Legends (Europe)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_542.19: # Buzz! Junior - Jungle Party (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt)
   modules:
     - BUZZER.IRX__6ddd290f6d66c7537b65aa382a5e8310
@@ -941,37 +941,37 @@ SCES_545.05: # Buzz! The Mega Quiz (Belgium, Netherlands) (En,Fr,Nl)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - Buzz
-    - EyeToy
+    - Sony EyeToy
 SCES_545.38: # EyeToy Play - Astro Zoo (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,Pl,Ru,El,Cs)
   modules:
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_545.70: # SingStar Pop Hits (Europe)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_545.97: # SingStar Rock Ballads (Europe, Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_545.99: # SingStar '90s (Europe, Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_546.25: # Buzz! Junior - Monster Rumble (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt)
   modules:
     - BUZZER.IRX__6ddd290f6d66c7537b65aa382a5e8310
@@ -983,19 +983,19 @@ SCES_546.37: # Gaelic Games - Hurling (Europe) (En,Ga)
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_546.38: # Gaelic Games - Football 2 (Europe) (En,Ga)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_546.39: # AFL Premiership 2007 (Australia)
   modules:
     - EYETOY.IRX__368523ff829a179f3bbebe4dce06d041
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_546.76: # Buzz! Junior - RoboJam (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt)
   modules:
     - BUZZER.IRX__6ddd290f6d66c7537b65aa382a5e8310
@@ -1020,8 +1020,8 @@ SCES_547.60: # SingStar R&B (Europe, Australia)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_547.94: # Syphon Filter - Dark Mirror (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -1034,8 +1034,8 @@ SCES_548.23: # SingStar Bollywood (Europe)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_548.44: # Buzz! The Hollywood Quiz (Europe, Australia)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
@@ -1043,13 +1043,13 @@ SCES_548.44: # Buzz! The Hollywood Quiz (Europe, Australia)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - Buzz
-    - EyeToy
+    - Sony EyeToy
 SCES_549.24: # NBA 08 (Europe) (En,Fr,De,Es,It)
   modules:
     - LGVID.IRX__12e79021d44b07e6bf523003f3577573
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_549.41: # Buzz! The Schools Quiz (UK) (v1.00)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
@@ -1057,27 +1057,27 @@ SCES_549.41: # Buzz! The Schools Quiz (UK) (v1.00)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - Buzz
-    - EyeToy
+    - Sony EyeToy
 SCES_550.38: # EyeToy Play - Hero (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,Pl,Ru,El,Cs)
   modules:
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_550.56: # SingStar Summer Party (Europe)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_550.83: # EyeToy Play - PomPom Party (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,Pl,Ru,El,Cs)
   modules:
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCES_550.98: # Buzz! The Pop Quiz (Belgium, Netherlands) (En,Fr,Nl)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
@@ -1085,31 +1085,31 @@ SCES_550.98: # Buzz! The Pop Quiz (Belgium, Netherlands) (En,Fr,Nl)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - Buzz
-    - EyeToy
+    - Sony EyeToy
 SCES_551.60: # SingStar Hottest Hits (Europe, Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_551.78: # SingStar Boy Bands vs Girl Bands (Europe)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_551.83: # SingStar Turkish Party (Europe)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_552.10: # Buzz! Junior - Ace Racers (Europe, Australia) (En,Fr,De,Es,It,Nl,Pt,El)
   modules:
     - BUZZER.IRX__6ddd290f6d66c7537b65aa382a5e8310
@@ -1122,8 +1122,8 @@ SCES_552.55: # SingStar Singalong with Disney (Europe, Australia)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_553.85: # Buzz! Brain of the UK (UK)
   modules:
     - BUZZER.IRX__14b689cbed6ebd1f1ecc91f83395a7ff
@@ -1131,67 +1131,67 @@ SCES_553.85: # Buzz! Brain of the UK (UK)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
     - Buzz
-    - EyeToy
+    - Sony EyeToy
 SCES_554.35: # SingStar ABBA (Europe, Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_554.53: # SingStar Queen (Europe, Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_555.49: # SingStar Motown (Europe)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_555.54: # SingStar Take That (Europe, Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_555.67: # SingStar The Wiggles (Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCES_556.11: # SingStar Chart Hits (Australia)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCKA_100.05: # EyeToy - EduKids (Korea)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCKA_100.07: # EyeToy - Tales (Korea)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCPM_853.01: # Gran Turismo Concept - Copen Special Edition (Japan) (Taikenban)
   modules:
     - PDIUSB.IRX__e31040cecd5f3fe39e0dff3096cd88e0
@@ -1269,14 +1269,14 @@ SCPS_150.77: # EyeToy - Saru EyeToy - Oosawagi! Ukkiuki Game Tenkomori!! (Japan)
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCPS_150.86: # Bakufuu Slash! Kizuna Arashi (Japan)
   modules:
     - EYETOY.IRX__904cad683db9922cb9169ec55f95c52c
     - LGVID.IRX__969a99543486e6a241cba3233bd5f8e4
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
   devices:
-    - EyeToy
+    - Sony EyeToy
 SCPS_170.01: # Gran Turismo 4 (Japan, Asia)
   modules:
     - EPSPRINT.IRX__0291069bc9b1056801e06360a6f1dc47
@@ -1287,12 +1287,12 @@ SCPS_170.01: # Gran Turismo 4 (Japan, Asia)
     - USTORAGE.IRX__e2993d271d07bf7a96477d44231b0fba
   devices:
     - Epson
-    - EyeToy
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
     - Logitech MOMO Force
     - Logitech MOMO Racing Force
+    - Sony EyeToy
     - Storage
 SCPS_560.05: # Gran Turismo Concept - 2002 Tokyo-Seoul (Korea) (v1.02)
   modules:
@@ -1483,9 +1483,9 @@ SCUS_973.26: # MLB 2005 (USA)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBKB.IRX__6f9456b1894ed35bf7e68c553d354603
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_973.28: # Gran Turismo 4 (USA) (v2.00)
   modules:
     - EPSPRINT.IRX__0291069bc9b1056801e06360a6f1dc47
@@ -1496,12 +1496,12 @@ SCUS_973.28: # Gran Turismo 4 (USA) (v2.00)
     - USTORAGE.IRX__e2993d271d07bf7a96477d44231b0fba
   devices:
     - Epson
-    - EyeToy
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
     - Logitech MOMO Force
     - Logitech MOMO Racing Force
+    - Sony EyeToy
     - Storage
 SCUS_973.47: # MLB 2006 (USA)
   modules:
@@ -1510,9 +1510,9 @@ SCUS_973.47: # MLB 2006 (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_973.48: # NBA 06 (USA)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -1520,9 +1520,9 @@ SCUS_973.48: # NBA 06 (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_973.56: # Network Adaptor Start-Up Disc v2.5 (USA)
   modules:
     - AN986.IRX__6ce56ce2964f4ad010819549c0b94d53
@@ -1578,9 +1578,9 @@ SCUS_974.09: # Gretzky NHL 2005 (USA)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBKB.IRX__6f9456b1894ed35bf7e68c553d354603
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_974.25: # Online Start-Up Disc v3.0 (USA) (Rev 2)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -1598,9 +1598,9 @@ SCUS_974.63: # World Tour Soccer 2006 (USA) (En,Fr,Es,It)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
     - USBKB.IRX__6f9456b1894ed35bf7e68c553d354603
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_974.66: # Gretzky NHL 06 (USA)
   modules:
     - LGAUD.IRX__2eacaa0e198082897958eacae3890039
@@ -1608,9 +1608,9 @@ SCUS_974.66: # Gretzky NHL 06 (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_974.72: # Shadow of the Colossus (USA)
   modules:
     - PL2303.IRX__6c76a938d43f493a9df81475f7dd70cd
@@ -1627,12 +1627,12 @@ SCUS_974.83: # Gran Turismo 4 - Mazda MX-5 Edition (USA) (Demo)
     - USTORAGE.IRX__e2993d271d07bf7a96477d44231b0fba
   devices:
     - Epson
-    - EyeToy
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
     - Logitech MOMO Force
     - Logitech MOMO Racing Force
+    - Sony EyeToy
     - Storage
 SCUS_975.00: # MLB 06 - The Show (USA)
   modules:
@@ -1641,9 +1641,9 @@ SCUS_975.00: # MLB 06 - The Show (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_975.02: # Tourist Trophy (USA, Canada)
   modules:
     - EPSPRINT.IRX__5cf44c0891897cd0f41370b097930bcc
@@ -1660,9 +1660,9 @@ SCUS_975.44: # NBA 07 featuring the Life Vol. 2 (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_975.56: # MLB 07 - The Show (USA) (v1.00)
   modules:
     - LGAUD.IRX__57140338edddd842250fdae6e3078d8f
@@ -1670,9 +1670,9 @@ SCUS_975.56: # MLB 07 - The Show (USA) (v1.00)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_975.83: # MLB 08 - The Show (USA)
   modules:
     - LGAUD.IRX__57140338edddd842250fdae6e3078d8f
@@ -1680,9 +1680,9 @@ SCUS_975.83: # MLB 08 - The Show (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_975.84: # Syphon Filter - Logan's Shadow (USA)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -1695,8 +1695,8 @@ SCUS_976.11: # SingStar Amped (USA)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCUS_976.25: # NBA 09 - The Inside (USA)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -1704,17 +1704,17 @@ SCUS_976.25: # NBA 09 - The Inside (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_976.27: # SingStar Pop Vol. 2 (USA)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCUS_976.44: # MLB 09 - The Show (USA)
   modules:
     - LGAUD.IRX__57140338edddd842250fdae6e3078d8f
@@ -1722,33 +1722,33 @@ SCUS_976.44: # MLB 09 - The Show (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SCUS_976.51: # SingStar Country (USA)
   modules:
     - EYETOY.IRX__0dbc033d006ceaf7d7f27dc0aeb983ba
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
     - USBMIC.IRX__5f3588cf656583354f481279f6211c1a
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SCUS_976.53: # MLB 10 - The Show (USA)
   modules:
     - LGVID.IRX__27e139dea37a01bea196d4a1795c957c
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SCUS_976.57: # MLB 11 - The Show (USA)
   modules:
     - LGVID.IRX__27e139dea37a01bea196d4a1795c957c
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SLES_500.32: # Theme Park World (Europe) (En,Fr,De)
   modules:
     - USBD.IRX__490bd72468d75bbaf248288107c61297
@@ -2242,7 +2242,7 @@ SLES_505.57: # Polaroid Pete (Europe) (Proto) (2002-01-09)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - USBPRT.IRX__7e42abbc7eee6cc6de3c2d7560bf6e20
   devices:
-    - HM-PP1
+    - Sony HM-PP1
     - Sony PopEgg
     - Storage
 SLES_505.89: # Worms Blast (Europe) (En,Fr,De,Es,It)
@@ -3623,7 +3623,7 @@ SLES_524.40: # Harry Potter and the Prisoner of Azkaban (Europe) (En,Fr,De,Es,It
     - EYETOY.IRX__d94a33f2c758ed7f42f74fbe52dfc2e0
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_524.44: # Hyper Street Fighter II - The Anniversary Edition (Europe)
   modules:
     - LGDEV.IRX__75eb524d9b47b0141dd458eacba563ab
@@ -3760,13 +3760,13 @@ SLES_525.94: # U-Move Super Sports (Europe) (En,Fr,De,Es,It)
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_525.98: # Dancing Stage Fusion (Europe) (En,Fr,De,Es,It)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_526.20: # Guncom 2 (Europe) (En,Fr,De)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -3779,8 +3779,8 @@ SLES_526.21: # Tony Hawk's Underground 2 (Europe, Australia)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SLES_526.28: # NBA Ballers (Europe)
   modules:
     - LGAUD.IRX__22e950624c6e1062423152a915602448
@@ -3859,13 +3859,13 @@ SLES_526.85: # Polar Express, The (Europe, Australia) (En,Fr,De,Es,It)
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_526.93: # LMA Manager 2005 (Europe)
   modules:
     - LGVID.IRX__969a99543486e6a241cba3233bd5f8e4
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_527.05: # Mortal Kombat - Deception (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__22e950624c6e1062423152a915602448
@@ -3995,8 +3995,8 @@ SLES_528.11: # Get on da Mic (Europe) (En,Fr,It)
     - LGAUD.IRX__0b960c7e399e90de01f401ef2329cea3
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SLES_528.32: # Mega Man X - Command Mission (Europe) (En,Fr,De)
   modules:
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -4005,7 +4005,7 @@ SLES_528.34: # Sega Superstars (Europe, Australia) (En,Fr,Es,It)
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_528.53: # Miami Vice (Europe) (En,Fr,De,Es,It,Nl)
   modules:
     - APEMOD.IRX__b4b8099b316f570e17564ebb38d5d770
@@ -4082,8 +4082,8 @@ SLES_529.22: # Disney Move (Europe) (En,Fr,De,Es,It)
     - LGAUD.IRX__0b960c7e399e90de01f401ef2329cea3
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SLES_529.40: # S.L.A.I. - Steel Lancer Arena International (Europe) (En,Fr,De)
   modules:
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
@@ -4174,7 +4174,7 @@ SLES_530.09: # Dance Factory (Europe) (En,Fr,De,Es,It)
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_530.22: # ESPN NBA 2K5 (Europe)
   modules:
     - IOP.IRX__3ee2fe3cda19cb6f63408ae30d168366
@@ -4235,10 +4235,10 @@ SLES_530.82: # World Snooker Championship 2005 (Europe)
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
   devices:
     - Conexant SmartSCM
-    - EyeToy
     - Lucent
     - Microphone
     - Pegasus
+    - Sony EyeToy
 SLES_530.87: # TOCA Race Driver 3 (Europe) (En,Fr,De,Es,It)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -4321,8 +4321,8 @@ SLES_531.75: # Top Spin (Europe, Australia) (En,Fr,De,Es,It)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SLES_531.86: # International Super Karts (Europe)
   modules:
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
@@ -4350,7 +4350,7 @@ SLES_532.18: # Dancing Stage Max (Europe) (En,Fr,De,Es,It)
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_532.96: # Ford Mustang - The Legend Lives (Europe) (En,Fr,De,Es)
   modules:
     - LGDEVW.IRX__fa436ba12eac37c656b221f228f80394
@@ -4428,7 +4428,7 @@ SLES_534.36: # Yetisports Arctic Adventures (Europe) (En,Fr,De,Es,It)
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_534.39: # Crash Tag Team Racing (Europe, Australia) (En,Fr,De,Es,It,Nl)
   modules:
     - USBD.IRX__6ee98e77e9d238ceaf77308b71ef99e2
@@ -4457,7 +4457,7 @@ SLES_534.71: # LMA Manager 2006 (Europe) (En,Fr,De,Es,It)
   modules:
     - LGVID.IRX__665fcdf1c8a92726bb2bcc7492a1dee5
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_534.90: # Outlaw Tennis (Europe) (En,Fr,De,Es,It)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -4473,9 +4473,9 @@ SLES_534.91: # Karaoke Stage 2 (Europe) (En,Fr,De,Es,It)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLES_535.01: # Star Wars - Battlefront II (Europe) (En,Es,It)
   modules:
     - LGAUD.IRX__57140338edddd842250fdae6e3078d8f
@@ -4521,8 +4521,8 @@ SLES_535.34: # Tony Hawk's American Wasteland (Europe)
     - LGKBM.IRX__6c14fad26a06c630c88039457f61c080
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SLES_535.41: # Tiger Woods PGA Tour 06 (Europe) (En,Fr,De,Sv)
   modules:
     - LGAUD.IRX__5209a4e0491d971a19a3f43df68a91db
@@ -4705,8 +4705,8 @@ SLES_537.24: # World Series of Poker (Europe)
     - LGVID.IRX__12e79021d44b07e6bf523003f3577573
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SLES_537.29: # Battlefield 2 - Modern Combat (Europe) (En,Es,Nl,Sv) (v1.00)
   modules:
     - LGAUD.IRX__0b960c7e399e90de01f401ef2329cea3
@@ -4739,7 +4739,7 @@ SLES_538.48: # Flow - Urban Dance Uprising (Europe) (En,Fr,De,Es,It)
     - EYETOY.IRX__d94a33f2c758ed7f42f74fbe52dfc2e0
     - USBD.IRX__cbc1ee7f14c8f82c5127209ba90a7b82
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_539.00: # Kaido Racer 2 (Europe) (En,Fr,De)
   modules:
     - LGDEV.IRX__177c2ca762245dafb2d0ba34253b67d3
@@ -4761,12 +4761,12 @@ SLES_539.04: # DT Racer (Europe) (En,Fr,De,Es,It)
     - LGDEVW.IRX__d5c32e462ba43d253fbb55a02289caa1
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
     - Logitech Driving Force
     - Logitech Driving Force Pro
     - Logitech GT Force
     - Logitech MOMO Force
     - Logitech MOMO Racing Force
+    - Sony EyeToy
 SLES_539.58: # Noble Racing (Europe)
   modules:
     - LGDEVW.IRX__75eb524d9b47b0141dd458eacba563ab
@@ -4813,25 +4813,25 @@ SLES_539.95: # World Championship Poker 2 featuring Howard Lederer (Europe, Aust
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
     - USBMLOAD.IRX__0a5bc7d4162aa9f1a8d93cba74d1b61e
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLES_540.13: # World Snooker Championship 2007 (Europe)
   modules:
     - LGAUD.IRX__5209a4e0491d971a19a3f43df68a91db
     - LGVID.IRX__12e79021d44b07e6bf523003f3577573
     - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SLES_540.16: # AND 1 Streetball (Europe) (En,Fr,De,Es,It)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SLES_540.63: # FIFA World Cup Germany 2006 (Europe) (En,Es,Pt)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -4904,7 +4904,7 @@ SLES_541.99: # Who Wants to Be a Millionaire - Party Edition (Europe)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
     - Buzz
-    - EyeToy
+    - Sony EyeToy
 SLES_542.03: # PES 6 - Pro Evolution Soccer (Europe, Australia)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -4969,7 +4969,7 @@ SLES_542.25: # LMA Manager 2007 (Europe) (En,Fr,De,Es,It)
   modules:
     - LGVID.IRX__665fcdf1c8a92726bb2bcc7492a1dee5
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_542.44: # FIFA 07 (Europe) (En,Nl,Sv,No,Da)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -5020,7 +5020,7 @@ SLES_543.41: # Dancing Stage SuperNova (Europe) (En,Fr,De,Es,It)
     - EYETOY.IRX__1c61e94f6b574cc0635603b4954b0683
     - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_543.43: # Bratz - Forever Diamondz (Europe, Australia) (En,Es,It)
   modules:
     - LGAUD.IRX__a8d882dfae01e0efda9c19bd398cb32f
@@ -5043,9 +5043,9 @@ SLES_544.48: # World Series of Poker - Tournament of Champions - 2007 Edition (E
     - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4
     - USBPSPCM.IRX__974a14ac35ea36e6df59abcc8f0b0e2f
   devices:
-    - EyeToy
     - Microphone
     - PlayStation Portable
+    - Sony EyeToy
 SLES_544.66: # Test Drive Unlimited (Europe, Australia) (En,Fr,De,Es)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -5090,7 +5090,7 @@ SLES_545.18: # Clumsy Shumsy (Europe)
     - EYETOY.IRX__1c61e94f6b574cc0635603b4954b0683
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_545.47: # World Championship Poker featuring Howard Lederer - All In (Europe) (En,Fr,De,Es,It)
   modules:
     - EYETOY.IRX__d7341af1cd108be7a52a37462519691c
@@ -5100,9 +5100,9 @@ SLES_545.47: # World Championship Poker featuring Howard Lederer - All In (Europ
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
     - USBMLOAD.IRX__0a5bc7d4162aa9f1a8d93cba74d1b61e
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLES_545.84: # Pac-Man Rally (Europe) (En,Fr,De,Es,It)
   modules:
     - LGDEV.IRX__46d504fa620cf85ad920f0bb125d04de
@@ -5131,7 +5131,7 @@ SLES_546.56: # Bob the Builder (Europe)
     - EYETOY.IRX__1c61e94f6b574cc0635603b4954b0683
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_547.05: # SBK-07 - Superbike World Championship (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - LGDEV.IRX__177c2ca762245dafb2d0ba34253b67d3
@@ -5175,7 +5175,7 @@ SLES_548.25: # Bob the Builder (Europe) (En,De,Nl)
     - EYETOY.IRX__1c61e94f6b574cc0635603b4954b0683
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_548.34: # Juiced 2 - Hot Import Nights (Europe, Australia) (En,Fr,De,Es,It)
   modules:
     - LGDEV.IRX__119a64528936a42e253a68b67c18de1c
@@ -5207,7 +5207,7 @@ SLES_548.61: # Thomas & Friends - A Day at the Races (Europe) (Sv,No,Da,Fi)
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_548.67: # Tiger Woods PGA Tour 08 (Europe, Australia) (En,Fr)
   modules:
     - LGAUD.IRX__5209a4e0491d971a19a3f43df68a91db
@@ -5293,14 +5293,14 @@ SLES_549.61: # World Series of Poker 2008 - Battle for the Bracelets (Europe)
     - LGVID.IRX__12e79021d44b07e6bf523003f3577573
     - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4
   devices:
-    - EyeToy
     - Microphone
+    - Sony EyeToy
 SLES_549.85: # Thomas & Friends - A Day at the Races (Europe) (En,Fr,It,Nl)
   modules:
     - EYETOY.IRX__b2a4af0a41f40a09797bdf1d974a9a14
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_549.86: # Bratz - The Movie (Europe) (En,Fr)
   modules:
     - LGAUD.IRX__a8d882dfae01e0efda9c19bd398cb32f
@@ -5354,7 +5354,7 @@ SLES_551.97: # Dancing Stage SuperNova 2 (Europe) (En,Fr,De,Es,It)
     - EYETOY.IRX__1c61e94f6b574cc0635603b4954b0683
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLES_551.99: # NASCAR 09 (Europe)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -6609,7 +6609,7 @@ SLPM_690.01: # PictureParadise Club (Japan)
     - DSCDRV.IRX__0c51520d8782be8c2536b2dd67612359
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
   devices:
-    - HM-PP1
+    - Sony HM-PP1
     - Storage
 SLPM_690.02: # NetFront (Japan)
   modules:
@@ -6656,9 +6656,9 @@ SLPM_690.06: # PictureParadise Club Vol. 2 (Japan)
     - USBPRT.IRX__3947b6bacf21a7d7405abc1b218fae17
   devices:
     - Epson
-    - HM-PP1
     - Keyboard
     - Pegasus
+    - Sony HM-PP1
     - Sony PopEgg
     - Storage
 SLPS_200.16: # Dream Audition (Japan)
@@ -6724,7 +6724,7 @@ SLPS_200.91: # Gekisha Boy 2 - Tokudane Taikoku Nippon (Japan)
     - USBD.IRX__cf523ebd88118d83e2d2bd0110648eba
     - USBPRT.IRX__7e42abbc7eee6cc6de3c2d7560bf6e20
   devices:
-    - HM-PP1
+    - Sony HM-PP1
     - Sony PopEgg
     - Storage
 SLPS_200.93: # Super Mic-chan (Japan)
@@ -6996,9 +6996,9 @@ SLPS_204.18: # C@m Station (Japan)
     - USBMLOAD.IRX__0a5bc7d4162aa9f1a8d93cba74d1b61e
     - USBMLOAD.IRX__b0e78c3e20f63500e7a24f78d87d565b
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLPS_204.96: # Daito Giken Koushiki Pachi-Slot Simulator - Shake II (Japan)
   modules:
     - SLOTCNTR.IRX__3923db7cb8bb66bde68e19d0e272baa6
@@ -7096,7 +7096,7 @@ SLPS_251.06: # America Oudan Ultra Quiz (Japan)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
     - USBPRT.IRX__fac8d725a335e404797a7161bee5df7d
   devices:
-    - HM-PP1
+    - Sony HM-PP1
     - Sony PopEgg
     - Storage
 SLPS_251.12: # Armored Core 3 (Japan)
@@ -7133,7 +7133,7 @@ SLPS_251.48: # Panel Quiz Attack 25 (Japan)
     - USBD.IRX__0173a1a24450a724aeb0338dea44438f
     - USBPRT.IRX__fac8d725a335e404797a7161bee5df7d
   devices:
-    - HM-PP1
+    - Sony HM-PP1
     - Sony PopEgg
     - Storage
 SLPS_251.65: # Gunvari Collection + Time Crisis (Japan) (With GunCon2)
@@ -7918,9 +7918,9 @@ SLUS_210.89: # Karaoke Revolution Volume 3 (USA)
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
     - USBKB.IRX__1d597b55517582696deb93b19f47d405
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLUS_211.00: # NCAA March Madness 2005 (USA)
   modules:
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
@@ -8028,9 +8028,9 @@ SLUS_212.23: # Karaoke Revolution Party (USA)
     - USBD.IRX__7f39607736ffd40b910361604e7464e6
     - USBKB.IRX__1d597b55517582696deb93b19f47d405
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLUS_212.32: # College Hoops 2K6 (USA)
   modules:
     - IOP.IRX__29613accfe47f0552fee4a0915c0e274
@@ -8077,8 +8077,8 @@ SLUS_212.95: # Tony Hawk's American Wasteland (USA) (Collector's Edition)
     - LGKBM.IRX__6c14fad26a06c630c88039457f61c080
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SLUS_212.98: # NCAA March Madness 06 (USA)
   modules:
     - LGKBM.IRX__330c02898f67374757db38c2aa65539f
@@ -8105,9 +8105,9 @@ SLUS_213.29: # CMT Presents - Karaoke Revolution - Country (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLUS_213.32: # Real World Golf (USA)
   modules:
     - GTD.IRX__7248da276332e0b44be2ee0c5f30b61a
@@ -8136,9 +8136,9 @@ SLUS_213.40: # World Championship Cards (USA)
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
     - USBMLOAD.IRX__0a5bc7d4162aa9f1a8d93cba74d1b61e
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLUS_213.67: # MVP 06 NCAA Baseball (USA)
   modules:
     - LGAUD.IRX__4cc8d10b0bdeaa43847fa852e0d8604f
@@ -8254,9 +8254,9 @@ SLUS_215.40: # Karaoke Revolution Presents - American Idol (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLUS_215.47: # NHRA Drag Racing - Countdown to the Championship (USA)
   modules:
     - LGDEV.IRX__fec70a01f7666d972d3b8afd267cbd82
@@ -8346,9 +8346,9 @@ SLUS_217.19: # Karaoke Revolution Presents - American Idol Encore (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__c9602148d636ecf92e6fa649cae91911
   devices:
-    - EyeToy
     - Keyboard
     - Microphone
+    - Sony EyeToy
 SLUS_217.29: # Major League Baseball 2K8 (USA)
   modules:
     - IOP.IRX__2448d7aa251717d32f35207580021fe0
@@ -8375,8 +8375,8 @@ SLUS_217.67: # Dance Dance Revolution X (USA)
     - USBD.IRX__93966722b6a6ec1ec7569338b75b8559
     - USBKB.IRX__0472efeccf78967d62b3a81a35513f46
   devices:
-    - EyeToy
     - Keyboard
+    - Sony EyeToy
 SLUS_217.89: # Cabela's Legendary Adventures (USA)
   modules:
     - USBD.IRX__6d8e4ec5acba0ef3abe6b8cff7edfe1e
@@ -8483,7 +8483,7 @@ SLUS_219.17: # Dance Dance Revolution X2 (USA) (En,Fr,Es)
     - EYETOY.IRX__1c61e94f6b574cc0635603b4954b0683
     - USBD.IRX__32fc7cd79820977506bbfb2e4a359da4
   devices:
-    - EyeToy
+    - Sony EyeToy
 SLUS_219.29: # Major League Baseball 2K10 (USA)
   modules:
     - IOP.IRX__2448d7aa251717d32f35207580021fe0
